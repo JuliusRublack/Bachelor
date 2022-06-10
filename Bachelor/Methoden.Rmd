@@ -1,0 +1,51 @@
+---
+output:
+  bookdown::pdf_document2:
+    fig_caption: yes
+    toc: TRUE
+    toc_depth: 3
+    fontsize: 12pt
+    latex_engine: xelatex
+bibliography: "Bachelor_quellen.bib"
+biblio-style: apalike
+citation_package: biblatex
+link-citations: yes
+urlcolor: RoyalBlue
+linkcolor: RoyalBlue
+header-includes:
+  \usepackage{float}
+  \usepackage[ngerman]{babel}
+  \usepackage[onehalfspacing]{setspace}
+  \usepackage[utf8]{inputenc}
+  
+---
+
+```{r setup2, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+library(kableExtra)
+
+```
+
+# Material und Methoden
+
+## Herstellen der RNA-Standards
+
+### Kultivierung von Bakterien
+
+Zum erstellen der Übernachtkulturen wurden die transformierten Bakterien für 16 $\pm$ 2 h bei 37 °C und 200 RPM in 25 ml Lennox LB-Medium (Fertigmischung, Carl Roth GmbH) kultiviert. 
+
+### Isolierung von Plasmid-DNA aus Übernactkulturen
+
+Die Isolierung der Plasmid-DNA erfolgte mit dem Quiagen 
+
+### Sequenzierung der isolierten Plasmide 
+
+
+
+
+
+### Extraktion der Plasmid-DNA aus _E. coli_
+
+
+
