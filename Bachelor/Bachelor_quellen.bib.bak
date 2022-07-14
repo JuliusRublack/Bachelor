@@ -118,16 +118,6 @@
   groups    = {Methoden},
 }
 
-@InCollection{Smitha,
-  author    = {Duncan R. Smith},
-  booktitle = {Transgenesis Techniques},
-  publisher = {Humana Press},
-  title     = {Restriction Endonuclease Digestion of {DNA}},
-  pages     = {427--432},
-  doi       = {10.1385/0-89603-245-0:427},
-  groups    = {Methoden},
-}
-
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
