@@ -27,6 +27,8 @@ library(kableExtra)
 
 ```
 
+\pagebreak
+
 # Material und Methoden
 
 ## Bioinformatische Methoden
@@ -46,6 +48,22 @@ kable(parameter, booktabs = TRUE, caption = "Parameter für das Primerdesign mit
 
 Als DNA Sequenz-Vorlage diente die Sequenz des Influenza B Virus Segmentes 8 (GenBank Nr.: MT637911). Die entstandenen Primerpaare wurden mit dem Online-Programm \emph{PrimerDimer}^[http://www.primer-dimer.com/] von @Johnston2019 auf Eigenhybridisierung und Dimerbildung untersucht. Die Primer-Sonden-Paare wurden im Anschluss mit DNA Sequenzen des gleiches Virussegmentes von älteren Stämmen verglichen und mögliche Mismatches durch die Einführung von degenerierten Primer vermieden. Für den Sequenzvergleich wurde das Online-Programm \emph{Clustal Omega}^[https://www.ebi.ac.uk/Tools/msa/clustalo/] beschrieben durch @Sievers2017 verwendet.
 Für das Influenza A Virus waren innerhalb der Arbeitsgruppe schon RPA Primer-Sonden-Paare entwickelt. 
+
+### Statistische Auswertung der Amplifikationen
+
+Für die Entwicklung und Optimisierung von Amplifikationverfahren ist eine einheitliche statistische Auswertung notwenig [@Roediger2015]. Als Werkzeug für die Auswertung wurde die "open source" Programmiersprache R verwendet, da hier viele Erweiterungen sogenannte "Packages" für spezifische Anwedungen zur verfügung stehen [@Pabinger2014].  
+**Normalisierung der Daten:**  
+Für die Normalisierung der Daten wurde wie durch @Ritz2008 beschrieben, der Mittelwert der ersten 5 Messwerte jeder Amplifikationskurve berechnet. Die berechneten Mittelwerte wurden von den jeweiligen Datensätzen subtrahiert.  
+**Ermittlung signifikater Ampflifikationen:**  
+Die Überprüfung ob es sich bei einem gemessenen Datensatz um eine positive Amplifikation handelt wurde mit dem \emph{chipPCR} Paket von @Roediger2015 durchgeführt. Für die Auswertung wurden folgende Tests durchgeführt.   
+_Shapiro-Wilk Test:_ Mithilfe des Shaprio-Wilk Tests für Normalität wird der Datensatz auf Normalverteilung getestet. Bei errechneten P-Werten von $\geq$ 5*10^-4^ liegt keine Normalverteilung mehr vor und der Datensatz wird als negative Amplifikation gewertet.  
+_Residuen Wachstums Test:_ Bei diesen Test wird die stabilität der Residuen in der linearen Phase des Anstiegs untersucht. Bei negativen Amplifikationen weichen die fluoreszenzwerte von dem linaren Modell ab. Dadurch correlieren die Residuen im Gegensatz zu positiven Amplifikationen stark mit den Fluoreszenzwerten. Anhand eines Schwellenwertes von 0.5 wurde diese correlation als positive/negative Ampflifikation eingestuft.  
+_Schwellenwert Test:_ Innerhalb dieses Tests wird untersucht, ob die Fluoreszenzwerte einen Schwellenwert überschreiten und somit die Amplifikation positiv ist. Zur Ermittlung des Schwellenwertes wurden, wie in der Literatur üblich, die 10-Fache Standardabweichung der Fluoreszenzwerte von Negativkontrollen verwendet [@quellen, @zweitequelle]. Dabei wurden mindestens acht Negativkontrollen betrachtet. Der finale Schwellenwert ergab sich aus dem Median der einzeln berechneten SChwellenwerte.   
+_Signal Level Test:_ Bei diesem Test wird
+_Polygon Test:_ Hier wird untersucht, ob die Datenpunkte innerhalb des Datensatzes sich im "Uhrzeigersinn" befinden. Dabei wird mit der Formel ((x2 - x1)(y2+y1)) die Summe über den Kanten bestimmt. Bei positiven Amplifikationen erreicht die Summe höhere Werte als bei negativen Amplifikationen. Als Schwellenwert wurde hier empirisch ein Wert von 100 als passender SChwellenwert festgestellt [@Roediger2015].
+
+### Probit-Analyse
+
 
 ## Herstellen der RNA-Standards
 Die Herstellung des RNA-Standards für das Inlfuenza A Virus wurde wie beschrieben durchgeführt. Für das Influenza B Virus war in der Arbeitsgruppe schon eine transformierte _E. coli_ Kultur vohanden. Mit dieser wurden die alle entsprechenden Schritte wie beschrieben durchgeführt.
@@ -125,10 +143,15 @@ cat(c("\\begin{table}[!htb]
 
 Für die Influenza A Plasmide (siehe...) wurde das Enzym BoxI (Thermo Fisher Scientific) verwendet. Der in Tab. gezeigte Restriktionsansatz wurde für 2h im Wasserbad bei 37 °C inkubiert und anschließend bei 80 °C für 20 min im ThermoStat C (Eppendorf\textsuperscript{\textcopyright}) inaktiviert.
 
+### Gel
 
+### Cleaning
 
+### in vitro transktription
 
-### Extraktion der Plasmid-DNA aus _E. coli_
+### ribogreen assay
+
+### RPA
 
 \pagebreak
 
