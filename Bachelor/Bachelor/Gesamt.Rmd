@@ -1,0 +1,72 @@
+---
+output:
+  bookdown::pdf_document2:
+    fig_caption: yes
+    toc: FALSE
+    toc_depth: 3
+    fontsize: 12pt
+    latex_engine: xelatex
+bibliography: "Bachelor_quellen.bib"
+biblio-style: apalike
+citation_package: biblatex
+link-citations: yes
+urlcolor: RoyalBlue
+linkcolor: RoyalBlue
+always_allow_html: TRUE
+header-includes:
+  \usepackage{float}
+  \usepackage[ngerman]{babel}
+  \usepackage[onehalfspacing]{setspace}
+  \usepackage{colortbl}
+  \usepackage[utf8]{inputenc}
+  \renewcommand{\listfigurename}{Abbildungsverzeichnis}
+  \renewcommand{\listtablename}{Tabellenverzeichnis}
+  \pagenumbering{Roman}
+  \usepackage[]{hyperref}
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(kableExtra)
+library(ggplot2)
+library(mdthemes)
+```
+
+\pagenumbering{gobble}
+
+a```{r, child='Deckblatt.Rmd'}
+s```
+
+\pagebreak
+
+\pagenumbering{Roman}
+
+\hypersetup{linkcolor=black}
+\tableofcontents
+
+\pagebreak
+
+\listoffigures
+
+\listoftables
+
+\pagebreak
+
+# Abkürzungsverzeichnis
+
+```{r}
+#Abkz <- read.csv2("D:/Studium/Uni/Praxsisemester/Praxissemester-Arbeit/Publikation/Gesamt mit rchild/Abkürzungsverzeichnis.csv", header = FALSE)
+#kable(Abkz, booktabs = TRUE, format = "latex", escape = FALSE, col.names = NULL) %>%
+  #kable_styling(full_width = T) %>%
+ #column_spec(1, width = "2.2in") 
+  
+```
+
+
+\pagebreak
+
+\hypersetup{linkcolor=RoyalBlue}
+
+\pagenumbering{arabic}
+
+```{r, child=c( 'Methoden.Rmd', "Ergebnisse.Rmd")}
+```
