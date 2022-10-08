@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.8.28) (preloaded format=xelatex 2022.9.28)  7 OCT 2022 18:11
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.8.28) (preloaded format=xelatex 2022.9.28)  8 OCT 2022 19:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1135,18 +1135,21 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[5] [6] [7] [8] [9] [10]
-Underfull \hbox (badness 2205) in paragraph at lines 586--588
+[5] [6] [7] [8]
+File: Bilder/infB_verdau.png Graphic file (type bmp)
+<Bilder/infB_verdau.png>
+[9] [10]
+Underfull \hbox (badness 2205) in paragraph at lines 597--599
 []\TU/lmr/m/n/10 QIAGEN. 2021. “QIAGEN® PlasmidPurification Handbook.” \TU/lmr/
 m/it/10 QIAGEN Plasmid Mini, Midi, Ma-
  []
 
 [11] (Gesamt.aux) ) 
 Here is how much of TeX's memory you used:
- 22043 strings out of 410536
- 397774 string characters out of 2812580
- 971710 words of memory out of 3000000
- 42891 multiletter control sequences out of 15000+600000
+ 22069 strings out of 410536
+ 398256 string characters out of 2812580
+ 969780 words of memory out of 3000000
+ 42910 multiletter control sequences out of 15000+600000
  474847 words of font info for 75 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  86i,13n,121p,1458b,511s stack positions out of 10000i,1000n,20000p,200000b,80000s
