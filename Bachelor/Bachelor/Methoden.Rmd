@@ -91,9 +91,9 @@ Um eine Amplifikation als positiv einzustufen, mussten alle aufgeführten Tests 
 
 Die Anstiegszeit, in der Literatur bei PCR-System nach den MIQE Richtlinien auch als C~q~-Wert angegeben (siehe @Bustin2009), ist der Zeitpunkt bei die dem Fluoreszenzwerte einer Amplifikation einen vorher festgelegten Schwellenwert überschreiten und sich zusätzlich signifikant von dem Grundrauschen unterscheiden. Für die Ermittlung der Anstiegszeit wurde der im \emph{chipPCR}-Paket vorhandene Befehl "th.cyc" verwendet. Dieser gleicht die Amplifikationskurve im Bereich des vorher festgelegten Schwellenwertes mit einer Polynomfunktion zweiten Grades an und gibt den Schnittpunkt mit dem Schwellenwert als Anstiegszeit aus. Als Schwellenwert wurde der im _Schwellenwert Test_ beschrieben Wert verwendet [@Roediger2015]. 
    
-### Probit-Analyse
+### Probit-Analyse {#probit}
 
-Die Probit-Analyse ist ein statistisches Modell, welches binäre Fälle (0 und 1) mit einer fortlaufenden Variablen in Verbindung bringt. Dabei wird die Gausssche Normalverteilungsfunktion $\phi$, welche durch die Formel $p= \phi(\alpha+\beta x)$ beschrieben wird, auf die Regression angewendet [@Bingham2010]. Die von @Bliss1934 enwtickelte Methode wurde urspünglich für toxikologische Experimente genutzt, um die tödliche Dosis mathematisch zu bestimmen [@Bliss1934]. Aufgrund der gleichen Datenlage lässt sich jedoch dieses mathematische Modell auch verwenden, um das Detektionslimit anhand einer Konzentrationsreihe für ein Nukleinsäure-Amplifikationssystem zu ermitteln. 
+Die Probit-Analyse ist ein statistisches Modell, welches binäre Fälle (0 und 1) mit einer fortlaufenden Variablen in Verbindung bringt. Dabei wird die Gausssche Normalverteilungsfunktion $\phi$, welche durch die Formel $p= \phi(\alpha+\beta x)$ beschrieben wird, auf die Regression angewendet [@Bingham2010]. Die von @Bliss1934 enwtickelte Methode wurde urspünglich für toxikologische Experimente genutzt, um die tödliche Dosis mathematisch zu bestimmen [@Bliss1934]. Aufgrund der gleichen Datenlage lässt sich jedoch dieses mathematische Modell auch verwenden, um das Detektionslimit anhand einer Konzentrationsreihe für ein Nukleinsäure-Amplifikationssystem zu ermitteln. Die Probit-Analyse anhand von von Amplifikationsdaten erfolgte mittels einer R-skrips, entwickelt durch Ole Bährmann, beschrieben in @Behrmann2020. Skript modifiziert und an die Daten angepasst durch mich.
 
 ## Herstellen der RNA-Standards
 Die Herstellung des RNA-Standards für das Influenza A Virus wurde wie beschrieben durchgeführt. Für das Influenza B Virus war in der Arbeitsgruppe schon eine transformierte _E. coli_ Kultur vorhanden. Mit dieser wurden die alle entsprechenden Schritte wie beschrieben durchgeführt.
@@ -147,19 +147,19 @@ Für das Influenza B Plasmid (siehe...) wurde das Enzym SacI (Fast Digest, Therm
 
 Für die Influenza A Plasmide (siehe...) wurde das Enzym BoxI (Thermo Fisher Scientific) verwendet. Der in Tab. gezeigte Restriktionsansatz wurde für 2h im Wasserbad bei 37 °C inkubiert und anschließend bei 80 °C für 20 min im ThermoStat C (Eppendorf\textsuperscript{\textcopyright}) inaktiviert.
 
-### Gel
+### Gel{#gel}
 
-### Cleaning
+### Cleaning{#cleaning}
 
-### in vitro transktription
+### in vitro transktription{#transkription}
 
-### ribogreen assay
+### ribogreen assay{#ribogreen}
 
 ## Nukleinsäure Amplifikation
 
 ### Polymerase Kettenreaktion
 
-#### Influenza B PCR
+#### Influenza B PCR{#infbPCR}
 \hfill
 Die Amplifikation von Influenza B Virus Nukleinsäuren mittels PCR wurde mit dem Luna\textsuperscript{\textcopyright} Universal Probe One-Step RT-qPCR Kit durchgeführt. Im ersten Schritt wurden pro Reaktion 19 µl Reaktionsmix mit DEPC-H~2~O (\textcolor{red}{Hersteller}) siehe Tabelle \@ref(tab:infbPCR) hergestellt. Für den in Tabelle \@ref(tab:infbPCR) angegebenen Primer-Sonden-Mix (PSM) wurde der in  Tabelle \@ref(tab:infbPSM) beschriebene Influenza B PSM verwendet. Die Primersequenzen wurden durch das nationale Zentrum für Immunisierung und Atemwegserkrankungen (U.S.) beschrieben [@ImmunizationJuly132021].
 

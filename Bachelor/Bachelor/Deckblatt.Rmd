@@ -1,0 +1,62 @@
+---
+output:
+  bookdown::pdf_document2:
+    fig_caption: yes
+    toc: FALSE
+    toc_depth: 3
+    fontsize: 12pt
+bibliography: "Bachelor_quellen.bib"
+biblio-style: apalike
+citation_package: biblatex
+link-citations: yes
+urlcolor: RoyalBlue
+linkcolor: RoyalBlue
+header-includes:
+  \usepackage{float}
+  \usepackage[utf8]{inputenc}
+  \usepackage[ngerman]{babel}
+  \usepackage[onehalfspacing]{setspace}
+  \usepackage{colortbl}
+  \usepackage[T1]{fontenc}
+---
+
+\vspace*{2 cm}
+
+\begin{centering}
+
+\LARGE
+
+{\bf Bachelorarbeit}
+
+\vspace{2 cm}
+
+\Huge
+
+{\bf Titel der Arbeit  }
+
+\vspace{3 cm}
+
+\Large
+Julius Rublack 
+\vspace{0.2 cm}
+
+
+
+
+\normalsize
+
+Matrikel Nr.: 3801533
+
+
+`r format(Sys.time(), '%d %B, %Y')`
+
+
+\end{centering}
+\vspace{3 cm}
+Erstbetreuer: Dr. rer.nat. Gregory Dame  
+Zweitbetreuer: Dr. rer. nat. Barbara Hansen
+
+Arbeitsgruppe Virologie  
+Institut für Mikrobiologie und Virologie  
+Medizinische Hochschule Brandenburg - Theodor Fontane
+\normalsize

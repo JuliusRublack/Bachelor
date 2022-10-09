@@ -33,8 +33,8 @@ library(mdthemes)
 
 \pagenumbering{gobble}
 
-a```{r, child='Deckblatt.Rmd'}
-s```
+```{r, child='Deckblatt.Rmd'}
+```
 
 \pagebreak
 
@@ -70,3 +70,7 @@ s```
 
 ```{r, child=c( 'Methoden.Rmd', "Ergebnisse.Rmd")}
 ```
+
+\pagebreak
+
+# Literaturverzeichniss

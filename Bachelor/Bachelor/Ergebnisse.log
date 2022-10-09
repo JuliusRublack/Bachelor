@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.8.28) (preloaded format=xelatex 2022.9.28)  8 OCT 2022 18:33
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.8.28) (preloaded format=xelatex 2022.9.28)  9 OCT 2022 15:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1112,28 +1112,62 @@ LaTeX Warning: Reference `tab:RPAoligo' on page 1 undefined on input line 115.
 LaTeX Warning: Reference `kultivierung' on page 1 undefined on input line 122.
 
 
+LaTeX Warning: Reference `isolation' on page 1 undefined on input line 122.
+
+
 LaTeX Warning: Reference `sequenzierung' on page 1 undefined on input line 122.
 
 
 
 LaTeX Warning: Reference `verdau' on page 1 undefined on input line 124.
 
-File: Bilder/infB_verdau.png Graphic file (type bmp)
-<Bilder/infB_verdau.png>
+
+LaTeX Warning: Reference `gel' on page 1 undefined on input line 124.
+
+
+LaTeX Warning: Reference `cleaning' on page 1 undefined on input line 124.
+
+File: Bilder/infB_verdau_t.png Graphic file (type bmp)
+<Bilder/infB_verdau_t.png>
+File: Ergebnisse_files/figure-latex/infBverdau-2.pdf Graphic file (type pdf)
+<use Ergebnisse_files/figure-latex/infBverdau-2.pdf>
+
+LaTeX Warning: Reference `transkription' on page 1 undefined on input line 135.
+
+
+
+LaTeX Warning: Reference `ribogreen' on page 1 undefined on input line 135.
+
 [1
 
-] [2] (Ergebnisse.aux)
+]
+
+LaTeX Warning: Reference `infbPCR' on page 2 undefined on input line 140.
+
+
+LaTeX Warning: Reference `infbPCR' on page 2 undefined on input line 140.
+
+
+LaTeX Warning: Reference `chipPCR' on page 2 undefined on input line 140.
+
+File: Ergebnisse_files/figure-latex/Conawachstum-1.pdf Graphic file (type pdf)
+<use Ergebnisse_files/figure-latex/Conawachstum-1.pdf>
+File: Ergebnisse_files/figure-latex/Conawachstum-2.pdf Graphic file (type pdf)
+<use Ergebnisse_files/figure-latex/Conawachstum-2.pdf>
+File: Bilder/infB_probit.png Graphic file (type bmp)
+<Bilder/infB_probit.png>
+[2] [3] (Ergebnisse.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 21929 strings out of 410536
- 395702 string characters out of 2812580
- 954172 words of memory out of 3000000
- 42795 multiletter control sequences out of 15000+600000
- 472878 words of font info for 58 fonts, out of 8000000 for 9000
+ 21994 strings out of 410536
+ 397951 string characters out of 2812580
+ 960307 words of memory out of 3000000
+ 42852 multiletter control sequences out of 15000+600000
+ 472886 words of font info for 59 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 86i,5n,121p,1009b,351s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 86i,6n,121p,1009b,356s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
-Output written on Ergebnisse.pdf (2 pages).
+Output written on Ergebnisse.pdf (3 pages).

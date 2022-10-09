@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.8.28) (preloaded format=xelatex 2022.9.28)  8 OCT 2022 19:32
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.8.28) (preloaded format=xelatex 2022.9.28)  9 OCT 2022 15:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1117,17 +1117,17 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 [2] [3]
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 183.
+(Font)              scaled to size 8.0pt on input line 223.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 183.
+(Font)              scaled to size 6.0pt on input line 223.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 8.00073pt on input line 183.
+(Font)              scaled to size 8.00073pt on input line 223.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.00055pt on input line 183.
+(Font)              scaled to size 6.00055pt on input line 223.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.99915pt on input line 183.
+(Font)              scaled to size 7.99915pt on input line 223.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.99936pt on input line 183.
+(Font)              scaled to size 5.99936pt on input line 223.
 [1] [2] [3] [4]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1135,23 +1135,35 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 [5] [6] [7] [8]
-File: Bilder/infB_verdau.png Graphic file (type bmp)
-<Bilder/infB_verdau.png>
-[9] [10]
-Underfull \hbox (badness 2205) in paragraph at lines 597--599
+File: Bilder/infB_verdau_t.png Graphic file (type bmp)
+<Bilder/infB_verdau_t.png>
+File: Gesamt_files/figure-latex/infBverdau-2.pdf Graphic file (type pdf)
+<use Gesamt_files/figure-latex/infBverdau-2.pdf>
+[9]
+File: Gesamt_files/figure-latex/Conawachstum-1.pdf Graphic file (type pdf)
+<use Gesamt_files/figure-latex/Conawachstum-1.pdf>
+File: Gesamt_files/figure-latex/Conawachstum-2.pdf Graphic file (type pdf)
+<use Gesamt_files/figure-latex/Conawachstum-2.pdf>
+File: Bilder/infB_probit.png Graphic file (type bmp)
+<Bilder/infB_probit.png>
+[10] [11] [12]
+Underfull \hbox (badness 2205) in paragraph at lines 659--661
 []\TU/lmr/m/n/10 QIAGEN. 2021. “QIAGEN® PlasmidPurification Handbook.” \TU/lmr/
 m/it/10 QIAGEN Plasmid Mini, Midi, Ma-
  []
 
-[11] (Gesamt.aux) ) 
+[13] (Gesamt.aux) ) 
 Here is how much of TeX's memory you used:
- 22069 strings out of 410536
- 398256 string characters out of 2812580
- 969780 words of memory out of 3000000
- 42910 multiletter control sequences out of 15000+600000
- 474847 words of font info for 75 fonts, out of 8000000 for 9000
+ 22139 strings out of 410536
+ 400606 string characters out of 2812580
+ 971961 words of memory out of 3000000
+ 42970 multiletter control sequences out of 15000+600000
+ 474879 words of font info for 79 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  86i,13n,121p,1458b,511s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
-Output written on Gesamt.pdf (15 pages).
+Output written on Gesamt.pdf (17 pages).
