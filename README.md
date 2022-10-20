@@ -3,15 +3,11 @@
 # To Do Liste:
 
 
-* **Methodenteil korrogieren**
+* **Methodenteil überarbeiten**
+*   + Tabellen auf Komma zentrieren? nochmal mit Greg sprechen.
+*  
 * **Ergebnissteil InfB fertig schreiben**
 * **Ergebnissteil InfA anfangen**
-* ~~Ausblick schreiben~~
-* Danksagung schreiben
-* **Ergebnisse: Sind jetzt auch fertig und können Kontrolliert werden**
-* Generell:
-    + ~~Fehlende Quellen einfügen und wo nötig Quellen noch mal Überprüfen~~
-    + ~~Satzstrukturen überprüfen (Ursache -> Wirkung)~~
-    + ~~Quellen auf Großschreibung überprüfen~~
-
-# Vielen Dank für die Hilfe
+* Arbeitsgruppe Ändern/Iris fragen wie die Arbeitsgruppe heißt
+* PCR Primerquelle überarbeiten, dass die richtig angezeigt wird
+* 
