@@ -1,11 +1,11 @@
 # Bachelor
 
-# Praxissemesterarbeit
-
 # To Do Liste:
 
 
-* **Diskussion: Ist jetzt soweit fertig**  
+* **Methodenteil korrogieren**
+* **Ergebnissteil InfB fertig schreiben**
+* **Ergebnissteil InfA anfangen**
 * ~~Ausblick schreiben~~
 * Danksagung schreiben
 * **Ergebnisse: Sind jetzt auch fertig und können Kontrolliert werden**
