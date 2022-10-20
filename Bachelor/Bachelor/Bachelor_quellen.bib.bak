@@ -286,6 +286,29 @@
   publisher = {Oxford University Press ({OUP})},
 }
 
+@Article{Bliss1934,
+  author    = {C. I. Bliss},
+  journal   = {Science},
+  title     = {The Method of Probits},
+  year      = {1934},
+  month     = {jan},
+  number    = {2037},
+  pages     = {38--39},
+  volume    = {79},
+  doi       = {10.1126/science.79.2037.38},
+  groups    = {Methoden},
+  publisher = {American Association for the Advancement of Science ({AAAS})},
+}
+
+@Book{Bingham2010,
+  author    = {N. H. Bingham and John M. Fry},
+  publisher = {Springer London},
+  title     = {Regression},
+  year      = {2010},
+  doi       = {10.1007/978-1-84882-969-5},
+  groups    = {Methoden},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
