@@ -33,9 +33,9 @@ library(kableExtra)
 
 ## Bioinformatische Methoden
 
-### Primerdesign für die RPA {#desing}
+### Rekombinase Polymerase Amplifikation Primerdesign {#desing}
 
-Für die Erstellung der Primer für das Influenza B Virus wurde das von @Higgins2018 entwickelte Programm \emph{PrimedRPA} verwendet. Die Parameter für die Primersuche sind in Tabelle \@ref(tab:parameter) angegeben. 
+Für die Erstellung der Primer zur Detektion des Influenza B Virus wurde das von @Higgins2018 entwickelte Programm \emph{PrimedRPA} verwendet. Die Parameter dafür sind in Tabelle \@ref(tab:parameter) angegeben. 
 
 ```{r, parameter}
 
@@ -46,21 +46,20 @@ kable(parameter, booktabs = TRUE, caption = "Parameter für das Primerdesign mit
 
 ```
 
-Als DNA-Sequenz-Vorlage diente die Sequenz des Influenza B Virus Segmentes 8 (GenBank Nr.: MT637911). Die entstandenen Primerpaare wurden mit dem Online-Programm \emph{PrimerDimer}^[http://www.primer-dimer.com/] von @Johnston2019 auf Eigenhybridisierung und Dimerbildung untersucht. Die Primer-Sonden-Paare wurden im Anschluss mit DNA-Sequenzen des gleichen Virussegmentes von älteren Stämmen verglichen und mögliche Fehlpaarungen durch die Einführung von degenerierten Primern vermieden. Für den Sequenzvergleich wurde das Online-Programm \emph{Clustal Omega}^[https://www.ebi.ac.uk/Tools/msa/clustalo/] beschrieben durch @Sievers2017 verwendet.
-Für das Influenza A Virus waren innerhalb der Arbeitsgruppe schon RPA Primer-Sonden-Paare entwickelt. 
+Als DNA-Referenzsequenz diente das Virusgenomsegment 8 des Influenza B Virus (GenBank Nr.: MT637911). Die entstandenen Primerpaare wurden mit dem Online-Programm \emph{PrimerDimer}^[http://www.primer-dimer.com/] von @Johnston2019 auf Eigenhybridisierung und Dimerbildung untersucht. Im Anschluss wurden die Primer-Sonden-Paare mit DNA-Sequenzen des gleichen Virusgenomsegmentes von älteren Stämmen verglichen und mögliche Fehlpaarungen durch die Einführung von degenerierten Primern zu vermeiden. Für das Alignment wurde das Online-Programm \emph{Clustal Omega}^[https://www.ebi.ac.uk/Tools/msa/clustalo/] beschrieben durch @Sievers2017, verwendet.
 
 ### Statistische Auswertung der Amplifikationen {#chipPCR}
 
-Für die Entwicklung und Optimierung von Amplifikationsverfahren ist eine einheitliche statistische Auswertung notwendig [@Roediger2015]. Als Werkzeug für die Auswertung wurde die "Open Source" Programmiersprache R verwendet, da hier viele Erweiterungen sogenannte "Packages" für spezifische Anwendungen zur Verfügung stehen [@Pabinger2014].  
-**Normalisierung der Daten:**  
-Für die Normalisierung der Daten wurde wie durch @Ritz2008 beschrieben, der Mittelwert der ersten 5 Messwerte jeder Amplifikationskurve berechnet. Die berechneten Mittelwerte wurden von den jeweiligen Datensätzen subtrahiert.  
+Für die Entwicklung und Optimierung von Amplifikationsverfahren ist eine einheitliche statistische Auswertung notwendig [@Roediger2015]. Als Werkzeug für die Auswertung wurde die "Open Source" Programmiersprache R verwendet,welches für spezifische Anwendungen beliebig erweiterbar ist durch die Verwendung sogenannter “Packages” [@Pabinger2014].  
+**Normalisierung der Fluoreszenz-Daten:**  
+Für die Normalisierung der Daten wurde wie in der Literatur beschrieben, der Mittelwert der ersten 5 Messwerte jeder Amplifikationskurve berechnet [@Ritz2008]. Die berechneten Mittelwerte wurden von den jeweiligen Datensätzen subtrahiert.  
 **Ermittlung signifikanter Amplifikationen:**  
-Die Überprüfung, ob es sich bei einem gemessenen Datensatz um eine positive Amplifikation handelt, wurde mit dem \emph{chipPCR} Paket von @Roediger2015 durchgeführt. Für die Auswertung wurden folgende Tests durchgeführt.
+Die Überprüfung, ob es sich bei einem gemessenen Fluoreszenz-Datensatz um eine positive Amplifikation handelt, wurde mit dem \emph{chipPCR} Paket von @Roediger2015 durchgeführt. Für die Auswertung wurden folgende Tests durchgeführt.
 
 _Shapiro-Wilk Test:_  Negative Amplifikationen unterliegen einem gleichmäßigen starken Rauschen, weswegen eine Normalverteilung der Daten gegeben ist. Bei positiven Amplifikationen hingegen sind die Daten durch den linearen Anstieg in der exponentiellen Phase der Amplifikation nicht mehr normalverteilt. Anhand dieser Gesetzmäßigkeit lassen sich durch einen Test auf Normalverteilung positive von negativen Amplifikationen unterscheiden [@Roediger2022]. Mithilfe des Shapiro-Wilk Tests für Normalität wird der Datensatz auf Normalverteilung getestet. Bei errechneten P-Werten von $\geq 5*10^{-4}$ liegt keine Normalverteilung mehr vor und der Datensatz wurde als negative Amplifikation gewertet.  
-_Residuen Wachstums Test:_ Bei diesem Test wird die Stabilität der Residuen in der linearen Phase des Anstiegs untersucht. Bei negativen Amplifikationen weichen die Fluoreszenzwerte von dem linearen Modell ab. Dadurch korrelieren die Residuen im Gegensatz zu positiven Amplifikationen stark mit den Fluoreszenzwerten. Anhand eines Schwellenwertes von 0.5 wurde diese Korrelation untersucht und der Datensatz als positive/negative Amplifikation eingestuft.  
+_Residuen Wachstums Test:_ Bei diesem Test wird die Stabilität der Residuen in der linearen Phase des Anstiegs untersucht. Bei negativen Amplifikationen weichen die Fluoreszenzwerte von dem linearen Modell ab. Dadurch korrelieren die Residuen im Gegensatz zu positiven Amplifikationen stark mit den Fluoreszenzwerten. Anhand eines Schwellenwertes von 0,5 wurde diese Korrelation untersucht und der Datensatz als positive/negative Amplifikation eingestuft.  
 _Vergleichs Test:_ Innerhalb dieses Tests wird untersucht, ob die ersten 20 % des Datensatzes sich signifikant von den letzten 15 % Unterscheiden. Dazu wurden die beiden Datengruppen mit dem Wilcoxon-Mann-Whitney-Test, beschrieben durch @Mann1947, verglichen. Besteht ein signifikanter Unterschied, handelt es sich um eine positive Amplifikation.    
-_Signal Level Test:_ Dieser Test vergleicht zwei aus dem Datensatz berechnete Werte. Der Erste berechnet sich aus der Formel \@ref(eq:eins). Dabei steht MAD^[https://search.r-project.org/CRAN/refmans/ie2misc/html/madstat.html] (engl. _Mean-absolut deviation_) für die absolute Standardabweichung, siehe R-Dokumentation.  Der zweite Wert ist das Signal-Rausch-Verhältnis (SNR), berechnet mit der Formel \@ref(eq:zwei). Bei einem um 25 % erhöhtem Wert des SNR im Vergleich zum ersten Wert wurde die Amplifikation als positiv gewertet.  
+_Signal Level Test:_ Dieser Test vergleicht zwei aus dem Datensatz berechnete Werte. Ersterer berechnet sich aus Formel \@ref(eq:eins), wobei MAD^[https://search.r-project.org/CRAN/refmans/ie2misc/html/madstat.html] (engl. _Mean-absolut deviation_) für die absolute Standardabweichung steht (siehe R-Dokumentation). Der zweite Wert ist das Signal-Rausch-Verhältnis (SNR, engl. _signal noise ratio_), berechnet mit Formel \@ref(eq:zwei). Bei einem um 25 % erhöhtem Wert des SNR im Vergleich zum ersten Wert wird die Amplifikation als positiv gewertet.  
 
 \begin{equation} 
   Median + 2* MAD\; \; \; \; \; \; \;  mit \; \; \; \; MAD= n^{-1}\sum_{i=1}^{n}\left | O_{i}-\overline{O}\right |
@@ -71,42 +70,38 @@ _Signal Level Test:_ Dieser Test vergleicht zwei aus dem Datensatz berechnete We
   (\#eq:zwei)
 \end{equation}
 
-_Polygon Test:_ Innerhalb dieses Tests wird der Anstieg pro Zeitintervall mit der Formel \@ref(eq:drei) aufsummiert. Bei positiven Amplifikationen erreicht die Summe höhere Werte als bei negativen Amplifikationen, da hier das stärkere Rauschen der Daten die Endsumme niedrig hält. Als Schwellenwert für eine positive Amplifikation wurde hier empirisch ein Wert von 10 als passend festgestellt [@Roediger2015].
+_Polygon Test:_ Innerhalb dieses Tests wird der Anstieg pro Zeitintervall mit Formel \@ref(eq:drei) aufsummiert. Bei positiven Amplifikationen erreicht die Summe höhere Werte als bei negativen Amplifikationen, da hier das stärkere Rauschen der Daten die Endsumme niedrig hält. Als Schwellenwert für eine positive Amplifikation wurde hier empirisch ein Wert von 10 festgelegt. [@Roediger2015].
 
 \begin{equation}
   ((x_{2}-x_{1}))*((y_{2}+y_{1})) \; \;   \widehat{=}\; \; (\Delta t)*((y_{2}+y_{1}))
   (\#eq:drei)
-\end{equation}  
+\end{equation}
 
-_Schwellenwert Test:_ Bei DNA-Amplifikationsmethoden ist es üblich, eine Amplifikation als negativ einzustufen, sollte ein gewisser Schwellenwert nicht überschritten werden [@Aranha2021]. Für die Berechnung des Schwellenwertes wurde die von @Frey1998 beschriebene Methode verwendet. Diese beruht auf dem Median der gesamten Daten, zu welchem ein Faktor addiert wird. Der Faktor bildet sich dabei aus der Standardabweichung (SD) der Daten multipliziert mit einem Term bestehend aus der Probenanzahl (n) und den Werten einer einseitigen students t-Verteilung (siehe Formel \@ref(eq:vier)). Für die Schwellenwertberechnung wurden mindestens 8 Negativkontrollen als Datensatz verwendet. Das Konfidenzintervall für die t-Verteilung wurde als 0.99 (99 %) festgelegt. 
+Des Weiteren ist es üblich, bei Echtzeit-Amplifikationsmethoden einen Schwellenwert einzuführen. Sollte dieser während der Messung nicht überschritten werden wird die Amplifikation als negativ eingestuft [@Aranha2021]. Um dies zu berücksichtigen wurde ein weiterer Test, der _Schwellenwert Test_, eingeführt. Für die Berechnung des Schwellenwertes wurde die von @Frey1998 beschriebene Methode verwendet. Diese beruht auf dem Median der gesamten Daten, zu welchem ein Faktor addiert wird. Der Faktor bildet sich dabei aus der Standardabweichung (SD) der Daten multipliziert mit einem Term bestehend aus der Probenanzahl (n) und den Werten einer einseitigen Students t-Verteilung (siehe Formel \@ref(eq:vier)). Für die Schwellenwertberechnung wurden mindestens 6 Negativkontrollen als Datensatz verwendet. Das Konfidenzintervall für die t-Verteilung wurde als 0,99 (99 %) festgelegt. 
 
 \begin{equation} 
   Schwellenwert=\overline{X}+SD*t\sqrt{1+\frac{1}{n}} \; \; \; \; \; \; \; mit \; \; \; \;  SD=\sqrt{\frac{\sum (x_{i}-\overline{X})^{2}}{n-1}}
   (\#eq:vier)
 \end{equation} 
 
-Um eine Amplifikation als positiv einzustufen, mussten alle aufgeführten Tests ein positives Testergebnis aufweisen. Sobald ein oder mehrere Tests ein negatives Testergebnis zeigten, wurde die Amplifikation als negativ eingestuft.
+Um eine Amplifikation als positiv einzustufen, mussten alle aufgeführten Tests ein positives Testergebnis aufweisen. Sobald ein oder mehrere Tests ein negatives Testergebnis zeigten, wurde die Amplifikation als negativ eingestuft. 
 
-**Ermittlung der Anstiegszeit (engl. threshold time, TT-Wert)**
 
-Die Anstiegszeit, in der Literatur bei PCR-System nach den MIQE Richtlinien auch als C~q~-Wert angegeben (siehe @Bustin2009), ist der Zeitpunkt bei, die dem Fluoreszenzwerte einer Amplifikation einen vorher festgelegten Schwellenwert überschreiten und sich zusätzlich signifikant von dem Grundrauschen unterscheiden. Für die Ermittlung der Anstiegszeit wurde der im \emph{chipPCR}-Paket vorhandene Befehl "th.cyc" verwendet. Dieser gleicht die Amplifikationskurve im Bereich des vorher festgelegten Schwellenwertes mit einer Polynomfunktion zweiten Grades an und gibt den Schnittpunkt mit dem Schwellenwert als Anstiegszeit aus. Als Schwellenwert wurde der im _Schwellenwert Test_ beschrieben Wert verwendet [@Roediger2015]. 
+**Ermittlung der Anstiegszeit **
+
+Die Anstiegszeit (engl. _threshold time_, TT-Wert), in der Literatur bei PCR-System nach den MIQE Richtlinien auch als C~q~-Wert angegeben, ist der Zeitpunkt bei, die dem Fluoreszenzwerte einer Amplifikation einen vorher festgelegten Schwellenwert überschreiten und sich zusätzlich signifikant von dem Grundrauschen unterscheiden [@Bustin2009]. Für die Ermittlung der Anstiegszeit wurde der im \emph{chipPCR}-Paket vorhandene Befehl "th.cyc" verwendet. Dieser gleicht die Amplifikationskurve im Bereich des vorher festgelegten Schwellenwertes mit einer Polynomfunktion zweiten Grades an und gibt den Schnittpunkt mit dem Schwellenwert als Anstiegszeit aus. Als Schwellenwert wurde der im Schwellenwert Test beschrieben Wert (siehe Kapitel \@ref(chipPCR)) verwendet [@Roediger2015]. 
    
 ### Probit-Analyse {#probit}
 
 Die Probit-Analyse ist ein statistisches Modell, welches binäre Fälle (0 und 1) mit einer fortlaufenden Variablen in Verbindung bringt. Dabei wird die Gausssche Normalverteilungsfunktion $\phi$, welche durch die Formel $p= \phi(\alpha+\beta x)$ beschrieben wird, auf die Regression angewendet [@Bingham2010]. Die von @Bliss1934 entwickelte Methode wurde ursprünglich für toxikologische Experimente genutzt, um die tödliche Dosis mathematisch zu bestimmen [@Bliss1934]. Aufgrund der gleichen Datenlage lässt sich jedoch dieses mathematische Modell auch verwenden, um das Detektionslimit anhand einer Konzentrationsreihe für ein Nukleinsäure-Amplifikationssystem zu ermitteln. Die Probit-Analyse anhand von Amplifikationsdaten erfolgte mittels einer R-skrips, entwickelt durch Ole Bährmann, beschrieben in @Behrmann2020. Skript modifiziert und an die Daten angepasst durch mich.
 
 ## Herstellen der RNA-Standards
-Die Herstellung des RNA-Standards für das Influenza A Virus wurde wie beschrieben durchgeführt. Für das Influenza B Virus war in der Arbeitsgruppe schon eine transformierte _E. coli_ Kultur vorhanden. Mit dieser wurden die alle entsprechenden Schritte wie beschrieben durchgeführt.
+\textcolor{red}{Für die Etablierung und Optimierung der RPA-Protokolle ist es nötig, eine definierte Menge amplifizierbarer viraler Nukleinsäure-Moleküle einzusetzten um so eine Vergleichbarkeit zu anderen Protokollen herzustellen. Dafür wurden definierte RNA-Standards der zu amplifizierenden Nukleinsäure hergestellt.} Die RNA-Standards für das Influenza A virus wurden wie in den nachfolgenden Kapiteln beschrieben hergestellt. Für das Influenza B Virus war in der Arbeitsgruppe schon eine transformierte _E. coli_ Kultur vorhanden, weswegen mit dieser erst ab Kapitel @\ref(isolation) weitergearbeitet wurde.
 
 ### Transformation von _E. coli_ mit Plasmid-DNA {#transformation}
 
-Die Transformation erfolge mit dem NEB\textsuperscript{\textcopyright} 5-alpha Competent _E. coli_ (High Efficiency) Kit (New England BioLabs\textsuperscript{\textcopyright} GmbH). Die Transformation wurde nach Herstellerangaben durchgeführt. Als Vektor dienten dabei synthetisierte Plasmide von der Firma Invitrogen (Plasmidkarten siehe Anhang unter \textcolor{red}{....}). Anschließend wurden jeweils 25 µl des Transformationsansatzes auf zwei mit Ampicillin versetzte LB-Platten pipettiert und mit einem sterilen Spatel verteilt. Die Platten wurden bei 37 °C für eine Nacht inkubiert. 
+Die chemische Transformation von NEB\textsuperscript{\textcopyright} 5-alpha competent _E. coli_ (High Efficiency, New England BioLabs\textsuperscript{\textcopyright} GmbH). wurde nach Herstellerangaben durchgeführt ((\textcolor{red}{Protokoll}). Als Vektor dienten dabei synthetisierte Plasmide von der Firma Invitrogen (Plasmidkarten siehe Anhang unter \textcolor{red}{....}). Anschließend wurden jeweils 25 µl des Transformationsansatzes auf zwei mit Ampicillin versetzte LB-Platten ausplattiert und bei 37 °C über Nacht inkubiert. Zur Überprüfung der Transformation wurde eine Kolonie-PCR, eine modifizierte Form der PCR, durchgeführt. Hierbei dient nicht reine DNA, sondern die transformierten Bakterien als Ausgangsmaterial. Durch die Wahl spezifischer Primer, welche das gewünschte Insert innerhalb des Plasmids amplifizieren, kann überprüft werden, ob die Transformation innerhalb der Kultur erfolgreich war [@Bergkessel2013]. Für die PCR wurde der Luna\textsuperscript{\textcopyright} Universal qPCR Master Mix (New England BioLabs\textsuperscript{\textcopyright}) verwendet. Eine halbe Kolonie der transformieren _E. coli_ (siehe Kapitel \@ref(transformation)) wurde in 20 µl PCR-reinem Wasser (Nuklease- und Nukleinsäure-frei, DEPC behandelt, Carl Roth) suspendiert. Von dieser Suspension wurden 2 µl mit 18 µl PCR-Mix gemischt und eine PCR durchgeführt. Das Temperaturprogramm der PCR ist in Tabelle \@ref(tab:kPCR) angegeben. Weitere 5 µl der Suspension wurden auf einer mit Ampicillin versetzten LB-Platte ausplattiert und bei 37 °C über Nacht inkubiert um eine Folgekultur der überprüften _E. coli_ zu erhalten.
 
-### Kolonie-PCR zur Überprüfung der Transformation
-Bei der PCR wird in drei wiederkehrenden Schritten (Denaturierung, Annealing, Elongation) ein DNA-Fragment amplifiziert [@Muelhardt2009]. Eine modifizierte Form der PCR ist die Kolonie-PCR. Hierbei dient nicht reine DNA, sondern transformierte Bakterien als Ausgangsmaterial. Durch die Wahl spezifischer Primer, welche das gewünschte Insert innerhalb des Plasmids amplifizieren, kann überprüft werden, ob die Transformation innerhalb der Kultur erfolgreich war [@Bergkessel2013].
-Für die PCR wurde der Luna\textsuperscript{\textcopyright} Universal qPCR Master Mix (New England BioLabs\textsuperscript{\textcopyright} GmbH) verwendet. Der Mastermix wurde nach Herstellerangaben vorbereitet. 
-Eine halbe Kolonie von den in Kapitel \@ref(transformation) inkubierten Platten wurde in 20 µl DEPC-H~2~O (\textcolor{red}{Hersteller}) suspendiert. Von dieser Suspension wurden 2 µl mit 18 µl Mastermix gemischt und die PCR durchgeführt. Weitere 5 µl der Suspension wurden auf eine mit Ampicillin versetzte LB-Platte übertragen, ausgestrichen und bei 37 °C über Nacht inkubiert.
-Das Temperaturprogramm der PCR ist in Tabelle \@ref(tab:kPCR) angegeben
 
 ```{r, kPCR}
 
@@ -126,14 +121,11 @@ kable(parameter, booktabs = TRUE,col.names = NULL, caption = "Temperaturprotokol
 
 ```
 
-### Kultivierung von Bakterien {#kultivierung}
-
-Zum Erstellen der Übernachtkulturen wurden die transformierten Bakterien für 16 $\pm$ 2 h bei 37 °C und 200 RPM in 25 ml Lennox LB-Medium (Fertigmischung, Carl Roth GmbH) kultiviert. 
-
 ### Extraktion von Plasmid-DNA aus Übernactkulturen {#isolation}
 
-Die Isolierung der Plasmid-DNA erfolgte mit dem Qiagen\texttrademark{} Plasmid midi Kit. Das Qiagen-Prinzip der DNA-Aufreinigung beruht auf einer speziellen alkalischen Lyse der Bakterien kombiniert mit dem Ionen Austausch Prinzip [@QIAGEN2021]. Hierbei wird die negativ geladene DNA an ein positiv geladenes Säulenmaterial wie Diethylaminoethyl (DEAE) Zellulose gebunden [@Gautam2022]. Durch in Salzkonzentrationen variierende Puffer kann anschließend die gebundene DNA von Unreinheiten befreit und eluiert werden [@Prazeres1998].
-Als Ausgangsmaterial für die DNA-Isolierung diente eine Submerskultur (siehe Kapitel \@ref(kultivierung)). Die Extraktion wurde nach Herstellerangaben durchgeführt. Die Elution der DNA im letzten Schritt wurde mit 30 µl DEPC-H~2~O (\textcolor{red}{Hersteller})  durchgeführt. Abschließend erfolgte eine Abschätzung der DNA-Konzentration mit dem NanoDrop 3300 Fluorospectrometer (Thermo Fisher Scientific)
+Die transformierten Bakterien wurden bei 37 °C und 200 RPM über Nacht in 25 ml Lennox LB-Medium (Fertigmischung, Carl Roth) kultiviert. 
+Die Isolierung der Plasmid-DNA erfolgte mit dem Qiagen\texttrademark{} Plasmid Midi Kit (Qiagen\texttrademark{}), DNA-Aufreinigung auf einer speziellen alkalischen Lyse der Bakterien kombiniert mit dem Ionen Austausch Prinzip beruht [@QIAGEN2021]. Hierbei wird die negativ geladene DNA an ein positiv geladenes Säulenmaterial wie Diethylaminoethyl (DEAE) Zellulose gebunden [@Gautam2022]. Durch in Salzkonzentrationen variierende Puffer kann anschließend die gebundene DNA von Unreinheiten befreit und eluiert werden [@Prazeres1998].
+Die Extraktion wurde nach Herstellerangaben durchgeführt (\textcolor{red}{Protokoll}) Die Elution der DNA im letzten Schritt wurde mit 30 µl PCR-reinem Wasser durchgeführt. Die anschließende Abschätzung der DNA-Konzentration mit dem NanoDrop 8000 Spektrophotometer (Thermo Fisher Scientific)
 
 ### Sequenzierung der isolierten Plasmide {#sequenzierung}
 

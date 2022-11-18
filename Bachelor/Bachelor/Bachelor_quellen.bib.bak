@@ -1,4 +1,3 @@
-% Encoding: UTF-8
 @Article{Sanger1977,
   author    = {F. Sanger and S. Nicklen and A. R. Coulson},
   journal   = {Proceedings of the National Academy of Sciences},
@@ -307,6 +306,47 @@
   year      = {2010},
   doi       = {10.1007/978-1-84882-969-5},
   groups    = {Methoden},
+}
+
+@Article{Jones1998,
+  author    = {Laurie J. Jones and Stephen T. Yue and Ching-Ying Cheung and Victoria L. Singer},
+  journal   = {Analytical Biochemistry},
+  title     = {{RNA} Quantitation by Fluorescence-Based Solution Assay: {RiboGreen} Reagent Characterization},
+  year      = {1998},
+  month     = {dec},
+  number    = {2},
+  pages     = {368--374},
+  volume    = {265},
+  doi       = {10.1006/abio.1998.2914},
+  publisher = {Elsevier {BV}},
+}
+
+@Article{Schmidt1999,
+  author    = {Torsten Schmidt and Karl Friehs and Martin Schleef and Carsten Voss and Erwin Flaschel},
+  journal   = {Analytical Biochemistry},
+  title     = {Quantitative Analysis of Plasmid Forms by Agarose and Capillary Gel Electrophoresis},
+  year      = {1999},
+  month     = {oct},
+  number    = {2},
+  pages     = {235--240},
+  volume    = {274},
+  doi       = {10.1006/abio.1999.4291},
+  publisher = {Elsevier {BV}},
+}
+
+@Article{BioEcho2022,
+  author  = {BioEcho},
+  journal = {Online Verfügbar unter},
+  title   = {EchoCLEAN DNA & RNA Cleanup Kits Produkt Brochüre},
+  year    = {2022},
+  doi     = {https://bioecho-prod-media-hp.s3.sbg.perf.cloud.ovh.net/media/d0/9e/c1/1655465490/Cleanup-Brochure_ENG.pd},
+}
+
+@Electronic{,
+  author = {NewEnlandBiolabs},
+  title  = {High Efficiency Transformation Protocol},
+  url    = {https://international.neb.com/protocols/0001/01/01/high-efficiency-transformation-protocol-c2987},
+  year   = {2022},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
