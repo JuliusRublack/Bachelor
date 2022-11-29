@@ -1,14 +1,14 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.8.28) (preloaded format=xelatex 2022.9.28)  9 OCT 2022 15:28
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.10) (preloaded format=xelatex 2022.11.18)  24 NOV 2022 14:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **./Ergebnisse.tex
 (Ergebnisse.tex
 LaTeX2e <2022-06-01> patch level 5
-L3 programming layer <2022-08-30> (C:\Users\Julius PC\AppData\Local\Programs\Mi
-KTeX\tex/latex/base\article.cls
+L3 programming layer <2022-10-26> (D:\Julius\Programme\MikTex\tex/latex/base\ar
+ticle.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+(D:\Julius\Programme\MikTex\tex/latex/base\size10.clo
 File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count181
@@ -22,24 +22,20 @@ File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
-)
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+) (D:\Julius\Programme\MikTex\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2022/04/08 v2.17n AMS math features
 \@mathmargin=\skip49
 For additional information on amsmath, use the `?' option.
-
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+(D:\Julius\Programme\MikTex\tex/latex/amsmath\amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+(D:\Julius\Programme\MikTex\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks16
 \ex@=\dimen139
-)) (C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.s
-ty
+)) (D:\Julius\Programme\MikTex\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen140
-) (C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.st
-y
+) (D:\Julius\Programme\MikTex\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count189
@@ -89,20 +85,16 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \mathdisplay@stack=\toks20
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
-)
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.st
-y
+) (D:\Julius\Programme\MikTex\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.s
-ty
+(D:\Julius\Programme\MikTex\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/lm\lmodern.sty
+)) (D:\Julius\Programme\MikTex\tex/latex/lm\lmodern.sty
 Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
@@ -136,17 +128,13 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
-) (C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+) (D:\Julius\Programme\MikTex\tex/generic/iftex\iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
-)
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/unicode-math\unicod
-e-math.sty (C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel
-\expl3.sty
-Package: expl3 2022-08-30 L3 programming layer (loader) 
-
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend
--xetex.def
-File: l3backend-xetex.def 2022-08-30 L3 backend support: XeTeX
+) (D:\Julius\Programme\MikTex\tex/latex/unicode-math\unicode-math.sty (D:\Juliu
+s\Programme\MikTex\tex/latex/l3kernel\expl3.sty
+Package: expl3 2022-10-26 L3 programming layer (loader) 
+(D:\Julius\Programme\MikTex\tex/latex/l3backend\l3backend-xetex.def
+File: l3backend-xetex.def 2022-10-26 L3 backend support: XeTeX
 \g__graphics_track_int=\count267
 \l__pdf_internal_box=\box53
 \g__pdf_backend_object_int=\count268
@@ -154,26 +142,16 @@ File: l3backend-xetex.def 2022-08-30 L3 backend support: XeTeX
 \g__pdf_backend_link_int=\count270
 ))
 Package: unicode-math 2020/01/31 v0.8q Unicode maths in XeLaTeX and LuaLaTeX
-
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/unicode-math\unicod
-e-math-xetex.sty
+(D:\Julius\Programme\MikTex\tex/latex/unicode-math\unicode-math-xetex.sty
 Package: unicode-math-xetex 2020/01/31 v0.8q Unicode maths in XeLaTeX and LuaLa
 TeX
-
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\x
-parse.sty
+(D:\Julius\Programme\MikTex\tex/latex/l3packages/xparse\xparse.sty
 Package: xparse 2022-06-22 L3 Experimental document command parser
-)
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/l3keys2e
-\l3keys2e.sty
+) (D:\Julius\Programme\MikTex\tex/latex/l3packages/l3keys2e\l3keys2e.sty
 Package: l3keys2e 2022-06-22 LaTeX2e option processing using LaTeX3 keys
-)
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontspec.s
-ty
+) (D:\Julius\Programme\MikTex\tex/latex/fontspec\fontspec.sty
 Package: fontspec 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
-
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontspec-x
-etex.sty
+(D:\Julius\Programme\MikTex\tex/latex/fontspec\fontspec-xetex.sty
 Package: fontspec-xetex 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTe
 X
 \l__fontspec_script_int=\count271
@@ -190,14 +168,12 @@ X
 \l__fontspec_tmpa_dim=\dimen148
 \l__fontspec_tmpb_dim=\dimen149
 \l__fontspec_tmpc_dim=\dimen150
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+(D:\Julius\Programme\MikTex\tex/latex/base\fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-)
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontspec.c
-fg))) (C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/base\fix-cm.s
-ty
+) (D:\Julius\Programme\MikTex\tex/latex/fontspec\fontspec.cfg))) (D:\Julius\Pro
+gramme\MikTex\tex/latex/base\fix-cm.sty
 Package: fix-cm 2020/11/24 v1.1t fixes to LaTeX
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1enc.def
+(D:\Julius\Programme\MikTex\tex/latex/base\ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
 ))
@@ -205,25 +181,18 @@ LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
 \g__um_fonts_used_int=\count283
 \l__um_primecount_int=\count284
 \g__um_primekern_muskip=\muskip17
-
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/unicode-math\unicod
-e-math-table.tex)))
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/upquote\upquote.sty
+(D:\Julius\Programme\MikTex\tex/latex/unicode-math\unicode-math-table.tex))) (D
+:\Julius\Programme\MikTex\tex/latex/upquote\upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
+(D:\Julius\Programme\MikTex\tex/latex/base\textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
-))
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype
-.sty
+)) (D:\Julius\Programme\MikTex\tex/latex/microtype\microtype.sty
 Package: microtype 2022/06/23 v3.0f Micro-typographical refinements (RS)
-
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+(D:\Julius\Programme\MikTex\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks21
-)
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.s
-ty
+) (D:\Julius\Programme\MikTex\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count285
 )
@@ -237,48 +206,32 @@ LaTeX Info: Redefining \textls on input line 1234.
 \MT@outer@kern=\dimen151
 LaTeX Info: Redefining \textmicrotypecontext on input line 1858.
 \MT@listname@count=\count287
-
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype
--xetex.def
+(D:\Julius\Programme\MikTex\tex/latex/microtype\microtype-xetex.def
 File: microtype-xetex.def 2022/06/23 v3.0f Definitions specific to xetex (RS)
 LaTeX Info: Redefining \lsstyle on input line 236.
 )
 Package microtype Info: Loading configuration file microtype.cfg.
-
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype
-.cfg
+(D:\Julius\Programme\MikTex\tex/latex/microtype\microtype.cfg
 File: microtype.cfg 2022/06/23 v3.0f microtype main configuration file (RS)
-))
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/parskip\parskip.sty
+)) (D:\Julius\Programme\MikTex\tex/latex/parskip\parskip.sty
 Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
-
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions
-.sty
+(D:\Julius\Programme\MikTex\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
-
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.s
-ty
+(D:\Julius\Programme\MikTex\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
-)
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/generic/kvsetkeys\kvsetke
-ys.sty
-Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
-))) (C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.s
-ty
+) (D:\Julius\Programme\MikTex\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))) (D:\Julius\Programme\MikTex\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
-
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.
-cfg
+(D:\Julius\Programme\MikTex\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: xetex.def on input line 227.
-
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\xetex.
-def
-File: xetex.def 2022/04/16 v5.0m Graphics/color driver for xetex
-)
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex-dev/graphics\mathco
-lor.ltx)
+(D:\Julius\Programme\MikTex\tex/latex/graphics-def\xetex.def
+File: xetex.def 2022/09/22 v5.0n Graphics/color driver for xetex
+\stockwidth=\dimen152
+\stockheight=\dimen153
+) (D:\Julius\Programme\MikTex\tex/latex/graphics\mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
 Package xcolor Info: Model `RGB' extended on input line 1369.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
@@ -287,44 +240,38 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
-
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/graphics\dvipsnam.d
-ef
+(D:\Julius\Programme\MikTex\tex/latex/graphics\dvipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
-) (C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\svgnam.def
+) (D:\Julius\Programme\MikTex\tex/latex/xcolor\svgnam.def
 File: svgnam.def 2022/06/12 v2.14 Predefined colors according to SVG 1.1 (UK)
-) (C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\x11nam.def
+) (D:\Julius\Programme\MikTex\tex/latex/xcolor\x11nam.def
 File: x11nam.def 2022/06/12 v2.14 Predefined colors according to Unix/X11 (UK)
-))
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.s
-ty
+)) (D:\Julius\Programme\MikTex\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+(D:\Julius\Programme\MikTex\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
 \Gm@cnth=\count288
 \Gm@cntv=\count289
 \c@Gm@tempcnt=\count290
-\Gm@bindingoffset=\dimen152
-\Gm@wd@mp=\dimen153
-\Gm@odd@mp=\dimen154
-\Gm@even@mp=\dimen155
-\Gm@layoutwidth=\dimen156
-\Gm@layoutheight=\dimen157
-\Gm@layouthoffset=\dimen158
-\Gm@layoutvoffset=\dimen159
+\Gm@bindingoffset=\dimen154
+\Gm@wd@mp=\dimen155
+\Gm@odd@mp=\dimen156
+\Gm@even@mp=\dimen157
+\Gm@layoutwidth=\dimen158
+\Gm@layoutheight=\dimen159
+\Gm@layouthoffset=\dimen160
+\Gm@layoutvoffset=\dimen161
 \Gm@dimlist=\toks23
-
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.c
-fg))
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
+(D:\Julius\Programme\MikTex\tex/latex/geometry\geometry.cfg)) (D:\Julius\Progra
+mme\MikTex\tex/latex/tools\longtable.sty
 Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 \LTleft=\skip52
 \LTright=\skip53
 \LTpre=\skip54
 \LTpost=\skip55
 \LTchunksize=\count291
-\LTcapwidth=\dimen160
+\LTcapwidth=\dimen162
 \LT@head=\box55
 \LT@firsthead=\box56
 \LT@foot=\box57
@@ -335,174 +282,141 @@ Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 \c@LT@tables=\count294
 \c@LT@chunks=\count295
 \LT@p@ftn=\toks24
-)
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.s
-ty
+) (D:\Julius\Programme\MikTex\tex/latex/booktabs\booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen161
-\lightrulewidth=\dimen162
-\cmidrulewidth=\dimen163
-\belowrulesep=\dimen164
-\belowbottomsep=\dimen165
-\aboverulesep=\dimen166
-\abovetopsep=\dimen167
-\cmidrulesep=\dimen168
-\cmidrulekern=\dimen169
-\defaultaddspace=\dimen170
+\heavyrulewidth=\dimen163
+\lightrulewidth=\dimen164
+\cmidrulewidth=\dimen165
+\belowrulesep=\dimen166
+\belowbottomsep=\dimen167
+\aboverulesep=\dimen168
+\abovetopsep=\dimen169
+\cmidrulesep=\dimen170
+\cmidrulekern=\dimen171
+\defaultaddspace=\dimen172
 \@cmidla=\count296
 \@cmidlb=\count297
-\@aboverulesep=\dimen171
-\@belowrulesep=\dimen172
+\@aboverulesep=\dimen173
+\@belowrulesep=\dimen174
 \@thisruleclass=\count298
 \@lastruleclass=\count299
-\@thisrulewidth=\dimen173
-) (C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
-Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
-\col@sep=\dimen174
+\@thisrulewidth=\dimen175
+) (D:\Julius\Programme\MikTex\tex/latex/tools\array.sty
+Package: array 2022/03/10 v2.5f Tabular extension package (FMi)
+\col@sep=\dimen176
 \ar@mcellbox=\box60
-\extrarowheight=\dimen175
+\extrarowheight=\dimen177
 \NC@list=\toks25
 \extratabsurround=\skip56
 \backup@length=\skip57
 \ar@cellbox=\box61
-) (C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+) (D:\Julius\Programme\MikTex\tex/latex/tools\calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count300
 \calc@Bcount=\count301
-\calc@Adimen=\dimen176
-\calc@Bdimen=\dimen177
+\calc@Adimen=\dimen178
+\calc@Bdimen=\dimen179
 \calc@Askip=\skip58
 \calc@Bskip=\skip59
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count302
 \calc@Cskip=\skip60
-)
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/footnotehyper\footn
-otehyper.sty
+) (D:\Julius\Programme\MikTex\tex/latex/footnotehyper\footnotehyper.sty
 Package: footnotehyper 2021/08/13 v1.1e hyperref aware footnote.sty (JFB)
 \FNH@notes=\box62
-\FNH@width=\dimen178
+\FNH@width=\dimen180
 \FNH@toks=\toks26
-)
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.s
-ty
+) (D:\Julius\Programme\MikTex\tex/latex/graphics\graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
-
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.s
-ty
+(D:\Julius\Programme\MikTex\tex/latex/graphics\graphics.sty
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+(D:\Julius\Programme\MikTex\tex/latex/graphics\trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-)
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphi
-cs.cfg
+) (D:\Julius\Programme\MikTex\tex/latex/graphics-cfg\graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: xetex.def on input line 107.
 )
-\Gin@req@height=\dimen179
-\Gin@req@width=\dimen180
-) (C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+\Gin@req@height=\dimen181
+\Gin@req@width=\dimen182
+) (D:\Julius\Programme\MikTex\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count303
 \float@exts=\toks27
 \float@box=\box63
 \@float@everytoks=\toks28
 \@floatcapt=\box64
-) (C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
-Package: babel 2022/09/17 3.80 The Babel package
+) (D:\Julius\Programme\MikTex\tex/generic/babel\babel.sty
+Package: babel 2022/10/23 3.82 The Babel package
 \babel@savecnt=\count304
-\U@D=\dimen181
+\U@D=\dimen183
 \l@unhyphenated=\language79
-
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/generic/babel\xebabel.def
-
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.de
-f))
+(D:\Julius\Programme\MikTex\tex/generic/babel\xebabel.def (D:\Julius\Programme\
+MikTex\tex/generic/babel\txtbabel.def))
 \bbl@readstream=\read2
 \bbl@dirlevel=\count305
 *************************************
 * Local config file bblopts.cfg used
 *
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+(D:\Julius\Programme\MikTex\tex/latex/arabi\bblopts.cfg
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
-)
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/babel-german\ngerma
-n.ldf
+) (D:\Julius\Programme\MikTex\tex/latex/babel-german\ngerman.ldf
 Language: ngerman 2021/02/27 v2.13 German support for babel (post-1996 orthogra
 phy)
-
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/babel-german\ngerma
-nb.ldf
+(D:\Julius\Programme\MikTex\tex/latex/babel-german\ngermanb.ldf
 Language: ngermanb 2021/02/27 v2.13 German support for babel (post-1996 orthogr
 aphy)
 Package babel Info: Making " an active character on input line 122.
-)))
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/de\b
-abel-ngerman.tex
+))) (D:\Julius\Programme\MikTex\tex/generic/babel/locale/de\babel-ngerman.tex
 Package babel Info: Importing font and identification data for ngerman
 (babel)             from babel-de.ini. Reported on input line 11.
-)
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.s
-ty
+) (D:\Julius\Programme\MikTex\tex/latex/setspace\setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
-) (C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+) (D:\Julius\Programme\MikTex\tex/latex/base\inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks29
 \inpenc@posthook=\toks30
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
-)
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.s
-ty
+) (D:\Julius\Programme\MikTex\tex/latex/multirow\multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip61
 \multirow@cntb=\count306
 \multirow@dima=\skip62
-\bigstrutjot=\dimen182
-)
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/wrapfig\wrapfig.sty
-\wrapoverhang=\dimen183
-\WF@size=\dimen184
+\bigstrutjot=\dimen184
+) (D:\Julius\Programme\MikTex\tex/latex/wrapfig\wrapfig.sty
+\wrapoverhang=\dimen185
+\WF@size=\dimen186
 \c@WF@wrappedlines=\count307
 \WF@box=\box65
 \WF@everypar=\toks31
 Package: wrapfig 2003/01/31  v 3.6
-)
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.s
-ty
+) (D:\Julius\Programme\MikTex\tex/latex/colortbl\colortbl.sty
 Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
 \everycr=\toks32
 \minrowclearance=\skip63
 \rownum=\count308
-)
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape
-.sty
+) (D:\Julius\Programme\MikTex\tex/latex/pdflscape\pdflscape.sty
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
-
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
+(D:\Julius\Programme\MikTex\tex/latex/graphics\lscape.sty
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 98.
 
-
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.s
-ty
+(D:\Julius\Programme\MikTex\tex/latex/base\atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
-)) (C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/tabu\tabu.sty
+)) (D:\Julius\Programme\MikTex\tex/latex/tabu\tabu.sty
 Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
-
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/varwidth\varwidth.s
-ty
+(D:\Julius\Programme\MikTex\tex/latex/varwidth\varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box66
 \sift@deathcycles=\count309
-\@vwid@loff=\dimen185
-\@vwid@roff=\dimen186
+\@vwid@loff=\dimen187
+\@vwid@roff=\dimen188
 )
 \c@taburow=\count310
 \tabu@nbcols=\count311
@@ -510,15 +424,15 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \tabu@Xcol=\count313
 \tabu@alloc=\count314
 \tabu@nested=\count315
-\tabu@target=\dimen187
-\tabu@spreadtarget=\dimen188
-\tabu@naturalX=\dimen189
-\tabucolX=\dimen190
-\tabu@Xsum=\dimen191
-\extrarowdepth=\dimen192
-\abovetabulinesep=\dimen193
-\belowtabulinesep=\dimen194
-\tabustrutrule=\dimen195
+\tabu@target=\dimen189
+\tabu@spreadtarget=\dimen190
+\tabu@naturalX=\dimen191
+\tabucolX=\dimen192
+\tabu@Xsum=\dimen193
+\extrarowdepth=\dimen194
+\abovetabulinesep=\dimen195
+\belowtabulinesep=\dimen196
+\tabustrutrule=\dimen197
 \tabu@thebody=\toks33
 \tabu@footnotes=\toks34
 \tabu@box=\box67
@@ -526,113 +440,77 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \tabu@hleads=\box69
 \tabu@vleads=\box70
 \tabu@cellskip=\skip64
-)
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/threeparttable\thre
-eparttable.sty
+) (D:\Julius\Programme\MikTex\tex/latex/threeparttable\threeparttable.sty
 Package: threeparttable 2003/06/13  v 3.0
 \@tempboxb=\box71
-)
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/threeparttablex\thr
-eeparttablex.sty
+) (D:\Julius\Programme\MikTex\tex/latex/threeparttablex\threeparttablex.sty
 Package: threeparttablex 2013/07/23 v0.3 by daleif
-
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/environ\environ.sty
+(D:\Julius\Programme\MikTex\tex/latex/environ\environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
-
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/trimspaces\trimspac
-es.sty
+(D:\Julius\Programme\MikTex\tex/latex/trimspaces\trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
 \TPTL@width=\skip65
-) (C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/ulem\ulem.sty
+) (D:\Julius\Programme\MikTex\tex/latex/ulem\ulem.sty
 \UL@box=\box72
 \UL@hyphenbox=\box73
 \UL@skip=\skip66
 \UL@hook=\toks35
-\UL@height=\dimen196
+\UL@height=\dimen198
 \UL@pe=\count316
-\UL@pixel=\dimen197
+\UL@pixel=\dimen199
 \ULC@box=\box74
 Package: ulem 2019/11/18
-\ULdepth=\dimen198
-)
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/makecell\makecell.s
-ty
+\ULdepth=\dimen256
+) (D:\Julius\Programme\MikTex\tex/latex/makecell\makecell.sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
-\rotheadsize=\dimen199
+\rotheadsize=\dimen257
 \c@nlinenum=\count317
 \TeXr@lab=\toks36
-)
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bookmark.s
-ty
+) (D:\Julius\Programme\MikTex\tex/latex/bookmark\bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
-
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.s
-ty
+(D:\Julius\Programme\MikTex\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2022-09-22 v7.00t Hypertext links for LaTeX
-
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftex
-cmds.sty
+(D:\Julius\Programme\MikTex\tex/generic/pdftexcmds\pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
-
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infware
-rr.sty
+(D:\Julius\Programme\MikTex\tex/generic/infwarerr\infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode not found.
-)
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvde
-finekeys.sty
+) (D:\Julius\Programme\MikTex\tex/generic/kvdefinekeys\kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-)
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfesca
-pe.sty
+) (D:\Julius\Programme\MikTex\tex/generic/pdfescape\pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-)
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+) (D:\Julius\Programme\MikTex\tex/latex/hycolor\hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-)
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxm
-acro.sty
+) (D:\Julius\Programme\MikTex\tex/latex/letltxmacro\letltxmacro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
-)
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+) (D:\Julius\Programme\MikTex\tex/latex/auxhook\auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
-)
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.st
-y
+) (D:\Julius\Programme\MikTex\tex/latex/hyperref\nameref.sty
 Package: nameref 2022-05-17 v2.50 Cross-referencing by name of section
-
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.s
-ty
+(D:\Julius\Programme\MikTex\tex/latex/refcount\refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-)
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\ge
-ttitlestring.sty
+) (D:\Julius\Programme\MikTex\tex/generic/gettitlestring\gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count318
 )
-\@linkdim=\dimen256
+\@linkdim=\dimen258
 \Hy@linkcounter=\count319
 \Hy@pagecounter=\count320
-
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+(D:\Julius\Programme\MikTex\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2022-09-22 v7.00t Hyperref: PDFDocEncoding definition (HO)
-)
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.s
-ty
+) (D:\Julius\Programme\MikTex\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
-)
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds
-.sty
+) (D:\Julius\Programme\MikTex\tex/generic/etexcmds\etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
 \Hy@SavedSpaceFactor=\count321
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+(D:\Julius\Programme\MikTex\tex/latex/hyperref\puenc.def
 File: puenc.def 2022-09-22 v7.00t Hyperref: PDF Unicode definition (HO)
 )
 Package hyperref Info: Option `unicode' set `true' on input line 4045.
@@ -642,22 +520,17 @@ Package hyperref Info: Hyper index ON on input line 4170.
 Package hyperref Info: Plain pages OFF on input line 4177.
 Package hyperref Info: Backreferencing OFF on input line 4182.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-\stockwidth=\dimen257
-\stockheight=\dimen258
 Package hyperref Info: Bookmarks ON on input line 4410.
 \c@Hy@tempcnt=\count322
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+(D:\Julius\Programme\MikTex\tex/latex/url\url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4748.
 \XeTeXLinkMargin=\dimen259
-
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+(D:\Julius\Programme\MikTex\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
-
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigint
-calc.sty
+(D:\Julius\Programme\MikTex\tex/generic/bigintcalc\bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
@@ -676,12 +549,9 @@ Package hyperref Info: PDF/A mode OFF on input line 6057.
 \c@Hfootnote=\count326
 )
 Package hyperref Info: Driver (autodetected): hxetex.
-
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hxetex.def
+(D:\Julius\Programme\MikTex\tex/latex/hyperref\hxetex.def
 File: hxetex.def 2022-09-22 v7.00t Hyperref driver for XeTeX
-
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringe
-nc.sty
+(D:\Julius\Programme\MikTex\tex/generic/stringenc\stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
@@ -690,31 +560,23 @@ Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 \HyField@AnnotCount=\count328
 \Fld@listcount=\count329
 \c@bookmark@seq@number=\count330
-
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\reru
-nfilecheck.sty
+(D:\Julius\Programme\MikTex\tex/latex/rerunfilecheck\rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
-
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.
-sty
+(D:\Julius\Programme\MikTex\tex/latex/base\atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
-)
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uni
-quecounter.sty
+) (D:\Julius\Programme\MikTex\tex/generic/uniquecounter\uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 85.
 )
 \Hy@SectionHShift=\skip67
-)
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bkm-dvipdf
-m.def
+) (D:\Julius\Programme\MikTex\tex/latex/bookmark\bkm-dvipdfm.def
 File: bkm-dvipdfm.def 2020-11-06 v1.29 bookmark driver for dvipdfm (HO)
 \BKM@id=\count331
-)) (C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/xurl\xurl.sty
+)) (D:\Julius\Programme\MikTex\tex/latex/xurl\xurl.sty
 Package: xurl 2022/01/09 v 0.10 modify URL breaks
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 92.
@@ -1017,9 +879,7 @@ Package microtype Info: Using protrusion set `basicmath'.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of spacing.
 Package microtype Info: No adjustment of kerning.
-
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-LatinM
-odernRoman.cfg
+(D:\Julius\Programme\MikTex\tex/latex/microtype\mt-LatinModernRoman.cfg
 File: mt-LatinModernRoman.cfg 2021/02/21 v1.1 microtype config. file: Latin Mod
 ern Roman (RS)
 )
@@ -1065,7 +925,7 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
 (Font)              scaled to size 5.0pt on input line 3.
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3
 .
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
+(D:\Julius\Programme\MikTex\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
@@ -1081,19 +941,15 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 4.99947pt on input line 3.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+(D:\Julius\Programme\MikTex\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cf
-g
+) (D:\Julius\Programme\MikTex\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+(D:\Julius\Programme\MikTex\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-(C:\Users\Julius PC\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cf
-g
+) (D:\Julius\Programme\MikTex\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ))
 \tf@toc=\write3
@@ -1150,22 +1006,28 @@ LaTeX Warning: Reference `infbPCR' on page 2 undefined on input line 140.
 
 LaTeX Warning: Reference `chipPCR' on page 2 undefined on input line 140.
 
+
+LaTeX Warning: Reference `probit' on page 2 undefined on input line 140.
+
 File: Ergebnisse_files/figure-latex/Conawachstum-1.pdf Graphic file (type pdf)
 <use Ergebnisse_files/figure-latex/Conawachstum-1.pdf>
 File: Ergebnisse_files/figure-latex/Conawachstum-2.pdf Graphic file (type pdf)
 <use Ergebnisse_files/figure-latex/Conawachstum-2.pdf>
 File: Bilder/infB_probit.png Graphic file (type bmp)
 <Bilder/infB_probit.png>
+
+LaTeX Warning: Reference `probit' on page 2 undefined on input line 160.
+
 [2] [3] (Ergebnisse.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 21994 strings out of 410536
- 397951 string characters out of 2812580
- 960307 words of memory out of 3000000
- 42852 multiletter control sequences out of 15000+600000
+ 22000 strings out of 410527
+ 395591 string characters out of 2816817
+ 959156 words of memory out of 3000000
+ 42867 multiletter control sequences out of 15000+600000
  472886 words of font info for 59 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  86i,6n,121p,1009b,356s stack positions out of 10000i,1000n,20000p,200000b,80000s

@@ -28,7 +28,7 @@ library(ggplot2)
 library(ggpubr)
 library(tidyverse)
 library(scales)
-library(cowplot)
+
 
 ```
 
@@ -75,7 +75,7 @@ Die Herstellung der RNA wurde wie in Kapitel \@ref(transkription) beschrieben du
 
 ### Ermittlung der Sesitivität der Influenza B PCR
 
-Zur Überprüfung der Sensitivität und um ein etabliertes Amplifikationsystem zum Vergleich heranziehen zu können, wurde das in Kaptiel \@ref(infbPCR) gezeigte PCR-System auf die Sesitivität getestet. Dazu wurde der in \@ref(standardherstellungb) hergestellte Standard auf $2*10^7$ Kopien/µl verdünnt und in \textcolor{red}{dekadischen Verdünnungsstufen} bis zu $2*10^0$ in jeweils einer Mehrfachbestimmung (n=7) auf eine Amplifikation nach beschriebener Methode \@ref(infbPCR) getestet. Die Amplifikationsgraphen sowie der lineare Zusammenhang der Ct-Werte (ermittelt nach der in \@ref(chipPCR) beschriebenen Methode) sind in Abbildung \@ref() gezeigt. 
+Zur Überprüfung der Sensitivität und um ein etabliertes Amplifikationsystem zum Vergleich heranziehen zu können, wurde das in Kaptiel \@ref(infbPCR) gezeigte PCR-System auf die Sesitivität getestet. Dazu wurde der in \@ref(standardherstellungb) hergestellte Standard auf $2*10^7$ Kopien/µl verdünnt und in \textcolor{red}{dekadischen Verdünnungsstufen} bis zu $2*10^0$ in jeweils einer Mehrfachbestimmung (n=7) auf eine Amplifikation nach beschriebener Methode \@ref(infbPCR) getestet. Die Amplifikationsgraphen sowie der lineare Zusammenhang der Ct-Werte (ermittelt nach der in \@ref(chipPCR) beschriebenen Methode) sind in Abbildung \@ref() gezeigt. Zur Ermittlung der Sesitivät wurde die in Kapitel \@ref(probit) beschriebene Methode verwendet. Es konnte ein 95 %-iges Detektionslimit von 11,4 Kopien/µl, gezeigt in Abbildung \@ref()C, bestimmt werden.
 
 ```{r Conawachstum, fig.show='hold', fig.cap="\\textbf{Sensitivitätsanalyse der Influenza B PCR:} \\textbf{A:} Amplifikationsgraphen der Influenza B PCR bei verschiedenen Konzentrationen (n=7). \\textbf{B:} Linearer Zusammenhang der Ct-Werte mit angefügter Geradengleichung, Korrelationskoeffizienten und p-Wert. Das graue Band zeigt das 95 \\%ige Konfidenzintervall der linearen Funktion. Gezeigt sind nur Ct-Werte, welche einer positiven Amplifikation zugehörig sind. \\textbf{C:} Probit-Analyse der Amplifikationsdaten. Die ermittelte Sensitivitätsgrenze, bei welcher 95 \\% der Amplifikationen positiv sind, liegt bei 11,3 Molekülen.", out.width= "49%", fig.align='center', fig.scap="Sensitivitätsanalyse der Influenza B PCR"}
 
@@ -152,7 +152,7 @@ ggplot(data, aes(konz, ct)) +
   stat_cor(label.y = 28)+ 
         stat_regline_equation(label.y = 25)+
   annotate(geom="text", x=1000000, y=35, label="B", color="black", size=12)
-     
+
 knitr::include_graphics("Bilder/infB_probit.png")
 
 #Zitation: Sktript entwickelt von Ole Bährmann, beschrieben durch (quelle vom Coronapaper), modifiziert und an meine Daten angespasst durch mich
@@ -160,5 +160,5 @@ knitr::include_graphics("Bilder/infB_probit.png")
 ```
 
 
-Zur Ermittlung der Sesitivät  
-
+Zur Ermittlung der Sesitivät wurde die in Kapitel \@ref(probit) beschriebene Methode verwendet. Es konnte ein 95 %-iges Detektionslimit von 11,4 Kopien/µl bestimmt werden. 
+ 
