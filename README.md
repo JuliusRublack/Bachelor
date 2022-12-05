@@ -7,6 +7,9 @@
 * **Methodenteil überarbeiten**
    + Tabellen auf Komma zentrieren? nochmal mit Greg sprechen.
    + µl kursiv überarbeiten
+   + Ausreißer-Test
+   + T-Test
+   + Test auf normalverteilung
  
 * **Ergebnissteil InfB fertig schreiben**
 * **Ergebnissteil InfA anfangen**
