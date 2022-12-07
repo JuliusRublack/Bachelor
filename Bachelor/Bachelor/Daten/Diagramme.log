@@ -1,9 +1,9 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.10) (preloaded format=xelatex 2022.11.18)  6 DEC 2022 15:49
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.10) (preloaded format=xelatex 2022.11.18)  5 DEC 2022 10:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./Ergebnisse.tex
-(Ergebnisse.tex
+**./Diagramme.tex
+(Diagramme.tex
 LaTeX2e <2022-06-01> patch level 5
 L3 programming layer <2022-10-26> (D:\Julius\Programme\MikTex\tex/latex/base\ar
 ticle.cls
@@ -580,8 +580,8 @@ File: bkm-dvipdfm.def 2020-11-06 v1.29 bookmark driver for dvipdfm (HO)
 Package: xurl 2022/01/09 v 0.10 modify URL breaks
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 92.
-(Ergebnisse.aux)
-\openout1 = `Ergebnisse.aux'.
+(Diagramme.aux)
+\openout1 = `Diagramme.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 97.
 LaTeX Font Info:    ... okay on input line 97.
@@ -918,165 +918,25 @@ ern Roman (RS)
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring ON on input line 97.
-(Ergebnisse.toc
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 3.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 3.
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3
-.
-(D:\Julius\Programme\MikTex\tex/latex/lm\omllmm.fd
-File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.00092pt on input line 3.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.00064pt on input line 3.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.00046pt on input line 3.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 3.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 3.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 3.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
-(D:\Julius\Programme\MikTex\tex/latex/amsfonts\umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-) (D:\Julius\Programme\MikTex\tex/latex/microtype\mt-msa.cfg
-File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
-(D:\Julius\Programme\MikTex\tex/latex/amsfonts\umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (D:\Julius\Programme\MikTex\tex/latex/microtype\mt-msb.cfg
-File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-))
+(Diagramme.toc)
 \tf@toc=\write3
-\openout3 = `Ergebnisse.toc'.
+\openout3 = `Diagramme.toc'.
 
-
-LaTeX Warning: Reference `desing' on page 1 undefined on input line 115.
-
-
-LaTeX Warning: Reference `RPAnormal' on page 1 undefined on input line 115.
-
-
-LaTeX Warning: Reference `tab:RPAoligo' on page 1 undefined on input line 115.
-
-
-LaTeX Warning: Reference `kultivierung' on page 1 undefined on input line 122.
-
-
-LaTeX Warning: Reference `isolation' on page 1 undefined on input line 122.
-
-
-LaTeX Warning: Reference `sequenzierung' on page 1 undefined on input line 122.
-
-
-
-LaTeX Warning: Reference `verdau' on page 1 undefined on input line 124.
-
-
-LaTeX Warning: Reference `gel' on page 1 undefined on input line 124.
-
-
-LaTeX Warning: Reference `cleaning' on page 1 undefined on input line 124.
-
-File: Bilder/infB_verdau_t.png Graphic file (type bmp)
-<Bilder/infB_verdau_t.png>
-File: Ergebnisse_files/figure-latex/infBverdau-2.pdf Graphic file (type pdf)
-<use Ergebnisse_files/figure-latex/infBverdau-2.pdf>
+File: Diagramme_files/figure-latex/infBetabl-1.pdf Graphic file (type pdf)
+<use Diagramme_files/figure-latex/infBetabl-1.pdf>
+File: Diagramme_files/figure-latex/unnamed-chunk-1-1.pdf Graphic file (type pdf
+)
+<use Diagramme_files/figure-latex/unnamed-chunk-1-1.pdf>
 [1
 
-]
-
-LaTeX Warning: Reference `transkription' on page 2 undefined on input line 135.
-
-
-
-LaTeX Warning: Reference `ribogreen' on page 2 undefined on input line 135.
-
-
-LaTeX Warning: Reference `infbPCR' on page 2 undefined on input line 140.
-
-
-LaTeX Warning: Reference `standardherstellungb' on page 2 undefined on input li
-ne 140.
-
-
-LaTeX Warning: Reference `infbPCR' on page 2 undefined on input line 140.
-
-
-LaTeX Warning: Reference `chipPCR' on page 2 undefined on input line 140.
-
-
-LaTeX Warning: Reference `probit' on page 2 undefined on input line 140.
-
-File: Ergebnisse_files/figure-latex/infBPCR-1.pdf Graphic file (type pdf)
-<use Ergebnisse_files/figure-latex/infBPCR-1.pdf>
-File: Ergebnisse_files/figure-latex/infBPCR-2.pdf Graphic file (type pdf)
-<use Ergebnisse_files/figure-latex/infBPCR-2.pdf>
-File: Bilder/infB_probit.png Graphic file (type bmp)
-<Bilder/infB_probit.png>
-
-LaTeX Warning: Reference `RPAnormal' on page 2 undefined on input line 154.
-
-
-LaTeX Warning: Reference `8telRPA' on page 2 undefined on input line 154.
-
-
-LaTeX Warning: Reference `t-test' on page 2 undefined on input line 154.
-
-[2] [3]
-File: Ergebnisse_files/figure-latex/infBetabl-1.pdf Graphic file (type pdf)
-<use Ergebnisse_files/figure-latex/infBetabl-1.pdf>
-
-LaTeX Warning: Reference `aksjdalf' on page 4 undefined on input line 170.
-
-
-LaTeX Warning: Reference `tab:' on page 4 undefined on input line 170.
-
-
-LaTeX Warning: Reference `tab:' on page 4 undefined on input line 170.
-
-
-LaTeX Warning: Reference `8telRPA' on page 4 undefined on input line 170.
-
-
-LaTeX Warning: Reference `fig:infBobtia' on page 4 undefined on input line 170.
-
-
-
-LaTeX Warning: Reference `tab:' on page 4 undefined on input line 170.
-
-
-LaTeX Warning: Reference `fig:infBobtia' on page 4 undefined on input line 170.
-
-
-
-LaTeX Warning: Reference `chipPCR' on page 4 undefined on input line 170.
-
-
-LaTeX Warning: Reference `8telRPA' on page 4 undefined on input line 171.
-
-[4]
-File: Ergebnisse_files/figure-latex/infBoptil-1.pdf Graphic file (type pdf)
-<use Ergebnisse_files/figure-latex/infBoptil-1.pdf>
-File: Ergebnisse_files/figure-latex/infBoptil-2.pdf Graphic file (type pdf)
-<use Ergebnisse_files/figure-latex/infBoptil-2.pdf>
-[5] (Ergebnisse.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+] [2] (Diagramme.aux) ) 
 Here is how much of TeX's memory you used:
- 22046 strings out of 410527
- 397226 string characters out of 2816817
- 959526 words of memory out of 3000000
- 42908 multiletter control sequences out of 15000+600000
- 472894 words of font info for 60 fonts, out of 8000000 for 9000
+ 21796 strings out of 410527
+ 390761 string characters out of 2816817
+ 945751 words of memory out of 3000000
+ 42718 multiletter control sequences out of 15000+600000
+ 470017 words of font info for 38 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 86i,6n,121p,2264b,372s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 86i,6n,121p,1008b,352s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
-Output written on Ergebnisse.pdf (5 pages).
+Output written on Diagramme.pdf (2 pages).

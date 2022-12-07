@@ -28,6 +28,7 @@ library(ggplot2)
 library(ggpubr)
 library(tidyverse)
 library(scales)
+library(latex2exp)
 
 
 ```
@@ -38,11 +39,11 @@ library(scales)
 
 kleiner Einleitungstext....
 
-### RPA-Primerdesing für das Influenza B Virus
+### RPA-Primerdesing für das Influenza B Virus{#eprimer}
 
-Für das Influenza B Virus konnten nach der beschriebenen Methode (siehe \@ref(desing)) isngesamt 10 verschiedene Primer-Sonden-Kombinationen gefunden werden. Davon befanden sich 2 Kombinationen im Bereich zwischen 625-756 Basenpaare und 8 im Bereich von 443-615 Basenpaare. Diese wurden in einer Dreifachbestimmung (n=3) nach Methode \@ref(RPAnormal) getestet. Dabei zeigte das Primer-Sonden-Paar, welches in Tabelle \@ref(tab:RPAoligo) beschrieben ist, die besten Ergebnisse. Dieses Primer-Sonden-Paar wurde für alle weiteren Rekombinase Polymerase Ampflifikationen innerhalb dieses Abschnitts verwendet. Der Amplifikationsbereich liegt dabei zwischen 625 bp und 749 bp.
+Für das Influenza B Virus konnten nach der beschriebenen Methode (siehe \@ref(desing)) isngesamt 10 verschiedene Primer-Sonden-Kombinationen gefunden werden. Davon befanden sich 2 Kombinationen im Bereich zwischen 625-756 Basenpaare und 8 im Bereich von 443-615 Basenpaare. Diese wurden in einer Dreifachbestimmung (n=3) nach Methode \@ref(RPAnormal) getestet. Dabei zeigte das Primer-Sonden-Paar, welches in Tabelle \@ref(tab:RPAoligo) beschrieben ist, die besten Ergebnisse. Dieses Primer-Sonden-Set wurde für alle weiteren Rekombinase Polymerase Ampflifikationen innerhalb dieses Abschnitts verwendet. Der Amplifikationsbereich liegt dabei zwischen 625 bp und 749 bp.
 
-### Herstellung der Influenza B Virus Standard-RNA{#standardherstellungb}
+### Herstellung der Influenza B Virus Standard-RNA{#standardherstellung}
 
 Um verschiedene Nukleinsäure-Amplifikationsverfahren durchführen zu können, war es nötig standartisierte Virus-RNA mit einer definierten Konzentration her zu stellen. Dabei diente ein DNA-Plasmid mit der entsprechenden Virus-Sequenz als Ausgangsmaterial. Dieses wurde in _E. coli_ transfomiert, durch Kultivierung vermehrt und anschließend mittels verschiedener Methoden zur gewünschten Virus-RNA transkribiert. 
 
@@ -75,9 +76,9 @@ Die Herstellung der RNA wurde wie in Kapitel \@ref(transkription) beschrieben du
 
 ### Ermittlung der Sesitivität der Influenza B PCR
 
-Zur Überprüfung der Sensitivität und um ein etabliertes Amplifikationsystem zum Vergleich heranziehen zu können, wurde das in Kaptiel \@ref(infbPCR) gezeigte PCR-System auf die Sesitivität getestet. Dazu wurde der in \@ref(standardherstellungb) hergestellte Standard auf $2*10^7$ Kopien/µl verdünnt und in \textcolor{red}{dekadischen Verdünnungsstufen} bis zu $2*10^0$ in jeweils einer Mehrfachbestimmung (n=7) auf eine Amplifikation nach beschriebener Methode \@ref(infbPCR) getestet. Die Amplifikationsgraphen sowie der lineare Zusammenhang der Ct-Werte (ermittelt nach der in \@ref(chipPCR) beschriebenen Methode) sind in Abbildung \@ref() gezeigt. Zur Ermittlung der Sesitivät wurde die in Kapitel \@ref(probit) beschriebene Methode verwendet. Es konnte ein 95 %-iges Detektionslimit von 11,4 Kopien/µl, gezeigt in Abbildung \@ref()C, bestimmt werden.
+Zur Überprüfung der Sensitivität und um ein etabliertes Amplifikationsystem zum Vergleich heranziehen zu können, wurde das in Kaptiel \@ref(infbPCR) gezeigte PCR-System auf die Sesitivität getestet. Dazu wurde der in \@ref(standardherstellungb) hergestellte Standard auf $2*10^7$ Kopien/µl verdünnt und in \textcolor{red}{dekadischen Verdünnungsstufen} bis zu $2*10^0$ in jeweils einer Mehrfachbestimmung (n=7) auf eine Amplifikation nach beschriebener Methode \@ref(infbPCR) getestet. Die Amplifikationsgraphen sowie der lineare Zusammenhang der Ct-Werte (ermittelt nach der in \@ref(chipPCR) beschriebenen Methode) sind in Abbildung \@ref(fig:infBPCR)A und B gezeigt. Für die Ermittlung der Sensitivität wurden die Amplifikationsergebnisse in das in Kapitel \@ref(probit) beschriebene R-Skript eingefügt. Die berechnete Sesitivitätsgrenze bei einer 95 %-igen Wahrscheinlichkeit liegt bei 11,3 Kopien (siehe Abbildung \@ref(fig:infBPCR)C). 
 
-```{r Conawachstum, fig.show='hold', fig.cap="\\textbf{Sensitivitätsanalyse der Influenza B PCR:} \\textbf{A:} Amplifikationsgraphen der Influenza B PCR bei verschiedenen Konzentrationen (n=7). \\textbf{B:} Linearer Zusammenhang der Ct-Werte mit angefügter Geradengleichung, Korrelationskoeffizienten und p-Wert. Das graue Band zeigt das 95 \\%ige Konfidenzintervall der linearen Funktion. Gezeigt sind nur Ct-Werte, welche einer positiven Amplifikation zugehörig sind. \\textbf{C:} Probit-Analyse der Amplifikationsdaten. Die ermittelte Sensitivitätsgrenze, bei welcher 95 \\% der Amplifikationen positiv sind, liegt bei 11,3 Molekülen.", out.width= "49%", fig.align='center', fig.scap="Sensitivitätsanalyse der Influenza B PCR"}
+```{r infBPCR, fig.show='hold', message = FALSE, fig.cap="\\textbf{Sensitivitätsanalyse der Influenza B PCR:} \\textbf{A:} Amplifikationsgraphen der Influenza B PCR bei verschiedenen Konzentrationen (n=7). \\textbf{B:} Linearer Zusammenhang der Ct-Werte mit angefügter Geradengleichung, Korrelationskoeffizienten und p-Wert. Das graue Band zeigt das 95 \\%ige Konfidenzintervall der linearen Funktion. Gezeigt sind nur Ct-Werte, welche einer positiven Amplifikation zugehörig sind. \\textbf{C:} Probit-Analyse der Amplifikationsdaten. Die schwarz durchgezogene Linie zeigt, die Probit-Regression der PCR. Die schwarzen gestreiften Linien beschreiben das oberer und untere 95 \\%-ige Konfidenzintervall der Probit-Regression. Die rot gesreifte Linie zeigt die ermittelte Sensitivitätsgrenze, bei welcher 95 \\% der Amplifikationen positiv sind.", out.width= "49%", fig.align='center', fig.scap="Sensitivitätsanalyse der Influenza B PCR"}
 
 data <- read.csv2("Daten/V_0096.probit.csv")
 
@@ -122,7 +123,7 @@ transformed <- rbind(zehn7, zehn6, zehn5, zehn4, zehn3, zehn2, zehn1, zehn0, zeh
 
 
 ggplot(transformed, aes(x=Zeit, y = Fluoreszenz)) +
-  geom_line(aes(color = Proben), size = 0.3) +
+  geom_line(aes(color = Proben), linewidth = 0.3) +
   theme_minimal()+
    ylab("Fluoreszenz in mV")+
    xlab("Zyklus")+
@@ -160,5 +161,84 @@ knitr::include_graphics("Bilder/infB_probit.png")
 ```
 
 
-Zur Ermittlung der Sesitivät wurde die in Kapitel \@ref(probit) beschriebene Methode verwendet. Es konnte ein 95 %-iges Detektionslimit von 11,4 Kopien/µl bestimmt werden. 
+### Etablierung der Influenza B Rekombinase Polymerse Apmlifikations-Assays
+
+Um das in Kapitel \@ref(eprimer) getestete Primer-sonden-Set zu Etablieren wurde eine RPA im Original-Volumen (50 µl) nach der beschriebenen Methode (siehe Kapitel \@ref(RPAnormal)) und eine RPA im 8tel-Ansatz (Methode siehe Kapitel \@ref(8telRPA)) mit jeweils 10^6^ Virus RNA Kopien/µl durchgeführt. Die Amplifikation wurde bei 40°C durchgeführt. Eine Unterbrechung der Messung durch einen Mischschritt fand nicht statt. Die normalisierten Fluoreszenzdaten sind in Abbildung \@ref(fig:infBetabl) gezeigt. Es ist zu erkennen, dass die 8tel RPA im Vergleich zu der 50 µl RPA im Verlauf der Reaktion an maximaler Intensität verliert. Der Mittelwert der TT-Werte der beiden RPA-Reaktionstypen liegt bei jeweils 3,36 $\pm$ 0,01 (50 µl RPA) und 3,47 $\pm$ 0,14 (8tel RPA). Es konnte durch einen unabhängigen student's T-Test (siehe Methode unter \@ref(t-test)) kein signifikanter Unterschied zwischen den Mittelwerten festgestellt werden. 
+
+
+(ref:etablB) **Etablierung der Influenza B RPA im Original- und 8tel-Ansatz:** Normalisierte Amplifikationsgraphen der 50µl RPA (n=3) und der 8tel RPA (n=6). Messung bei 40 °C ohne unterbrechung durch einen Mischschritt. Messung mit jeweils 10^6^ Virus-RNA-Molekülen/µl als Template
+
+```{r infBetabl, fig.show='hold', message = FALSE, fig.cap="(ref:etablB)", out.width= "70%", fig.align='center', fig.scap="Etablierung der Influenza B RPA im Original- und 8tel-Ansatz."}
+
+data <- read.csv2("Daten/V_0041.csv")
+
+
+transformed <- data %>% 
+  select(Zeit, ProbeA, ProbeB, ProbeC, ProbeD, ProbeE, ProbeF, ProbeG, ProbeH, ProbeI,	ProbeJ, ProbeK,	ProbeL) %>%
+  gather(key = "Proben", value = "Fluoreszenz", -Zeit)
+
+ggplot(transformed, aes(x=Zeit, y = Fluoreszenz)) +
+  geom_line(aes(color = Proben)) +
+  theme_minimal()+
+   ylab("Fluoreszenz in mV")+
+   xlab("Zeit in Minuten") +
+   scale_color_manual(values = c("#abd9e9", "#abd9e9", "#abd9e9", "#abd9e9", "#abd9e9", "#abd9e9", "#313695", "#313695",
+                                 "#a50026", "#fdae61", "#fdae61", "#fdae61"))+
+  theme(legend.position="none")
+  
+```
+
+### Optimierung der Influenza B Rekombinase Polymerase Amplifikation
+
+Um die Influenza B RPA weiter zu optmieren, wurden die Reaktionsparameter Mischzeit und Reaktionstemperatur untersucht. Zusätzlich wurde in Kapitel \@ref(aksjdalf) gezeigt, dass eine erhöhte Reverseprimerkonzentration bessere Amplifikation zur folge hat. Aus diesem Grund wurde die Primerkonzentration als weiterer Optimierungsparameter untersucht. Wie in Abblildung \@ref(fig:infBoptil)A zu sehen, weißt die Reaktion bei 38 °C eine späteren Anstieg des Fluoreszenzssignales und somit signifikant höhere TT-Werte auf als bei 40 °C oder 42 °C auf (siehe Tabelle \@ref(tab:) im Anhang). Des weiteren zeigt die RPA bei dieser Reaktionstemperatur eine niedrigere Fluoreszenzintensität im späteren Verlauf der Reaktion. Bei 40°C und 42°C konnten keine Signifikanten unterschiede bei den TT-werten festgestellt werden (siehe Tabelle \@ref(tab:) im Anhang). Die Reaktion bei 42 °C zeigt eine niedrigere Fluoreszenzintensität mit einer Abhanme an Fluoreszenzsignal nach ~ 13 Minuten in der Messung. Die Abhanme der Fluoreszenzintensität lässt sich auch bei 40 °C Reaktionstemperatur beobachten, jedoch erst ab ~ 15 Minuten und nur bei 4 von 6 Reaktionen. Alle Reaktionen wurden nach beschriebener Methode (siehe Kapitel \@ref(8telRPA)) ohne eine Unterbrechung der Messung durch einen Mischschritt durchgeführt. Bei der Optimierung der Mischzeit (Fluoreszenzdaten in Abbildung \@ref(fig:infBobtia) im Anhang) konnte beobachtet werden, dass bei Konzentrationen von 10^3^ und 10^2^ Amplifikaten/µl als Ausgansmaterial ein zusätzlicher Mischschritt nach 3,4 oder 5 Minuten keine signifikante Veränderung in den TT-Werten zur Folge hat (siehe Tab \@ref(tab:) im Anhang). Ebenfalls konnten keine Unterschiede in der Fluoreszenzintensität festgestellt werden. Bei 10^1^ Amplifikaten/µl zeigte ein Mischschritt nach 5 Minuten eine Verbesserung der Amplifikation (siehe Abbildung \@ref(fig:infBobtia)C und D) erreicht werden. Bei der Auswertung der Fluoreszenzdaten nach der beschrieben Methode (siehe Kapitel \@ref(chipPCR)) konnte die Anzahl der positiven Amplifikationen von 3/7 (ohne Mischschritt) auf 7/7 (zusätzlicher Mischschritt nach 5 min) erhöht werden. 
+Die Fluoreszenzdaten der Optimierung der Primerkonzentration sind in Abbildung \@ref(fig:infBoptil)B gezeigt. Es ist zu erkennen, dass eine Erhöhung der Reverseprimer-Konzentration auf 1,5X mit einer Erhöhung der Fluoreszenzintensität einhergeht. Bei einer weiteren Erhöhung auf eine doppelte Reversprimer-Konzentration ist ein Abfall der Fluoreszenz bei ~ 12 Minuten bei 4 von 6 Reaktionen zu beobachten. Es konnte keine signifikante Veränderung des TT-Wertes bei den untersuchten Primerkonzentration festgestellt werden. Alle Messung wurden nach beschriebener Methode (siehe Kapitel \@ref(8telRPA)) bei 40 °C und ohne zusätzlichen Mischschritt durchgeführt. 
+
+Somit konnten als Parameter für die folgenden Messungen ein Temperaturoptimum von 40 °C, ein zusätzlicher Mischschritt bei 5 Minuten und eine 1,5X erhöhte Reverseprimer-Konzentration als Optimal herausgefunden werden.
+
+(ref:nfBoptil) **Optimierung der Reaktionsparamter für die Influenza B RPA:** A: Normalisierte Fluoreszenzdaten der Influenza B RPA bei 3 verschiedenen Temperaturen in n=6 mit jeweils 10^6^ Amplifikaten/µl als Template. Assay im 8tel-Ansatz durchgeführt. Messung ohne zusätzlichen Mischschritt durchgeführt. B: Normalisierte Fluoreszenzdaten der Influenza B RPA bei veschiedenen Reverseprimer Konzentrationen in n=6 mit jeweils 10^6^ Amplifikaten/µl als Template. RPA im 8tel-Ansatz durchgeführt.  Messung bei 40 °C und ohne zusätzlichen Mischschritt. Als Referenz (Blau) wurde die RPA mit unveränderter Primerkonzentration mitgefürt.
  
+```{r infBoptil, fig.show='hold', message = FALSE, fig.cap="(ref:nfBoptil)", out.width= "49%", fig.align='center', fig.scap="Optimierung der Reaktionsparamter für die Influenza B RPA"}
+data1 <- read.csv2("daten/V_0045_ges.csv")
+
+
+transformed <- data1 %>% 
+  select(Zeit, ProbeA, ProbeB, ProbeC, ProbeD, ProbeE, ProbeF, ProbeG, ProbeH, ProbeI,	ProbeJ, ProbeK,	ProbeL,	ProbeM, ProbeN,	ProbeO,	ProbeP,	ProbeQ,	ProbeR,	ProbeS,	ProbeT,	ProbeU) %>%
+  gather(key = "Proben", value = "Fluoreszenz", -Zeit)
+
+ggplot(transformed, aes(x=Zeit, y = Fluoreszenz)) +
+  geom_line(aes(color = Proben)) +
+  theme_minimal()+
+   ylab("Fluoreszenz in mV")+
+   xlab("Zeit in Minuten") +
+   scale_color_manual(values = c("#f46d43", "#f46d43", "#f46d43", "#f46d43", "#f46d43", "#f46d43", "#000000",
+                                 "#a50026", "#a50026", "#a50026", "#a50026", "#a50026", "#a50026", "#000000",
+                                 "#fee090", "#fee090", "#fee090", "#fee090", "#fee090", "#fee090", "#000000"))+
+  theme(legend.position="none")+
+  annotate("text", x=4, y=470, label= "A",col="black", size=12)
+
+data2 <- read.csv2("daten/V_0056.csv")
+
+
+transformed <- data2 %>% 
+  select(Zeit, ProbeA, ProbeB, ProbeC, ProbeD, ProbeE, ProbeF, ProbeG, ProbeH, ProbeI,	ProbeJ, ProbeK,	ProbeL,	ProbeM, ProbeN,	ProbeO,	ProbeP,	ProbeQ,	ProbeR,	ProbeS,	ProbeT,	ProbeU, ProbeV, ProbeW, ProbeX) %>%
+  gather(key = "Proben", value = "Fluoreszenz", -Zeit)
+
+ggplot(transformed, aes(x=Zeit, y = Fluoreszenz)) +
+  geom_line(aes(color = Proben)) +
+  theme_minimal()+
+   ylab("Fluoreszenz in mV")+
+   xlab("Zeit in Minuten") +
+   scale_color_manual(values = c("#4575b4", "#4575b4", "#4575b4", "#4575b4", "#4575b4", "#4575b4", "#000000", "#000000",
+                                 "#fdae61", "#fdae61", "#fdae61", "#fdae61", "#fdae61", "#fdae61", "#000000", "#000000",
+                                 "#d73027", "#d73027", "#d73027", "#d73027", "#d73027", "#d73027", "#000000", "#000000"))+
+  theme(legend.position="none")+
+  annotate("text", x=4, y=690, label= "B",col="black", size=12)
+
+
+
+```
+
+
+
+
+

@@ -247,7 +247,7 @@ kable(RPAMM, booktabs = TRUE, col.names = NULL, caption = "Zusammenstzung des Re
  
 Pro Reaktion wurde 46,5 µl Rehydrationsmix (Zusammensetzung siehe Tab. \@ref(tab:RPAMM)) mit 29.5 µl Rehydrationspuffer und DEPC-H~2~O hergestellt. Der Rehydrationsmix wurde auf eine lyophilisiert RPA-Reaktion übertragen. Die Lösung wurde für ca. 2 min bei Raumtemperatur inkubiert, anschließend mit einer \textcolor{red}{Tischzentrifuge} kurz zentrifugiert und leicht gevortext. Von der rehydrierten RPA-Reaktion wurden 46,5 µl in eine Kavität eines 8-ter \textcolor{red}{Messsstreifens} übertragen und dieser mittels einer Tischzentrifuge abermals kurz zentrifugiert. Nachfolgend wurde 1 µl zu amplifizierende RNA bzw. 1 µl DEPC-H~2~O bei der Negativkontrolle dazugegeben. Als Letztes wurden 2,5 µl Magnesium Acetat (280 mM) in den Deckel der Kavität pipettiert. Zum Start der Messung wurde der Messstreifen kurz zentrifugiert, gevortext und abermals Zentrifugiert. Die Messung erfolgte im ESEQuant TS2.4 (Qiagen) bei 38-42 °C. Je nach Versuch wurde die Messung für ein zusätzliches Vortexen mit anschließender Zentrifugation unterbrochen. 
 
-#### 8tel Ansatz
+#### 8tel Ansatz {#8telRPA}
 \hfill
 kurze Einleitung, dass die RPA auch im 8tel Ansatz geht. 
 

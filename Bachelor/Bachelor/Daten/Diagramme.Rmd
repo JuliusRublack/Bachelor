@@ -1,0 +1,86 @@
+---
+output:
+  bookdown::pdf_document2:
+    fig_caption: yes
+    toc: TRUE
+    toc_depth: 3
+    fontsize: 12pt
+    latex_engine: xelatex
+biblio-style: apalike
+citation_package: biblatex
+link-citations: yes
+urlcolor: RoyalBlue
+linkcolor: RoyalBlue
+header-includes:
+  \usepackage{float}
+  \usepackage[ngerman]{babel}
+  \usepackage[onehalfspacing]{setspace}
+  \usepackage[utf8]{inputenc}
+  
+---
+
+```{r setup2, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+library(kableExtra)
+library(ggplot2)
+library(ggpubr)
+library(tidyverse)
+library(scales)
+library(rstatix)
+library(datarium)
+
+```
+
+
+```{r infBetabl, fig.show='hold', message = FALSE, fig.cap="\\textbf{Sensitivitätsanalyse der Influenza B PCR:} \\textbf{A:} Amplifikationsgraphen der Influenza B PCR bei verschiedenen Konzentrationen (n=7). \\textbf{B:} Linearer Zusammenhang der Ct-Werte mit angefügter Geradengleichung, Korrelationskoeffizienten und p-Wert. Das graue Band zeigt das 95 \\%ige Konfidenzintervall der linearen Funktion. Gezeigt sind nur Ct-Werte, welche einer positiven Amplifikation zugehörig sind. \\textbf{C:} Probit-Analyse der Amplifikationsdaten. Die schwarz, durchgezogene Linie zeigt, die Probit-Regression der PCR. Die schwarzen gestreiften Linien beschreiben das oberer und untere 95 \\%-ige Konfidenzintervall der Probit-Regression. Die rot gesreifte Linie zeigt die ermittelte Sensitivitätsgrenze, bei welcher 95 \\% der Amplifikationen positiv sind.", fig.align='center', fig.scap="Sensitivitätsanalyse der Influenza B PCR"}
+
+data <- read.csv2("V_0041.csv")
+
+
+transformed <- data %>% 
+  select(Zeit, ProbeA, ProbeB, ProbeC, ProbeD, ProbeE, ProbeF, ProbeG, ProbeH, ProbeI,	ProbeJ, ProbeK,	ProbeL) %>%
+  gather(key = "Proben", value = "Fluoreszenz", -Zeit)
+
+ggplot(transformed, aes(x=Zeit, y = Fluoreszenz)) +
+  geom_line(aes(color = Proben)) +
+  theme_minimal()+
+   ylab("Fluoreszenz in mV")+
+   xlab("Zeit in Minuten") +
+   scale_color_manual(values = c("#abd9e9", "#abd9e9", "#abd9e9", "#abd9e9", "#abd9e9", "#abd9e9", "#313695", "#313695",
+                                 "#a50026", "#fdae61", "#fdae61", "#fdae61"))+
+  theme(legend.position="none")
+  
+```
+
+```{r, fig.show='hold', message = FALSE, fig.cap="\\textbf{Sensitivitätsanalyse der Influenza B PCR:} \\textbf{A:} Amplifikationsgraphen der Influenza B PCR bei verschiedenen Konzentrationen (n=7). \\textbf{B:} Linearer Zusammenhang der Ct-Werte mit angefügter Geradengleichung, Korrelationskoeffizienten und p-Wert. Das graue Band zeigt das 95 \\%ige Konfidenzintervall der linearen Funktion. Gezeigt sind nur Ct-Werte, welche einer positiven Amplifikation zugehörig sind. \\textbf{C:} Probit-Analyse der Amplifikationsdaten. Die schwarz, durchgezogene Linie zeigt, die Probit-Regression der PCR. Die schwarzen gestreiften Linien beschreiben das oberer und untere 95 \\%-ige Konfidenzintervall der Probit-Regression. Die rot gesreifte Linie zeigt die ermittelte Sensitivitätsgrenze, bei welcher 95 \\% der Amplifikationen positiv sind.", fig.align='center', fig.scap="Sensitivitätsanalyse der Influenza B PCR"}
+
+data <- read.csv2("V_0041.csv")
+
+
+transformed <- data %>% 
+  select(Zeit, ProbeA, ProbeB, ProbeC, ProbeD) %>%
+  gather(key = "Proben", value = "Fluoreszenz", -Zeit)
+
+ggplot(transformed, aes(x=Zeit, y = Fluoreszenz)) +
+  geom_line(aes(color = Proben)) +
+  theme_minimal()+
+   ylab("Fluoreszenz in mV")+
+   xlab("Zeit in Minuten") +
+   scale_color_manual(values = c("#abd9e9", "#313695","#a50026", "#fdae61"), name="Legende",
+                         breaks=c("ProbeA", "ProbeB", "ProbeC", "ProbeD"),
+                         labels=c("8tel RPA", "8tel RPA Nk", "50 µl RPA", "50 µl RPA Nk"))
+  
+```
+
+```{r}
+test <- read.csv2("test2.csv")
+
+stat.test2 <- test %>%
+  t_test(weight ~ group, var.equal = TRUE) %>%
+  add_significance()
+stat.test2
+```
+
+
+

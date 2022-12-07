@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.10) (preloaded format=xelatex 2022.11.18)  22 NOV 2022 13:08
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.10) (preloaded format=xelatex 2022.11.18)  6 DEC 2022 15:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -939,14 +939,23 @@ File: Bilder/InfA Plasmidkarte 937.png Graphic file (type bmp)
 [5]
 File: Bilder/InfA Plasmidkarte 214.png Graphic file (type bmp)
 <Bilder/InfA Plasmidkarte 214.png>
-[6] (Anhang.aux) ) 
+[6]
+File: Anhang_files/figure-latex/infBobtia-1.pdf Graphic file (type pdf)
+<use Anhang_files/figure-latex/infBobtia-1.pdf>
+File: Anhang_files/figure-latex/infBobtia-2.pdf Graphic file (type pdf)
+<use Anhang_files/figure-latex/infBobtia-2.pdf>
+File: Anhang_files/figure-latex/infBobtia-3.pdf Graphic file (type pdf)
+<use Anhang_files/figure-latex/infBobtia-3.pdf>
+File: Anhang_files/figure-latex/infBobtia-4.pdf Graphic file (type pdf)
+<use Anhang_files/figure-latex/infBobtia-4.pdf>
+[7] (Anhang.aux) ) 
 Here is how much of TeX's memory you used:
- 21876 strings out of 410527
- 392983 string characters out of 2816817
- 939944 words of memory out of 3000000
- 42791 multiletter control sequences out of 15000+600000
+ 21918 strings out of 410527
+ 394780 string characters out of 2816817
+ 940198 words of memory out of 3000000
+ 42828 multiletter control sequences out of 15000+600000
  470017 words of font info for 38 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 86i,5n,121p,1005b,350s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 86i,6n,121p,1005b,350s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
-Output written on Anhang.pdf (6 pages).
+Output written on Anhang.pdf (7 pages).
