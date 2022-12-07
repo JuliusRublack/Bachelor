@@ -35,11 +35,11 @@ library(latex2exp)
 
 # Ergebnisse
 
-## Entwicklung einer RPA-Nachweissystems für Influenza B
+## Entwicklung eines Rekombinase Polymerase Amplifikationssystems für das Influenza B Virus
 
 kleiner Einleitungstext....
 
-### RPA-Primerdesing für das Influenza B Virus{#eprimer}
+### Rekombinase Polymerase Amplifikation-Primerdesing für das Influenza B Virus{#eprimer}
 
 Für das Influenza B Virus konnten nach der beschriebenen Methode (siehe \@ref(desing)) isngesamt 10 verschiedene Primer-Sonden-Kombinationen gefunden werden. Davon befanden sich 2 Kombinationen im Bereich zwischen 625-756 Basenpaare und 8 im Bereich von 443-615 Basenpaare. Diese wurden in einer Dreifachbestimmung (n=3) nach Methode \@ref(RPAnormal) getestet. Dabei zeigte das Primer-Sonden-Paar, welches in Tabelle \@ref(tab:RPAoligo) beschrieben ist, die besten Ergebnisse. Dieses Primer-Sonden-Set wurde für alle weiteren Rekombinase Polymerase Ampflifikationen innerhalb dieses Abschnitts verwendet. Der Amplifikationsbereich liegt dabei zwischen 625 bp und 749 bp.
 
@@ -188,7 +188,7 @@ ggplot(transformed, aes(x=Zeit, y = Fluoreszenz)) +
   
 ```
 
-### Optimierung der Influenza B Rekombinase Polymerase Amplifikation
+### Optimierung der Influenza B Rekombinase Polymerase Amplifikation{#optib}
 
 Um die Influenza B RPA weiter zu optmieren, wurden die Reaktionsparameter Mischzeit und Reaktionstemperatur untersucht. Zusätzlich wurde in Kapitel \@ref(aksjdalf) gezeigt, dass eine erhöhte Reverseprimerkonzentration bessere Amplifikation zur folge hat. Aus diesem Grund wurde die Primerkonzentration als weiterer Optimierungsparameter untersucht. Wie in Abblildung \@ref(fig:infBoptil)A zu sehen, weißt die Reaktion bei 38 °C eine späteren Anstieg des Fluoreszenzssignales und somit signifikant höhere TT-Werte auf als bei 40 °C oder 42 °C auf (siehe Tabelle \@ref(tab:) im Anhang). Des weiteren zeigt die RPA bei dieser Reaktionstemperatur eine niedrigere Fluoreszenzintensität im späteren Verlauf der Reaktion. Bei 40°C und 42°C konnten keine Signifikanten unterschiede bei den TT-werten festgestellt werden (siehe Tabelle \@ref(tab:) im Anhang). Die Reaktion bei 42 °C zeigt eine niedrigere Fluoreszenzintensität mit einer Abhanme an Fluoreszenzsignal nach ~ 13 Minuten in der Messung. Die Abhanme der Fluoreszenzintensität lässt sich auch bei 40 °C Reaktionstemperatur beobachten, jedoch erst ab ~ 15 Minuten und nur bei 4 von 6 Reaktionen. Alle Reaktionen wurden nach beschriebener Methode (siehe Kapitel \@ref(8telRPA)) ohne eine Unterbrechung der Messung durch einen Mischschritt durchgeführt. Bei der Optimierung der Mischzeit (Fluoreszenzdaten in Abbildung \@ref(fig:infBobtia) im Anhang) konnte beobachtet werden, dass bei Konzentrationen von 10^3^ und 10^2^ Amplifikaten/µl als Ausgansmaterial ein zusätzlicher Mischschritt nach 3,4 oder 5 Minuten keine signifikante Veränderung in den TT-Werten zur Folge hat (siehe Tab \@ref(tab:) im Anhang). Ebenfalls konnten keine Unterschiede in der Fluoreszenzintensität festgestellt werden. Bei 10^1^ Amplifikaten/µl zeigte ein Mischschritt nach 5 Minuten eine Verbesserung der Amplifikation (siehe Abbildung \@ref(fig:infBobtia)C und D) erreicht werden. Bei der Auswertung der Fluoreszenzdaten nach der beschrieben Methode (siehe Kapitel \@ref(chipPCR)) konnte die Anzahl der positiven Amplifikationen von 3/7 (ohne Mischschritt) auf 7/7 (zusätzlicher Mischschritt nach 5 min) erhöht werden. 
 Die Fluoreszenzdaten der Optimierung der Primerkonzentration sind in Abbildung \@ref(fig:infBoptil)B gezeigt. Es ist zu erkennen, dass eine Erhöhung der Reverseprimer-Konzentration auf 1,5X mit einer Erhöhung der Fluoreszenzintensität einhergeht. Bei einer weiteren Erhöhung auf eine doppelte Reversprimer-Konzentration ist ein Abfall der Fluoreszenz bei ~ 12 Minuten bei 4 von 6 Reaktionen zu beobachten. Es konnte keine signifikante Veränderung des TT-Wertes bei den untersuchten Primerkonzentration festgestellt werden. Alle Messung wurden nach beschriebener Methode (siehe Kapitel \@ref(8telRPA)) bei 40 °C und ohne zusätzlichen Mischschritt durchgeführt. 
@@ -238,7 +238,12 @@ ggplot(transformed, aes(x=Zeit, y = Fluoreszenz)) +
 
 ```
 
+### Ermittlung der Sensitivit der Influenza B Rekombinase Polymerase Amplifikation
 
+ZUr Ermittlung der Sensitivität der Influenza B RPA wurde der in \@ref(standardherstellungb) hergestellte Standard auf $2*10^7$ Kopien/µl verdünnt und in \textcolor{red}{dekadischen Verdünnungsstufen} bis zu $2*10^0$ in jeweils einer Mehrfachbestimmung von n=7 auf eine Amplifikation getestet. Dabei wurde jeweils die Verdünnungsreihe innerhalb der 50 µl RPA (Methode siehe Kapitel \@ref(RPAnormal)) und der 8tel RPA (Methode siehe Kapitel \@ref(8telRPA)) gemessen. Die beiden Systeme wurden dabei mit den in Kapitel \@ref(optib) angegebenen optimalen Reaktionsparamtern durchgeführt. Eine Unterbrechung der Messung durch den Mischschritt nach 5 Minuten..... Die Fluoreszenzdaten der Amplifikationen sind in Abbildung \@ref(fig:) gezeigt. 
+
+
+### Ermittlung der Spezifität der Influenza B Rekombinase Polymerase Amplifikation
 
 
 

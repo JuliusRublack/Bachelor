@@ -76,11 +76,54 @@ ggplot(transformed, aes(x=Zeit, y = Fluoreszenz)) +
 ```{r}
 test <- read.csv2("test2.csv")
 
+#test auf Normalverteilung
+test %>%
+  group_by(group) %>%
+  shapiro_test(weight)
+#test auf Ausreißer
+test %>%
+  group_by(group) %>%
+  identify_outliers(weight)
+#test auf gleiche Varianzen --> wenn p kleiner als 0.05 var.equal auf FALSE stellen
+test$group <- as.factor(test$group)
+test %>%
+  levene_test(weight ~ group)
+
 stat.test2 <- test %>%
-  t_test(weight ~ group, var.equal = TRUE) %>%
+  t_test(weight ~ group, var.equal = FALSE) %>%
   add_significance()
 stat.test2
+
+
+
 ```
+
+```{r}
+test <- read.csv2("test2.csv")
+
+#test auf Normalverteilung
+test %>%
+  group_by(group) %>%
+  shapiro_test(weight)
+#test auf Ausreißer
+test %>%
+  group_by(group) %>%
+  identify_outliers(weight)
+#test auf gleiche Varianzen --> wenn p kleiner als 0.05 dann welch_anova_test() (sonst anova_test()) --> nachfolgend wenn gleiche Varianzen kann tukey_hsd() verwendet werden sonst games_howell_test()
+test$group <- as.factor(test$group)
+test %>%
+  levene_test(weight ~ group)
+
+res.aov <- test %>% welch_anova_test(weight ~ group)
+res.aov
+
+pwc <- test %>% games_howell_test(weight ~ group)
+pwc
+
+
+```
+
+
 
 
 
