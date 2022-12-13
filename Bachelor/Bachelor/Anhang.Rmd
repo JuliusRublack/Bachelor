@@ -108,41 +108,8 @@ knitr::include_graphics("Bilder/InfA Plasmidkarte 214.PNG")
 
 ```{r infBobtia, fig.show='hold', message = FALSE, fig.cap="a", out.width= "49%", fig.align='center', fig.scap="Etablierung der Influenza B RPA im Original- und 8tel-Ansatz."}
 
-data1 <- read.csv2("daten/V_0051.ges.csv")
 
 
-transformed <- data1 %>% 
-  select(Zeit, ProbeA, ProbeB, ProbeC, ProbeD, ProbeE, ProbeF, ProbeG, ProbeH, ProbeI,	ProbeJ, ProbeK,	ProbeL,	ProbeM, ProbeN,	ProbeO,	ProbeP,	ProbeQ,	ProbeR,	ProbeS,	ProbeT,	ProbeU) %>%
-  gather(key = "Proben", value = "Fluoreszenz", -Zeit)
-
-ggplot(transformed, aes(x=Zeit, y = Fluoreszenz)) +
-  geom_line(aes(color = Proben)) +
-  theme_minimal()+
-   ylab("Fluoreszenz in mV")+
-   xlab("Zeit in Minuten") +
-   scale_color_manual(values = c("#74add1", "#74add1", "#74add1", "#74add1", "#74add1", "#74add1", "#000000",
-                                 "#fee090", "#fee090", "#fee090", "#fee090", "#fee090", "#fee090", "#000000",
-                                 "#d73027", "#d73027", "#d73027", "#d73027", "#d73027", "#d73027", "#000000"))+
-  theme(legend.position="none")+
-  annotate("text", x=4, y=330, label= "A",col="black", size=12)
-
-
-data2 <- read.csv2("daten/V_0063.csv")
-
-
-transformed <- data2 %>% 
-  select(Zeit, ProbeA, ProbeB, ProbeC, ProbeD, ProbeE, ProbeF, ProbeG, ProbeH, ProbeI,	ProbeJ, ProbeK,	ProbeL,	ProbeM, ProbeN,	ProbeO,	ProbeP) %>%
-  gather(key = "Proben", value = "Fluoreszenz", -Zeit)
-
-ggplot(transformed, aes(x=Zeit, y = Fluoreszenz)) +
-  geom_line(aes(color = Proben)) +
-  theme_minimal()+
-   ylab("Fluoreszenz in mV")+
-   xlab("Zeit in Minuten") +
-   scale_color_manual(values = c("#000000", "#abd9e9", "#abd9e9", "#abd9e9", "#abd9e9", "#abd9e9", "#abd9e9","#abd9e9",
-                                 "#000000", "#fdae61", "#fdae61", "#fdae61", "#fdae61", "#fdae61", "#fdae61","#fdae61" ))+
-  theme(legend.position="none")+
-  annotate("text", x=4, y=330, label= "B",col="black", size=12)
 
 
 data3 <- read.csv2("daten/V_0064.1.csv")
@@ -160,7 +127,7 @@ ggplot(transformed, aes(x=Zeit, y = Fluoreszenz)) +
   ylim(NA,400)+
    scale_color_manual(values = c("#000000", "#fdae61","#fdae61","#fdae61", "#fdae61", "#fdae61", "#fdae61", "#fdae61"))+
   theme(legend.position="none")+
-   annotate("text", x=4, y=370, label= "C",col="black", size=12)
+   annotate("text", x=4, y=370, label= "A",col="black", size=12)
 
 data4 <- read.csv2("daten/V_0064.2.csv")
 
@@ -177,13 +144,62 @@ ggplot(transformed, aes(x=Zeit, y = Fluoreszenz)) +
   ylim(NA,400)+
    scale_color_manual(values = c("#000000", "#fdae61","#fdae61","#fdae61", "#fdae61", "#fdae61", "#fdae61", "#fdae61"))+
   theme(legend.position="none")+
-  annotate("text", x=4, y=370, label= "D",col="black", size=12)
+  annotate("text", x=4, y=370, label= "B",col="black", size=12)
 
 
+data1 <- read.csv2("daten/V_0051.ges.csv")
 
+
+transformed <- data1 %>% 
+  select(Zeit, ProbeA, ProbeB, ProbeC, ProbeD, ProbeE, ProbeF, ProbeG, ProbeH, ProbeI,	ProbeJ, ProbeK,	ProbeL,	ProbeM, ProbeN,	ProbeO,	ProbeP,	ProbeQ,	ProbeR,	ProbeS,	ProbeT,	ProbeU) %>%
+  gather(key = "Proben", value = "Fluoreszenz", -Zeit)
+
+ggplot(transformed, aes(x=Zeit, y = Fluoreszenz)) +
+  geom_line(aes(color = Proben)) +
+  theme_minimal()+
+   ylab("Fluoreszenz in mV")+
+   xlab("Zeit in Minuten") +
+   scale_color_manual(values = c("#74add1", "#74add1", "#74add1", "#74add1", "#74add1", "#74add1", "#000000",
+                                 "#fee090", "#fee090", "#fee090", "#fee090", "#fee090", "#fee090", "#000000",
+                                 "#d73027", "#d73027", "#d73027", "#d73027", "#d73027", "#d73027", "#000000"))+
+  theme(legend.position="none")+
+  annotate("text", x=4, y=330, label= "C",col="black", size=12)
 
 
 ```
+
+
+(ref:tab1) Mathematische Daten des TT-Wert Vergleichs für Abbildung \@ref(fig:infBetabl)
+```{r tabeins}
+
+tab1 <- read.csv2("daten/tab1.csv", fileEncoding="latin1", header = FALSE)
+
+kable(tab1, booktabs = TRUE, col.names = NULL, format = "latex", escape = FALSE, caption = "(ref:tab1)") %>%
+  add_header_above(c("Gruppe 1"= 1, "Gruppe 2"= 1, "Mittelwert Gr. 1"=1, "Mittelwert Gr. 2" =1, "T-Wert"=1, "Freiheitsgrad"=1, "p-wert"=1, "Aussage"=1), line_sep=0) %>%
+  kable_styling(latex_options = "hold_position") %>%
+  kable_styling(latex_options = "scale_down") %>%
+  footnote(general="ns = nicht Signifikant", symbol = c("abc","def"), symbol_manual = c('*', '**', '***'), fixed_small_size = TRUE, general_title = "Notiz:", escape= FALSE, footnote_as_chunk =TRUE)
+```
+
+
+(ref:tab2) Mathematische Daten des TT-Wert Vergleichs für Abbildung \@ref(fig:infBetabl)
+```{r tabzwei}
+
+tab1 <- read.csv2("daten/tab2.csv", fileEncoding="latin1", header = FALSE)
+
+kable(tab1, booktabs = TRUE, col.names = NULL, format = "latex", escape = FALSE, align = "c", caption = "(ref:tab1)") %>%
+  add_header_above(c("Gruppe "= 1, "Werte"= 1, "Mittelwert"=1, "Shapio-Wilk-Test" =1, "Levene-Test"=1, "Anova-Test"=1), line_sep=0) %>%
+  kable_styling(latex_options = "hold_position") %>%
+  kable_styling(latex_options = "scale_down") %>%
+  footnote(general="ns = nicht Signifikant; untr.Konfid. = unteres Konfidenzintervall; obrs.Konfid. = oberes Konfidenzintervall", symbol = c("abc","def"), symbol_manual = c('*', '**', '***'), fixed_small_size = TRUE, general_title = "Notiz:", escape= FALSE, footnote_as_chunk =TRUE) %>%
+  row_spec(4,hline_after=TRUE) %>%
+  row_spec(3,hline_after=TRUE) 
+```
+
+
+
+
+
 
 
 

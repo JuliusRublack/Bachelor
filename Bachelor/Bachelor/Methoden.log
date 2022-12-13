@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.10) (preloaded format=xelatex 2022.11.18)  7 DEC 2022 15:15
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.10) (preloaded format=xelatex 2022.11.18)  9 DEC 2022 14:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -977,7 +977,11 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 5.99936pt on input line 160.
 [2] [3] [4]
 
-LaTeX Warning: Reference `(' on page 5 undefined on input line 227.
+LaTeX Warning: Reference `fig:plasmidB' on page 5 undefined on input line 232.
+
+
+LaTeX Warning: Reference `fig:plasmidA214' on page 5 undefined on input line 23
+2.
 
 [5] [6] [7]
 
@@ -992,31 +996,24 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[8] [9]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[10] [11]
-Underfull \hbox (badness 2205) in paragraph at lines 546--548
+[8] [9] [10] [11] [12]
+Underfull \hbox (badness 2205) in paragraph at lines 554--556
 []\TU/lmr/m/n/10 QIAGEN. 2021. “QIAGEN® PlasmidPurification Handbook.” \TU/lmr/
 m/it/10 QIAGEN Plasmid Mini, Midi, Ma-
  []
 
-[12] [13] (Methoden.aux)
+[13] (Methoden.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 22011 strings out of 410527
- 394788 string characters out of 2816817
- 970151 words of memory out of 3000000
- 42877 multiletter control sequences out of 15000+600000
+ 22014 strings out of 410527
+ 394818 string characters out of 2816817
+ 973252 words of memory out of 3000000
+ 42880 multiletter control sequences out of 15000+600000
  474839 words of font info for 74 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 86i,15n,121p,2099b,511s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 86i,15n,121p,2120b,512s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
 Output written on Methoden.pdf (13 pages).

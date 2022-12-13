@@ -114,10 +114,10 @@ test$group <- as.factor(test$group)
 test %>%
   levene_test(weight ~ group)
 
-res.aov <- test %>% welch_anova_test(weight ~ group)
+res.aov <- test %>% anova_test(weight ~ group)
 res.aov
 
-pwc <- test %>% games_howell_test(weight ~ group)
+pwc <- test %>% tukey_hsd(weight ~ group)
 pwc
 
 

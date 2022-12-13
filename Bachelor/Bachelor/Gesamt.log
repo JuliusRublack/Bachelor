@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.10) (preloaded format=xelatex 2022.11.18)  7 DEC 2022 15:18
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.10) (preloaded format=xelatex 2022.11.18)  12 DEC 2022 14:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -984,11 +984,7 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 7.99915pt on input line 223.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 5.99936pt on input line 223.
-[1] [2] [3]
-
-LaTeX Warning: Reference `(' on page 4 undefined on input line 290.
-
-[4] [5] [6]
+[1] [2] [3] [4] [5] [6]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1001,107 +997,96 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[7] [8] [9] [10]
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[7] [8]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[9]
-
-LaTeX Warning: Reference `kultivierung' on page 10 undefined on input line 568.
+LaTeX Warning: Reference `kultivierung' on page 11 undefined on input line 576.
 
 
 
-LaTeX Warning: Reference `gel' on page 10 undefined on input line 570.
+LaTeX Warning: Reference `gel' on page 11 undefined on input line 578.
 
 File: Bilder/infB_verdau_t.png Graphic file (type bmp)
 <Bilder/infB_verdau_t.png>
 File: Gesamt_files/figure-latex/infBverdau-2.pdf Graphic file (type pdf)
 <use Gesamt_files/figure-latex/infBverdau-2.pdf>
-[10]
 
-LaTeX Warning: Reference `infbPCR' on page 11 undefined on input line 586.
-
-
-LaTeX Warning: Reference `standardherstellungb' on page 11 undefined on input l
-ine 586.
+LaTeX Warning: Reference `infbPCR' on page 11 undefined on input line 594.
 
 
-LaTeX Warning: Reference `infbPCR' on page 11 undefined on input line 586.
+LaTeX Warning: Reference `infbPCR' on page 11 undefined on input line 594.
 
+[11]
 File: Gesamt_files/figure-latex/infBPCR-1.pdf Graphic file (type pdf)
 <use Gesamt_files/figure-latex/infBPCR-1.pdf>
 File: Gesamt_files/figure-latex/infBPCR-2.pdf Graphic file (type pdf)
 <use Gesamt_files/figure-latex/infBPCR-2.pdf>
 File: Bilder/infB_probit.png Graphic file (type bmp)
 <Bilder/infB_probit.png>
-
-LaTeX Warning: Reference `t-test' on page 11 undefined on input line 600.
-
-[11] [12]
 File: Gesamt_files/figure-latex/infBetabl-1.pdf Graphic file (type pdf)
 <use Gesamt_files/figure-latex/infBetabl-1.pdf>
 
-LaTeX Warning: Reference `aksjdalf' on page 13 undefined on input line 616.
+LaTeX Warning: Reference `aksjdalf' on page 12 undefined on input line 624.
 
 
-LaTeX Warning: Reference `tab:' on page 13 undefined on input line 616.
+LaTeX Warning: Reference `tab:' on page 12 undefined on input line 625.
 
-
-LaTeX Warning: Reference `tab:' on page 13 undefined on input line 616.
-
-
-LaTeX Warning: Reference `tab:' on page 13 undefined on input line 616.
-
-[13]
+[12] [13] [14]
 File: Gesamt_files/figure-latex/infBoptil-1.pdf Graphic file (type pdf)
 <use Gesamt_files/figure-latex/infBoptil-1.pdf>
 File: Gesamt_files/figure-latex/infBoptil-2.pdf Graphic file (type pdf)
 <use Gesamt_files/figure-latex/infBoptil-2.pdf>
-[14]
+[15]
+
+LaTeX Warning: Reference `fig:' on page 16 undefined on input line 652.
+
+File: Bilder/InfB_50_sensi.png Graphic file (type bmp)
+<Bilder/InfB_50_sensi.png>
+File: Bilder/InfB_8tel_sensi.png Graphic file (type bmp)
+<Bilder/InfB_8tel_sensi.png>
+File: Bilder/InfB_50_probit.png Graphic file (type bmp)
+<Bilder/InfB_50_probit.png>
+File: Bilder/infB_8tel_probit.png Graphic file (type bmp)
+<Bilder/infB_8tel_probit.png>
+[16] [17]
 File: Bilder/InfB Plasmidkarte.png Graphic file (type bmp)
 <Bilder/InfB Plasmidkarte.png>
-[15]
+[18]
 File: Bilder/InfA Plasmidkarte 258.png Graphic file (type bmp)
 <Bilder/InfA Plasmidkarte 258.png>
-[16]
+[19]
 File: Bilder/InfA Plasmidkarte 197.png Graphic file (type bmp)
 <Bilder/InfA Plasmidkarte 197.png>
-[17]
+[20]
 File: Bilder/InfA Plasmidkarte 937.png Graphic file (type bmp)
 <Bilder/InfA Plasmidkarte 937.png>
-[18]
+[21]
 File: Bilder/InfA Plasmidkarte 214.png Graphic file (type bmp)
 <Bilder/InfA Plasmidkarte 214.png>
-[19]
+[22]
 File: Gesamt_files/figure-latex/infBobtia-1.pdf Graphic file (type pdf)
 <use Gesamt_files/figure-latex/infBobtia-1.pdf>
 File: Gesamt_files/figure-latex/infBobtia-2.pdf Graphic file (type pdf)
 <use Gesamt_files/figure-latex/infBobtia-2.pdf>
 File: Gesamt_files/figure-latex/infBobtia-3.pdf Graphic file (type pdf)
 <use Gesamt_files/figure-latex/infBobtia-3.pdf>
-File: Gesamt_files/figure-latex/infBobtia-4.pdf Graphic file (type pdf)
-<use Gesamt_files/figure-latex/infBobtia-4.pdf>
-[20] [21]
-Underfull \hbox (badness 2205) in paragraph at lines 782--784
+[23] [24]
+Underfull \hbox (badness 2205) in paragraph at lines 851--853
 []\TU/lmr/m/n/10 QIAGEN. 2021. “QIAGEN® PlasmidPurification Handbook.” \TU/lmr/
 m/it/10 QIAGEN Plasmid Mini, Midi, Ma-
  []
 
-[22] (Gesamt.aux)
+[25] (Gesamt.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 22324 strings out of 410527
- 404790 string characters out of 2816817
- 974942 words of memory out of 3000000
- 43152 multiletter control sequences out of 15000+600000
+ 22391 strings out of 410527
+ 406537 string characters out of 2816817
+ 975417 words of memory out of 3000000
+ 43216 multiletter control sequences out of 15000+600000
  474879 words of font info for 79 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 86i,15n,121p,2260b,511s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 86i,15n,121p,2145b,512s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
-Output written on Gesamt.pdf (26 pages).
+Output written on Gesamt.pdf (29 pages).

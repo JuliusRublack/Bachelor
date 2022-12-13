@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.10) (preloaded format=xelatex 2022.11.18)  6 DEC 2022 15:07
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.10) (preloaded format=xelatex 2022.11.18)  12 DEC 2022 16:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -946,16 +946,64 @@ File: Anhang_files/figure-latex/infBobtia-2.pdf Graphic file (type pdf)
 <use Anhang_files/figure-latex/infBobtia-2.pdf>
 File: Anhang_files/figure-latex/infBobtia-3.pdf Graphic file (type pdf)
 <use Anhang_files/figure-latex/infBobtia-3.pdf>
-File: Anhang_files/figure-latex/infBobtia-4.pdf Graphic file (type pdf)
-<use Anhang_files/figure-latex/infBobtia-4.pdf>
-[7] (Anhang.aux) ) 
-Here is how much of TeX's memory you used:
- 21918 strings out of 410527
- 394780 string characters out of 2816817
- 940198 words of memory out of 3000000
- 42828 multiletter control sequences out of 15000+600000
- 470017 words of font info for 38 fonts, out of 8000000 for 9000
- 1348 hyphenation exceptions out of 8191
- 86i,6n,121p,1005b,350s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
-Output written on Anhang.pdf (7 pages).
+LaTeX Warning: Reference `fig:infBetabl' on page 7 undefined on input line 186.
+
+
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 7.0pt on input line 197.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 5.0pt on input line 197.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
+97.
+(D:\Julius\Programme\MikTex\tex/latex/lm\omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.00092pt on input line 197.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.00064pt on input line 197.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 5.00046pt on input line 197.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 9.99893pt on input line 197.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 6.99925pt on input line 197.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 4.99947pt on input line 197.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 197
+.
+(D:\Julius\Programme\MikTex\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+) (D:\Julius\Programme\MikTex\tex/latex/microtype\mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 197
+.
+(D:\Julius\Programme\MikTex\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) (D:\Julius\Programme\MikTex\tex/latex/microtype\mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+
+LaTeX Warning: Reference `fig:infBetabl' on page 7 undefined on input line 204.
+
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[7] [8] (Anhang.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 22030 strings out of 410527
+ 397158 string characters out of 2816817
+ 950386 words of memory out of 3000000
+ 42897 multiletter control sequences out of 15000+600000
+ 472870 words of font info for 57 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 86i,14n,121p,1005b,350s stack positions out of 10000i,1000n,20000p,200000b,80000s
+
+Output written on Anhang.pdf (8 pages).

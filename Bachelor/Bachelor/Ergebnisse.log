@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.10) (preloaded format=xelatex 2022.11.18)  7 DEC 2022 15:52
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.10) (preloaded format=xelatex 2022.11.18)  12 DEC 2022 13:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -983,13 +983,13 @@ LaTeX Warning: Reference `gel' on page 1 undefined on input line 124.
 
 LaTeX Warning: Reference `cleaning' on page 1 undefined on input line 124.
 
-[1
-
-]
 File: Bilder/infB_verdau_t.png Graphic file (type bmp)
 <Bilder/infB_verdau_t.png>
 File: Ergebnisse_files/figure-latex/infBverdau-2.pdf Graphic file (type pdf)
 <use Ergebnisse_files/figure-latex/infBverdau-2.pdf>
+[1
+
+]
 
 LaTeX Warning: Reference `transkription' on page 2 undefined on input line 135.
 
@@ -999,10 +999,6 @@ LaTeX Warning: Reference `ribogreen' on page 2 undefined on input line 135.
 
 
 LaTeX Warning: Reference `infbPCR' on page 2 undefined on input line 140.
-
-
-LaTeX Warning: Reference `standardherstellungb' on page 2 undefined on input li
-ne 140.
 
 
 LaTeX Warning: Reference `infbPCR' on page 2 undefined on input line 140.
@@ -1026,7 +1022,10 @@ LaTeX Warning: Reference `RPAnormal' on page 2 undefined on input line 154.
 LaTeX Warning: Reference `8telRPA' on page 2 undefined on input line 154.
 
 
-LaTeX Warning: Reference `t-test' on page 2 undefined on input line 154.
+LaTeX Warning: Reference `chipPCR' on page 2 undefined on input line 154.
+
+
+LaTeX Warning: Reference `tt-wert' on page 2 undefined on input line 154.
 
 [2] [3]
 File: Ergebnisse_files/figure-latex/infBetabl-1.pdf Graphic file (type pdf)
@@ -1035,30 +1034,24 @@ File: Ergebnisse_files/figure-latex/infBetabl-1.pdf Graphic file (type pdf)
 LaTeX Warning: Reference `aksjdalf' on page 4 undefined on input line 170.
 
 
-LaTeX Warning: Reference `tab:' on page 4 undefined on input line 170.
+LaTeX Warning: Reference `tab:' on page 4 undefined on input line 171.
 
 
-LaTeX Warning: Reference `tab:' on page 4 undefined on input line 170.
+LaTeX Warning: Reference `8telRPA' on page 4 undefined on input line 172.
 
 
-LaTeX Warning: Reference `8telRPA' on page 4 undefined on input line 170.
-
-
-LaTeX Warning: Reference `fig:infBobtia' on page 4 undefined on input line 170.
+LaTeX Warning: Reference `fig:infBobtia' on page 4 undefined on input line 173.
 
 
 
-LaTeX Warning: Reference `tab:' on page 4 undefined on input line 170.
-
-
-LaTeX Warning: Reference `fig:infBobtia' on page 4 undefined on input line 170.
+LaTeX Warning: Reference `fig:infBobtia' on page 4 undefined on input line 173.
 
 
 
-LaTeX Warning: Reference `chipPCR' on page 4 undefined on input line 170.
+LaTeX Warning: Reference `chipPCR' on page 4 undefined on input line 173.
 
 
-LaTeX Warning: Reference `8telRPA' on page 4 undefined on input line 171.
+LaTeX Warning: Reference `8telRPA' on page 4 undefined on input line 174.
 
 [4]
 File: Ergebnisse_files/figure-latex/infBoptil-1.pdf Graphic file (type pdf)
@@ -1066,30 +1059,45 @@ File: Ergebnisse_files/figure-latex/infBoptil-1.pdf Graphic file (type pdf)
 File: Ergebnisse_files/figure-latex/infBoptil-2.pdf Graphic file (type pdf)
 <use Ergebnisse_files/figure-latex/infBoptil-2.pdf>
 
-LaTeX Warning: Reference `standardherstellungb' on page 5 undefined on input li
-ne 193.
+LaTeX Warning: Reference `RPAnormal' on page 5 undefined on input line 196.
 
 
-LaTeX Warning: Reference `RPAnormal' on page 5 undefined on input line 193.
+LaTeX Warning: Reference `8telRPA' on page 5 undefined on input line 196.
 
 
-LaTeX Warning: Reference `8telRPA' on page 5 undefined on input line 193.
+LaTeX Warning: Reference `chipPCR' on page 5 undefined on input line 196.
 
 
-LaTeX Warning: Reference `fig:' on page 5 undefined on input line 193.
+LaTeX Warning: Reference `tt-wert' on page 5 undefined on input line 196.
 
-[5] [6] (Ergebnisse.aux)
+[5]
+
+LaTeX Warning: Reference `klinischeproben' on page 6 undefined on input line 19
+8.
+
+
+LaTeX Warning: Reference `fig:' on page 6 undefined on input line 198.
+
+File: Bilder/InfB_50_sensi.png Graphic file (type bmp)
+<Bilder/InfB_50_sensi.png>
+File: Bilder/InfB_8tel_sensi.png Graphic file (type bmp)
+<Bilder/InfB_8tel_sensi.png>
+File: Bilder/InfB_50_probit.png Graphic file (type bmp)
+<Bilder/InfB_50_probit.png>
+File: Bilder/infB_8tel_probit.png Graphic file (type bmp)
+<Bilder/infB_8tel_probit.png>
+[6] [7] (Ergebnisse.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 22051 strings out of 410527
- 397381 string characters out of 2816817
- 958824 words of memory out of 3000000
- 42913 multiletter control sequences out of 15000+600000
+ 22124 strings out of 410527
+ 399532 string characters out of 2816817
+ 959884 words of memory out of 3000000
+ 42982 multiletter control sequences out of 15000+600000
  472894 words of font info for 60 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 86i,6n,121p,2264b,356s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 86i,6n,121p,2155b,372s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
-Output written on Ergebnisse.pdf (6 pages).
+Output written on Ergebnisse.pdf (7 pages).
