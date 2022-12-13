@@ -7,7 +7,7 @@
 * **Methodenteil überarbeiten**
    + Tabellen auf Komma zentrieren? nochmal mit Greg sprechen.
    + µl kursiv überarbeiten
-   + Ausreißer-Test
+   + ~Ausreißer-Test~
    + T-Test
    + Test auf normalverteilung
  
