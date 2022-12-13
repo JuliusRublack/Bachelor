@@ -2,8 +2,6 @@
 
 # To Do Liste:
 
-* **Threshold berechnung geändert!! alle Diagramme mit neuem Threshold überarbeiten! (außer etablierung InfB RPA)**
-
 * **Methodenteil überarbeiten**
    + Tabellen auf Komma zentrieren? nochmal mit Greg sprechen.
    + ~µl kursiv überarbeiten~
