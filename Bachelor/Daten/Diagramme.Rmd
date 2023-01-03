@@ -1,0 +1,250 @@
+---
+output:
+  bookdown::pdf_document2:
+    fig_caption: yes
+    toc: TRUE
+    toc_depth: 3
+    fontsize: 12pt
+    latex_engine: xelatex
+biblio-style: apalike
+citation_package: biblatex
+link-citations: yes
+urlcolor: RoyalBlue
+linkcolor: RoyalBlue
+header-includes:
+  \usepackage{float}
+  \usepackage[ngerman]{babel}
+  \usepackage[onehalfspacing]{setspace}
+  \usepackage[utf8]{inputenc}
+  
+---
+
+```{r setup2, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+library(kableExtra)
+library(ggplot2)
+library(ggpubr)
+library(tidyverse)
+library(scales)
+library(rstatix)
+library(datarium)
+
+```
+
+
+```{r infBetabl, fig.show='hold', message = FALSE, fig.cap="\\textbf{Sensitivitätsanalyse der Influenza B PCR:} \\textbf{A:} Amplifikationsgraphen der Influenza B PCR bei verschiedenen Konzentrationen (n=7). \\textbf{B:} Linearer Zusammenhang der Ct-Werte mit angefügter Geradengleichung, Korrelationskoeffizienten und p-Wert. Das graue Band zeigt das 95 \\%ige Konfidenzintervall der linearen Funktion. Gezeigt sind nur Ct-Werte, welche einer positiven Amplifikation zugehörig sind. \\textbf{C:} Probit-Analyse der Amplifikationsdaten. Die schwarz, durchgezogene Linie zeigt, die Probit-Regression der PCR. Die schwarzen gestreiften Linien beschreiben das oberer und untere 95 \\%-ige Konfidenzintervall der Probit-Regression. Die rot gesreifte Linie zeigt die ermittelte Sensitivitätsgrenze, bei welcher 95 \\% der Amplifikationen positiv sind.", fig.align='center', fig.scap="Sensitivitätsanalyse der Influenza B PCR"}
+
+data <- read.csv2("V_0041.csv")
+
+
+transformed <- data %>% 
+  select(Zeit, ProbeA, ProbeB, ProbeC, ProbeD, ProbeE, ProbeF, ProbeG, ProbeH, ProbeI,	ProbeJ, ProbeK,	ProbeL) %>%
+  gather(key = "Proben", value = "Fluoreszenz", -Zeit)
+
+ggplot(transformed, aes(x=Zeit, y = Fluoreszenz)) +
+  geom_line(aes(color = Proben)) +
+  theme_minimal()+
+   ylab("Fluoreszenz in mV")+
+   xlab("Zeit in Minuten") +
+   scale_color_manual(values = c("#abd9e9", "#abd9e9", "#abd9e9", "#abd9e9", "#abd9e9", "#abd9e9", "#313695", "#313695",
+                                 "#a50026", "#fdae61", "#fdae61", "#fdae61"))+
+  theme(legend.position="none")
+  
+```
+
+```{r, fig.show='hold', message = FALSE, fig.cap="\\textbf{Sensitivitätsanalyse der Influenza B PCR:} \\textbf{A:} Amplifikationsgraphen der Influenza B PCR bei verschiedenen Konzentrationen (n=7). \\textbf{B:} Linearer Zusammenhang der Ct-Werte mit angefügter Geradengleichung, Korrelationskoeffizienten und p-Wert. Das graue Band zeigt das 95 \\%ige Konfidenzintervall der linearen Funktion. Gezeigt sind nur Ct-Werte, welche einer positiven Amplifikation zugehörig sind. \\textbf{C:} Probit-Analyse der Amplifikationsdaten. Die schwarz, durchgezogene Linie zeigt, die Probit-Regression der PCR. Die schwarzen gestreiften Linien beschreiben das oberer und untere 95 \\%-ige Konfidenzintervall der Probit-Regression. Die rot gesreifte Linie zeigt die ermittelte Sensitivitätsgrenze, bei welcher 95 \\% der Amplifikationen positiv sind.", fig.align='center', fig.scap="Sensitivitätsanalyse der Influenza B PCR"}
+
+data <- read.csv2("V_0041.csv")
+
+
+transformed <- data %>% 
+  select(Zeit, ProbeA, ProbeB, ProbeC, ProbeD) %>%
+  gather(key = "Proben", value = "Fluoreszenz", -Zeit)
+
+ggplot(transformed, aes(x=Zeit, y = Fluoreszenz)) +
+  geom_line(aes(color = Proben)) +
+  theme_minimal()+
+   ylab("Fluoreszenz in mV")+
+   xlab("Zeit in Minuten") +
+   scale_color_manual(values = c("#d73027", "#fdae61","#4575b4", "#000000"), name="Legende",
+                         breaks=c("ProbeA", "ProbeB", "ProbeC", "ProbeD"),
+                         labels=c("2X Rev. Primer", "1,5X Rev. Primer", "Referenz", "Nk"))
+  
+```
+
+```{r}
+test <- read.csv2("test22.csv")
+
+#test auf Normalverteilung
+test %>%
+  group_by(group) %>%
+  shapiro_test(weight)
+#test auf Ausreißer
+test %>%
+  group_by(group) %>%
+  identify_outliers(weight)
+#test auf gleiche Varianzen --> wenn p kleiner als 0.05 var.equal auf FALSE stellen
+test$group <- as.factor(test$group)
+test %>%
+  levene_test(weight ~ group)
+
+stat.test2 <- test %>%
+  t_test(weight ~ group, var.equal = FALSE) %>%
+  add_significance()
+stat.test2
+
+
+
+```
+
+```{r}
+test <- read.csv2("test4.csv")
+
+#test auf Normalverteilung
+test %>%
+  group_by(group) %>%
+  shapiro_test(weight)
+#test auf Ausreißer
+test %>%
+  group_by(group) %>%
+  identify_outliers(weight)
+#test auf gleiche Varianzen --> wenn p kleiner als 0.05 dann welch_anova_test() (sonst anova_test()) --> nachfolgend wenn gleiche Varianzen kann tukey_hsd() verwendet werden sonst games_howell_test()
+test$group <- as.factor(test$group)
+test %>%
+  levene_test(weight ~ group)
+
+res.aov <- test %>% anova_test(weight ~ group)
+res.aov
+
+pwc <- test %>% tukey_hsd(weight ~ group)
+pwc
+
+
+```
+
+```{r}
+data <- read.csv2("V_0096.probit.csv")
+
+zehn7 <- data %>% 
+  select(Zeit, X1071,	X1072,	X1073,	X1074,	X1075,	X1076,	X1077) %>%
+  gather(key = "Proben", value = "Fluoreszenz", -Zeit)
+
+zehn6 <- data %>% 
+  select(Zeit, X1061,	X1062,	X1063,	X1064,	X1065,	X1066,	X1067) %>%
+  gather(key = "Proben", value = "Fluoreszenz", -Zeit)
+
+zehn5 <- data %>% 
+  select(Zeit,  X1051,	X1052,	X1053,	X1054,	X1055,	X1056,	X1057) %>%
+  gather(key = "Proben", value = "Fluoreszenz", -Zeit)
+
+zehn4 <- data %>% 
+  select(Zeit, X1041,	X1042,	X1043,	X1044,	X1045,	X1046,	X1047) %>%
+  gather(key = "Proben", value = "Fluoreszenz", -Zeit)
+
+zehn3 <- data %>% 
+  select(Zeit, X1031,	X1032,	X1033,	X1034,	X1035,	X1036,	X1037) %>%
+  gather(key = "Proben", value = "Fluoreszenz", -Zeit)
+
+zehn2 <- data %>% 
+  select(Zeit, X1021,	X1022,	X1023,	X1024,	X1025,	X1026,	X1027) %>%
+  gather(key = "Proben", value = "Fluoreszenz", -Zeit)
+
+zehn1 <- data %>% 
+  select(Zeit,	X1011,	X1012,	X1013,	X1014,	X1015,	X1016,	X1017) %>%
+  gather(key = "Proben", value = "Fluoreszenz", -Zeit)
+
+zehn0 <- data %>% 
+  select(Zeit, X1001,	X1002,	X1003,	X1004,	X1005,	X1006,	X1007) %>%
+  gather(key = "Proben", value = "Fluoreszenz", -Zeit)
+
+zehnnk <- data %>%
+  select(Zeit, nk1,	nk2,	nk3,	nk4,	nk5,	nk6,	nk7,	nk8) %>%
+  gather(key = "Proben", value = "Fluoreszenz", -Zeit)
+  
+transformed <- rbind(zehn7, zehn6, zehn5, zehn4, zehn3, zehn2, zehn1, zehn0, zehnnk)
+
+
+
+ggplot(transformed, aes(x=Zeit, y = Fluoreszenz)) +
+  geom_line(aes(color = Proben), linewidth = 0.3) +
+  theme_minimal()+
+   ylab("Fluoreszenz in mV")+
+   xlab("Zyklus")+
+  scale_color_manual(values = c("#d73027", "#d73027", "#d73027", "#d73027", "#d73027", "#d73027", "#d73027", "#d73027", 
+                                "#f46d43", "#f46d43", "#f46d43", "#f46d43", "#f46d43", "#f46d43", "#f46d43",  
+                                "#fdae61", "#fdae61", "#fdae61", "#fdae61", "#fdae61", "#fdae61", "#fdae61",  
+                                "#fee090", "#fee090", "#fee090", "#fee090", "#fee090", "#fee090", "#fee090",  
+                                "#e0f3f8", "#e0f3f8", "#e0f3f8", "#e0f3f8", "#e0f3f8", "#e0f3f8", "#e0f3f8",  
+                                "#abd9e9", "#abd9e9", "#abd9e9", "#abd9e9", "#abd9e9", "#abd9e9", "#abd9e9",  
+                                "#74add1", "#74add1", "#74add1", "#74add1", "#74add1", "#74add1", "#74add1",  
+                                "#4575b4", "#4575b4", "#4575b4", "#4575b4", "#4575b4", "#4575b4", "#4575b4",
+                                "#333388", "#333388", "#333388", "#333388", "#333388", "#333388", "#333388"))+
+  theme(legend.position="none")+
+  annotate(geom="text", x=11, y=6, label="A", color="black", size=12)
+```
+
+```{r}
+data <- read.csv2("V_0041.csv")
+
+
+transformed <- data %>% 
+  select(Zeit, ProbeA, ProbeB, ProbeC, ProbeD, ProbeE, ProbeF, ProbeG, ProbeH, ProbeI,	ProbeJ, ProbeK,	ProbeL) %>%
+  gather(key = "Proben", value = "Fluoreszenz", -Zeit)
+
+ggplot(transformed, aes(x=Zeit, y = Fluoreszenz)) +
+  geom_line(aes(color = Proben)) +
+  theme_minimal()+
+   ylab("Fluoreszenz in mV")+
+   xlab("Zeit in Minuten") +
+   scale_color_manual(values = c("#abd9e9", "#abd9e9", "#abd9e9", "#abd9e9", "#abd9e9", "#abd9e9", "#313695", "#313695",
+                                 "#a50026", "#fdae61", "#fdae61", "#fdae61"))+
+  theme(legend.position="none")
+```
+
+```{r}
+data1 <- read.csv2("V_0045_ges.csv")
+
+
+transformed <- data1 %>% 
+  select(Zeit, ProbeA, ProbeB, ProbeC, ProbeD, ProbeE, ProbeF, ProbeG, ProbeH, ProbeI,	ProbeJ, ProbeK,	ProbeL,	ProbeM, ProbeN,	ProbeO,	ProbeP,	ProbeQ,	ProbeR,	ProbeS,	ProbeT,	ProbeU) %>%
+  gather(key = "Proben", value = "Fluoreszenz", -Zeit)
+
+ggplot(transformed, aes(x=Zeit, y = Fluoreszenz)) +
+  geom_line(aes(color = Proben)) +
+  theme_minimal()+
+   ylab("Fluoreszenz in mV")+
+   xlab("Zeit in Minuten") +
+   scale_color_manual(values = c("#f46d43", "#f46d43", "#f46d43", "#f46d43", "#f46d43", "#f46d43", "#000000",
+                                 "#a50026", "#a50026", "#a50026", "#a50026", "#a50026", "#a50026", "#000000",
+                                 "#fee090", "#fee090", "#fee090", "#fee090", "#fee090", "#fee090", "#000000"))+
+  theme(legend.position="none")+
+  annotate("text", x=4, y=470, label= "A",col="black", size=12)
+
+data2 <- read.csv2("V_0056.csv")
+
+
+transformed <- data2 %>% 
+  select(Zeit, ProbeA, ProbeB, ProbeC, ProbeD, ProbeE, ProbeF, ProbeG, ProbeH, ProbeI,	ProbeJ, ProbeK,	ProbeL,	ProbeM, ProbeN,	ProbeO,	ProbeP,	ProbeQ,	ProbeR,	ProbeS,	ProbeT,	ProbeU, ProbeV, ProbeW, ProbeX) %>%
+  gather(key = "Proben", value = "Fluoreszenz", -Zeit)
+
+ggplot(transformed, aes(x=Zeit, y = Fluoreszenz)) +
+  geom_line(aes(color = Proben)) +
+  theme_minimal()+
+   ylab("Fluoreszenz in mV")+
+   xlab("Zeit in Minuten") +
+   scale_color_manual(values = c("#4575b4", "#4575b4", "#4575b4", "#4575b4", "#4575b4", "#4575b4", "#000000", "#000000",
+                                 "#fdae61", "#fdae61", "#fdae61", "#fdae61", "#fdae61", "#fdae61", "#000000", "#000000",
+                                 "#d73027", "#d73027", "#d73027", "#d73027", "#d73027", "#d73027", "#000000", "#000000"))+
+  theme(legend.position="none")+
+  annotate("text", x=6, y=690, label= "B",col="black", size=12)
+
+
+
+```
+
+
+
+
+
+

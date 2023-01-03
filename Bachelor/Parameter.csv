@@ -1,0 +1,8 @@
+Parameter;Wert
+Länge der Primer;30 - 34 bp
+Länge der Sonde;50 bp
+Sondentyp;Exonuclease Sonde
+Nukleotid-Wiederholungs-Grenzwert;5 bp
+GC-Gehalt für Primer und Sonde;40 - 60 %
+Hintergrund-Kreuzreaktivitäts-Grenzwert;65 %
+Prozentuale Primer-Sonden Dimersierungstoleranz;40 %

@@ -1,0 +1,288 @@
+---
+output:
+  bookdown::pdf_document2:
+    fig_caption: yes
+    toc: TRUE
+    toc_depth: 3
+    fontsize: 12pt
+    latex_engine: xelatex
+bibliography: "Bachelor_quellen.bib"
+biblio-style: apalike
+citation_package: biblatex
+link-citations: yes
+urlcolor: RoyalBlue
+linkcolor: RoyalBlue
+header-includes:
+  \usepackage{float}
+  \usepackage[ngerman]{babel}
+  \usepackage[onehalfspacing]{setspace}
+  \usepackage[utf8]{inputenc}
+  \usepackage[dvipsnames]{xcolor}
+  \usepackage[x11names]{xcolor}
+  
+  
+---
+
+```{r setup1, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+library(kableExtra)
+
+```
+
+\pagebreak
+
+# Material und Methoden
+
+## Bioinformatische Methoden
+
+### Rekombinase Polymerase Amplifikation Primerdesign {#desing}
+
+Für die Erstellung der Primer und Sonden zur Detektion des Influenza A und B Virus wurde das von @Higgins2018 entwickelte Programm \emph{PrimedRPA} verwendet. Die Parameter dafür sind in Tabelle \@ref(tab:parameter) angegeben. 
+
+```{r, parameter}
+
+parameter <- read.csv2("Parameter.csv", fileEncoding="latin1")
+
+kable(parameter, booktabs = TRUE, caption = "Parameter für das Primerdesign mit dem PrimedRPA Programm") %>%
+  kable_styling(latex_options = "hold_position")
+
+```
+
+Als Referenzsequenzen für das Influenza A Virus diente jeweils eine Sequenz des Virusgenomsegmentes 7 von den Subtypen H1N1 (GenBank Nr.: MT341937) und H3N2 (GenBank Nr.: MT244214). Die Primer und Sonden wurden so gewählt, dass mindestens 90 % der Primer- und Sondensequenz keine Basenfehlpaarungen zwischen den beiden Subtypen aufweisen. Für das Influenza B Virus diente das Virusgenomsegment 8 (GenBank Nr.: MT637911) als Referenzsequenz. Alle entstandenen Primer/Sonden Sets wurden mit dem Online-Programm \emph{PrimerDimer}^[http://www.primer-dimer.com/] von @Johnston2019 auf Eigenhybridisierung und Dimerbildung untersucht. Im Anschluss wurden die Primer-Sonden-Sets mit DNA-Sequenzen des gleichen Virusgenomsegmentes von älteren Stämmen verglichen und mögliche Fehlpaarungen durch die Einführung von degenerierten Primern zu vermeiden. Für das Alignment wurde das Online-Programm \emph{Clustal Omega}^[https://www.ebi.ac.uk/Tools/msa/clustalo/] beschrieben durch @Sievers2017, verwendet. Für die Influenza A Primer-Sonden-Sets wurden zusätzlich degenerierte Basen eingeführt, um eine optimales Alignment an die Sequenzen der beiden Subtypen zu gewährleisten.
+
+### Modifikation der Fluoreszenzsonden {#modifikation}
+
+Das Prinzip der Fluoreszenzsonden ist bei PCR und RPA gleich. Dieses besteht aus einem fluoreszierenden Reportermolekül und einem sogenannten Quencher, welche sich innerhalb der Sonde in räumlicher Nähe befinden. Der Quencher ist ein weiteres Fluorophor, welches von der Emission des Reportermoleküls angeregt wird und dadurch verhindert, dass die Fluoreszenz des Reportermoleküls detektiert werden kann. Erst wenn die beiden Fluorophore durch Hydrolyse getrennt werden, kann der Quencher nicht mehr das Signal des Reportermoleküls blockieren und die Fluoreszenz kann detektiert werden [@Bustin2000].
+Alle verwendeten PCR-Sonden wurden am 5´-Ende mit einem entsprechendem Reporterfluorophor markiert. Am 3´-Ende sowie an der 9 Basenposition wurden die Sonde mit entsprechende Quenchern markiert. 
+Das Design der RPA-Sonden wurde wie in @Behrmann2020 beschrieben durchgeführt. Dazu wurde die erste Thymin-Base nach ca. 30 bp mit dem Reporterfluorophor markiert, gefolgt von einer a-basischen Seite. Diese besteht aus einem Zuckerphosphat-Rückgrat ohne Nucleobase. Nachfolgend wurde an das nächste Sondenukleotid ein entsprechender Quencher an gekoppelt. Am 3´-Ende wurde die Sonde mit einem dreikettigen Kohlenstoff-Rest versehen, um eine Kettenverlängerung der Sonde zu unterbinden.
+
+\textcolor{red}{Spacer C3}
+
+### Statistische Auswertung der Amplifikationen {#chipPCR}
+
+Für die Entwicklung und Optimierung von Amplifikationsverfahren ist eine einheitliche statistische Auswertung notwendig [@Roediger2015]. Als Werkzeug für die Auswertung wurde die "Open Source" Programmiersprache R verwendet, welches für spezifische Anwendungen beliebig erweiterbar ist durch die Verwendung sogenannter “Packages” [@Pabinger2014].  
+**Normalisierung der Fluoreszenz-Daten:**  
+Für die Normalisierung der Daten wurde, wie in der Literatur beschrieben, der Mittelwert der ersten 5 Messwerte jeder Amplifikationskurve berechnet [@Ritz2008]. Die berechneten Mittelwerte wurden von den jeweiligen Datensätzen subtrahiert.  
+**Ermittlung signifikanter Amplifikationen:**  
+Die Überprüfung, ob es sich bei einem gemessenen Fluoreszenz-Datensatz um eine positive Amplifikation handelt, wurde mit dem \emph{chipPCR} Paket von @Roediger2015 durchgeführt. Für die Auswertung wurden folgende Tests durchgeführt.
+
+_Shapiro-Wilk Test:_  Negative Amplifikationen unterliegen einem gleichmäßigen starken Rauschen, weswegen eine Normalverteilung der Daten gegeben ist. Bei positiven Amplifikationen hingegen sind die Daten durch den linearen Anstieg in der exponentiellen Phase der Amplifikation nicht mehr normalverteilt. Anhand dieser Gesetzmäßigkeit lassen sich durch einen Test auf Normalverteilung positive von negativen Amplifikationen unterscheiden [@Roediger2022]. Mithilfe des Shapiro-Wilk Tests (beschrieben durch @SHAPIRO1965) für Normalität wird der Datensatz auf Normalverteilung getestet. Bei errechneten P-Werten von $\geq 5*10^{-4}$ liegt keine Normalverteilung mehr vor und der Datensatz wurde als positive Amplifikation gewertet.  
+_Residuen Wachstums Test:_ Bei diesem Test wird die Stabilität der Residuen in der linearen Phase des Anstiegs untersucht. Bei negativen Amplifikationen weichen die Fluoreszenzwerte von dem linearen Modell ab. Dadurch korrelieren die Residuen im Gegensatz zu positiven Amplifikationen stark mit den Fluoreszenzwerten. Anhand eines Schwellenwertes von 0,5 wurde diese Korrelation untersucht und der Datensatz als positive/negative Amplifikation eingestuft.  
+_Vergleichs Test:_ Innerhalb dieses Tests wird untersucht, ob die ersten 20 % des Datensatzes sich signifikant von den letzten 15 % unterscheiden. Dazu wurden die beiden Datengruppen mit dem Wilcoxon-Mann-Whitney-Test, beschrieben durch @Mann1947, verglichen. Besteht ein signifikanter Unterschied, handelt es sich um eine positive Amplifikation.    
+_Signal Level Test:_ Dieser Test vergleicht zwei aus dem Datensatz berechnete Werte. Ersterer berechnet sich aus Formel \@ref(eq:eins), wobei MAD^[https://search.r-project.org/CRAN/refmans/ie2misc/html/madstat.html] (engl. _Mean-absolut deviation_) für die absolute Standardabweichung steht (siehe R-Dokumentation). Der zweite Wert ist das Signal-Rausch-Verhältnis (SNR, engl. _signal noise ratio_), berechnet mit Formel \@ref(eq:zwei). Bei einem um 25 % erhöhtem Wert des SNR im Vergleich zum ersten Wert wird die Amplifikation als positiv gewertet.  
+
+\begin{equation} 
+  Median + 2* MAD\; \; \; \; \; \; \;  mit \; \; \; \; MAD= n^{-1}\sum_{i=1}^{n}\left | O_{i}-\overline{O}\right |
+  (\#eq:eins)
+\end{equation} 
+\begin{equation} 
+  SNR=\frac{Mittelwert\: der \: Fluoreszenswerte}{Standardabweichung\: der \: Fluoreszenswerte}
+  (\#eq:zwei)
+\end{equation}
+
+_Polygon Test:_ Innerhalb dieses Tests wird der Anstieg pro Zeitintervall mit Formel \@ref(eq:drei) aufsummiert. Bei positiven Amplifikationen erreicht die Summe höhere Werte als bei negativen Amplifikationen, da hier das stärkere Rauschen der Daten die Endsumme niedrig hält. Als Schwellenwert für eine positive Amplifikation wurde hier empirisch ein Wert von 10 festgelegt. [@Roediger2015].
+
+\begin{equation}
+  ((x_{2}-x_{1}))*((y_{2}+y_{1})) \; \;   \widehat{=}\; \; (\Delta t)*((y_{2}+y_{1}))
+  (\#eq:drei)
+\end{equation}
+
+Des Weiteren ist es üblich, bei Echtzeit-Amplifikationsmethoden einen Schwellenwert einzuführen. Sollte dieser während der Messung nicht überschritten werden, wird die Amplifikation als negativ eingestuft [@Aranha2021]. Um dies zu berücksichtigen wurde ein weiterer Test, der _Schwellenwert Test_, eingeführt. Für die Berechnung des Schwellenwertes wurde die von @Frey1998 beschriebene Methode verwendet. Diese beruht auf dem Median der gesamten Daten, zu welchem ein Faktor addiert wird. Der Faktor bildet sich dabei aus der Standardabweichung (SD) der Daten multipliziert mit einem Term bestehend aus der Probenanzahl (n~1~) und den Werten einer einseitigen Student's t-Verteilung (siehe Formel \@ref(eq:vier)). Für die Schwellenwertberechnung wurden mindestens 6 Negativkontrollen als Datensatz verwendet. Das Konfidenzintervall für die t-Verteilung wurde als 0,99 (99 %) festgelegt. 
+
+\begin{equation} 
+  Schwellenwert=\overline{X}+SD*t\sqrt{1+\frac{1}{n_{1}}} \; \; \; \; \; \; \; mit \; \; \; \;  SD=\sqrt{\frac{\sum (x_{i}-\overline{X})^{2}}{n_{2}-1}}
+  (\#eq:vier)
+\end{equation} 
+
+Um eine Amplifikation als positiv einzustufen, mussten alle aufgeführten Tests ein positives Testergebnis aufweisen. Sobald ein oder mehrere Tests ein negatives Testergebnis zeigten, wurde die Amplifikation als negativ eingestuft. 
+
+
+**Ermittlung der Anstiegszeit **
+
+Die Anstiegszeit, in der Literatur bei PCR-System nach den MIQE Richtlinien auch als C~q~-Wert (engl. _cycle quantification_) angegeben, ist der Zeitpunkt bei, die dem Fluoreszenzwerte einer Amplifikation einen vorher festgelegten Schwellenwert überschreiten und sich zusätzlich signifikant von dem Grundrauschen unterscheiden [@Bustin2009]. Dies lässt sich auch auf die RPA als TT-Wert (engl. _threshold time_) übertragen [@Diagne2020]. Für die Ermittlung der Anstiegszeit wurde der im \emph{chipPCR}-Paket vorhandene Befehl "th.cyc" verwendet. Dieser gleicht die Amplifikationskurve im Bereich des vorher festgelegten Schwellenwertes mit einer Polynomfunktion zweiten Grades an und gibt den Schnittpunkt mit dem Schwellenwert als Anstiegszeit aus. Als Schwellenwert wurde der im Schwellenwert Test beschrieben Wert (siehe Kapitel \@ref(chipPCR)) verwendet [@Roediger2015]. 
+
+### Vergleich von Anstiegszeiten{#tt-wert}
+
+Um zu überprüfen, ob eine Veränderung der Reaktionsparameter eine signifikante Veränderung der Anstiegszeiten zur Folge hat, wurden die Mittelwerte der Anstiegszeiten bei 2 Gruppen mithilfe eines T-Tests und bei 3 oder mehr Gruppen mithilfe einer einfaktoriellen Varianzanalyse verglichen. Im ersten Schritt wurden die Daten mit dem Shaprio-Wilk-Test auf Normalität überprüft und anschließend auf Ausreißer untersucht. Datenpunkte, welche über $Q3 + 3* IQR$ oder unter $Q1-3*IQR$ liegen, wurden als Ausreißer festgelegt und für die folgenden Tests ignoriert. Dabei sind Q1 und Q3 das erste und dritte Quartil der Daten und IQR steht für den Interquartils-Abstand. Nachfolgend wurden die bereinigten Daten auf Varianzhomogenität mit dem Levene-Test überprüft. Bei einem Vergleich von 2 Gruppen wurde bei festgestellter Varianzhomogenität der Student's T-Test und bei signifikant unterschiedlichen Varianzen der Welch T-Test durchgeführt. Bei einem Vergleich von 3 oder mehr Gruppen wurde bei Varianzhomogenität eine einfaktorielle Varianzanalyse durchgeführt, welche bei einem p-Wert von unter 0,05 mit einem nachfolgendem Tukey HSD Test kombiniert wurde, um die Verhältnisse zwischen den Gruppen zu untersuchen. Wenn die Gruppen keine einheitlichen Varianzen besitzen, wurde eine Welch's Varianzanalyse durchgeführt. Konnten innerhalb der Welch's Varianzanalyse signifikante Unterschiede zwischen den Gruppen festgestellt werden, wurde ein Games Howell Test nachfolgend durchgeführt, um die Verhältnisse der einzelnen Gruppen zu untersuchen.
+
+   
+### Probit-Analyse {#probit}
+
+Die Probit-Analyse ist ein statistisches Modell, welches binäre Fälle (0 und 1) mit einer fortlaufenden Variablen in Verbindung bringt. Dabei wird die Gauß’sche Normalverteilungsfunktion $\phi$, welche durch die Formel $p= \phi(\alpha+\beta x)$ beschrieben wird, auf die Regression angewendet [@Bingham2010]. Die von @Bliss1934 entwickelte Methode wurde ursprünglich für toxikologische Experimente genutzt, um die tödliche Dosis mathematisch zu bestimmen [@Bliss1934]. Aufgrund der gleichen Datenlage lässt sich jedoch dieses mathematische Modell auch verwenden, um das Detektionslimit anhand einer Konzentrationsreihe für ein Nukleinsäure-Amplifikationssystem zu ermitteln. Die Probit-Analyse anhand von Amplifikationsdaten erfolgte mittels einer R-skripts, entwickelt durch Ole Behrmann, beschrieben in @Behrmann2020. Skript modifiziert und an die Daten angepasst durch mich.
+
+## Herstellen der RNA-Standards
+\textcolor{red}{Für die Etablierung und Optimierung der RPA-Protokolle ist es nötig, eine definierte Menge amplifizierbarer viraler Nukleinsäure-Moleküle einzusezten, um so eine Vergleichbarkeit zu anderen Protokollen herzustellen. Dafür wurden definierte RNA-Standards der zu amplifizierenden Nukleinsäure hergestellt.} Die RNA-Standards für das Influenza A Virus wurden wie in den nachfolgenden Kapiteln beschrieben hergestellt. Für das Influenza B Virus war in der Arbeitsgruppe schon eine transformierte _E. coli_ Kultur vorhanden, weswegen mit dieser erst ab Kapitel \@ref(isolation) weitergearbeitet wurde.
+
+### Transformation von _E. coli_ mit Plasmid-DNA {#transformation}
+
+Die chemische Transformation von NEB\textsuperscript{\textcopyright} 5-alpha competent _E. coli_ (High Efficiency, New England BioLabs\textsuperscript{\textcopyright} GmbH) wurde nach Herstellerangaben durchgeführt (Protokoll^[https://international.neb.com/protocols/0001/01/01/high-efficiency-transformation-protocol-c2987] online verfügbar). Als Vektor dienten synthetisierte Plasmide der Firma Invitrogen (Plasmidkarten siehe Abbildung \@ref(fig:plasmidB) -  \@ref(fig:plasmidA214) im Anhang). Nach der Transformation wurden jeweils 25 µl des Transformationsansatzes auf zwei mit Ampicillin (Endkonzentration: 100 µg/ml, Roche diagnostics) versetzte LB-Platten (Carl Roth) ausplattiert und bei 37 °C über Nacht inkubiert. Zur Überprüfung der Transformation wurde eine Kolonie-PCR, eine modifizierte Form der PCR, durchgeführt. Hierbei dient nicht reine DNA, sondern die transformierten Bakterien als Ausgangsmaterial. Durch die Wahl spezifischer Primer, welche das gewünschte Insert innerhalb des Plasmids amplifizieren, kann überprüft werden, ob die Transformation innerhalb der Kultur erfolgreich war [@Bergkessel2013]. Für die PCR wurde der Luna\textsuperscript{\textcopyright} Universal qPCR Master Mix (New England BioLabs) verwendet. Eine halbe Kolonie der transformieren _E. coli_ wurde in 20 µl PCR-reinem Wasser (Nuklease- und Nukleinsäure-frei, DEPC behandelt, Carl Roth) suspendiert. Von dieser Suspension wurden 2 µl mit 18 µl PCR-Mix gemischt und eine PCR durchgeführt. Das Temperaturprogramm der PCR ist in Tabelle \@ref(tab:kPCR) angegeben. Weitere 5 µl der Suspension wurden auf einer mit Ampicillin versetzten LB-Platte ausplattiert und bei 37 °C über Nacht inkubiert, um eine Folgekultur der überprüften _E. coli_ zu erhalten.
+
+
+```{r, kPCR}
+
+parameter <- read.csv2("koloniePCR.csv", header = FALSE, fileEncoding="latin1")
+
+kable(parameter, booktabs = TRUE,col.names = NULL, caption = "Temperaturprotokoll für die Kolonie-PCR") %>%
+  kable_styling(latex_options = "hold_position") %>%
+  footnote( symbol = c("Messung der Fluoreszenz"))%>%
+  pack_rows("Zellyse", 1, 1) %>%
+  pack_rows("Amplifikation", 2, 3) %>%
+  pack_rows("Kühlen", 4, 4) %>%
+  column_spec(1, width = "0.8in") %>%
+  column_spec(2, width = "0.8in") %>%
+  column_spec(3, width = "0.6in") %>%
+  add_header_above(c("Temperatur"= 1, "Zeit"= 1, "Zyklen"=1), line_sep=0)
+  
+
+```
+
+### Extraktion von Plasmid-DNA aus Übernachtkulturen {#isolation}
+
+Die transformierten Bakterien wurden bei 37 °C und 200 RPM über Nacht in 25 ml Lennox LB-Medium (Carl Roth) kultiviert. 
+Die Isolierung der Plasmid-DNA erfolgte mit dem Qiagen Plasmid Midi Kit (Qiagen) nach Herstellerangaben (Protokoll^[https://www.qiagen.com/us/resources/download.aspx?id=0bd0c5fb-c271-43e7-af43-32d539374fa9&lang=en] online verfügbar). Das Prinzip der QIAGEN DNA-Aufreinigung beruht dabei auf einer speziellen alkalischen Lyse der Bakterien kombiniert mit einem Ionen Austausch [@QIAGEN2021]. Hierbei wird die negativ geladene DNA an ein positiv geladenes Säulenmaterial wie Diethylaminoethyl (DEAE) Zellulose gebunden [@Gautam2022]. Durch in Salzkonzentrationen variierende Puffer kann anschließend die gebundene DNA von Unreinheiten befreit und eluiert werden [@Prazeres1998]. Die Elution der DNA im letzten Schritt wurde mit 30 µl PCR-reinem Wasser durchgeführt. Eine anschließende Abschätzung der DNA-Konzentration erfolgte mit dem NanoDrop 8000 Spektrophotometer (Thermo Fisher Scientific)
+
+### Sequenzierung der isolierten Plasmide {#sequenzierung}
+
+Um die DNA-Sequenz des transformierten Plasmids zu überprüfen, wurde die isolierte Plasmid-DNA mittels Sequenzierung untersucht. Dabei wird der Plasmidabschnitt mit der Virussequenz über eine PCR amplifiziert und mittels der von @Sanger1977 beschriebenen Kettenabbruchmethode mit fluoreszenzmarkierten Didesoxynucleotiden sequenziert [@Muelhardt2009]. Als Primer für die aus Kapitel \@ref(isolation) extrahierte Plasmid-DNA wurde der Vorwärtsprimer M13 (5'-GTAAAACGACGGCCAG-3') und der Rückwärtsprimer M13r (5'-CAGGAAACAGCTATGAC-3') verwendet. Die Sequenzierung erfolgte bei der Firma Microsynth Seqlab GmbH.
+
+### Restriktionsverdau und Linearisierung von Plasmiden {#verdau}
+
+In Vorbereitung für eine in vitro Transkription zum Erstellen viraler RNA wurde die aus Kapitel \@ref(isolation) extrahierte Plasmid-DNA linearisiert. Dafür wurden Restriktions-Endonukleasen benutzt, welche innerhalb von spezifischen Erkennungssequenzen den DNA-Doppelstrang schneiden [@Smitha].
+Für das Influenza B Plasmid (siehe Abbildung \@ref(fig:plasmidB) im Anhang) wurde das Enzym SacI (Fast Digest, Thermo Fisher Scientific) verwendet. Der Restriktionsverdau erfolgte in 30 µl einfach konzentriertem Fast Digest Puffer (Thermo Fisher Scientific), welcher mit 6 µl Enzym und 3 µl Plasmid-DNA versetzt wurde. Der Restriktionsansatz wurde für 30 min bei 37 °C im Wasserbad inkubiert und anschließend bei 65 °C für 5 min inaktiviert.
+Für die Influenza A Plasmide (siehe Abbildung \@ref(fig:plasmidA258) - \@ref(fig:plasmidA214) im Anhang) wurde das Enzym PshAI (Thermo Fisher Scientific) verwendet. Der Restriktionsverdau erfolgte in 40 µl einfach konzentriertem Tango Puffer (Thermo Fisher Scientific), welcher mit 3 µg Plasmid-DNA und 1,5 U/µl Enzym versetzt wurde. Der Restriktionsansatz wurde für 2 h im Wasserbad bei 37 °C inkubiert und anschließend bei 80 °C für 20 min im ThermoStat C (Eppendorf\textsuperscript{\textcopyright}) inaktiviert. Zur Überprüfung des Restriktionsverdaus wurde eine Agarose-Gelelektrophorese durchgeführt. Sie dient der Auftrennung von DNA-Fragmenten. Die negativ geladene DNA wandert durch das Anlegen einer Spannung durch ein gitterartiges Trägermaterial (Agarose-Gel) Richtung Anode. Dabei wandern kürzere DNA-Moleküle schneller durch das Trägermaterial als längere, wodurch DNA-Moleküle anhand ihrer Sequenzlänge aufgetrennt werden. Auch verschiedene Plasmidformen wie zirkuläre oder supercoilde Plasmide lassen sich so unterscheiden, \textcolor{red}{da die unterschiedlichen Formen für geringere oder stärkere sterische Beeinträchtigung in der Gittermatrix sorgen.} Zur visuellen Detektion der DNA-Fragmente wird die aufgetrennte DNA durch einen Farbstoff markiert [@Muelhardt2009; @Schmidt1999]. Als Trägermaterial diente ein Agarosegel mit 1 % (w/v) Agarose in 1X TRIS-Borat-EDTA-Puffer (Roti\textsuperscript{\textcopyright}fair, Carl Roth) versetzt mit 1,5 µl Green Gel DNA/RNA Stain (Bio & Sell). Pro Geltasche wurden  100 $n g$ DNA-Material mit 1 µl 6x orange loading DYE (Thermo Fisher Scientific) in einem finalen Volumen von 6 µl  analysiert. Als Referenz wurden jeweils  3 µl einer 100bp plus DNA-Leiter (GeneRuler, Thermo Fisher Scientific) und einer 1 kb DNA-Leiter (PeqGOLD, Thermo Fisher Scientific) mitgeführt. Die angelegte Spannung betrug 80 V für 60 min. Nach der erfolgten Elektrophorese wurde das Gel unter UV-Licht mithilfe des Geldokumentationssytemes Biorad universal Hood II (Bio-Rad) ausgewertet.
+
+### DNA-Aufreinigung des Restriktionsverdaus {#cleaning}
+
+Um Puffer- und Enzymbestandteile aus dem fertigen Restriktionsansatz zu entfernen, wurde der Ansatz mithilfe des DNA clean & concentrator Kit (Zymo Research) nach Herstellerangaben aufgereinigt (Protokoll^[https://files.zymoresearch.com/protocols/_d4003t_d4003_d4004_d4013_d4014_dna_clean_concentrator_-5.pdf] online verfügbar). Die Elution im letzten Schritt des Herstellerprotokolls erfolgte mit 10 µl DNA Elutionspuffer. Anschließend fand eine Abschätzung der DNA-Konzentration mit dem NanoDrop 8000 Spektrophotometer statt.
+
+### _In Vitro_ Transktription zur Herstellung von viralen RNA-Standards {#transkription}
+
+Die _in vitro_ Transkription erfolgte mit dem HiScribe\textsuperscript{TM} T7 High Yield RNA Synthesis Kit (New England BioLabs) nach Herstellerangaben (Protokoll^[https://international.neb.com/protocols/0001/01/01/standard-rna-synthesis-e2040] online verfügbar). Pro Reaktion wurde 1 µg verdaute und gereinigte DNA aus Kapitel \@ref(verdau) eingesetzt. Anschließend wurde die Reaktion für 2 h bei 37 °C im Wasserbad inkubiert. Um die Anfangs-DNA aus der RNA-Lösung zu entfernen wurde anschließend ein DNAse verdau durchgeführt. Dazu wurde der Mix mit 70 µl  PCR-reinem Wasser verdünnt und 10 µl 10x DNAse-Puffer (New England Biolabs) dazugegeben. Die neu entstandene Reaktionslösung wurde mit 4 U DNAse (New England Biolabs) versetzt und abermals bei 37 °C für 15 min inkubiert.
+Um Puffer- und Enzymbestandteile aus den vorherigen Arbeitsschritten zu entfernen und eine reine RNA-Lösung zu erhalten, wurde das EchoCLEAN RNA CleanUp Kit (BioEcho Life Sciences GmbH) nach Herstellerangaben durchgeführt (Protokoll^[https://bioecho-prod-media-hp.s3.sbg.perf.cloud.ovh.net/media/e8/6b/93/1650492291/Protocol_EchoCLEANRNACleanupcolumn_001_EN.pdf] online verfügbar). Das Prinzip der RNA-Aufreinigungsmethode von BioEcho basiert dabei auf einer Matrix, welche durchlässig für Nukleinsäuren ist, jedoch andere Verunreinigungen bindet [@BioEcho2022]. 
+
+### Ribogreen Assay zur Quantifizierung von RNA {#ribogreen}
+
+Zur präzisen RNA-Konzentrationsbestimmung wurde das Quant-iT RiboGreen RNA-Kit (Thermo Fisher Scientific) verwendet. Das Prinzip des Kits basiert dabei auf der Bindung eines gleichnamigen Fluoreszenzfarbstoffes an die RNA. Durch die Bindung erhöht sich die Fluoreszenz des Farbstoffes um das 1000-Fache wodurch eine sensitive Detektion von bis zu 1 $ng/ml$ RNA möglich wird [@Jones1998]. Vor der RNA-Konzentrationsbestimmung wurde\textcolor{red}{/wird} eine Kalibriergerade im "High-Range" Bereich erstellt. Dazu wurden mit dem im Kit enthaltenen RNA-Standard 5 Kalibrierlösungen im Bereich zwischen 2000 ng/ml und 50 ng/ml mit 1X TE-Puffer (Thermo Fisher Scientific) hergestellt. Die zu messende RNA-Probe wurde vor der Messung mit 1X TE-Puffer auf eine in der Kalibriergerade liegende Konzentration verdünnt. Jede Messlösung der Kalibriergerade sowie zu bestimmende RNA-Lösung wurde 1:1 mit einer Farblösung (RiboGreen 1:200 mit 1X TE-Puffer verdünnt) gemischt. Diese wurde homogenisiert, für 2 min auf Eis im Dunklen gelagert und anschließend abermals gemischt. Die anschließende Fluoreszenzmessung erfolgte im Nanodrop 3300 Fluoreszenzspektrometer bei 525 nm.
+
+### \textcolor{red}{Isolation von viraler RNA aus Nasopharyngeal-Abstrichen} {#klinischeproben}
+
+Für die Erstellung einer klinischen Kontrollprobe wurden von gesunden Mitarbeitern der Arbeitsgruppe Nasopharyngeal-Abstriche entnommen und die RNA mithilfe des QiAamp Viral RNA Mini Kits (Qiagen) nach Herstellerangaben isoliert. In die erhaltenen Extrakte wurde in einem 1:10 Verhältnis entsprechende Virus Standard RNA zugegeben.   
+
+## Nukleinsäure Amplifikation
+
+### Real Time Polymerase Kettenreaktion {#rtpcr}
+
+Die Amplifikation von viralen Nukleinsäuren mittels PCR wurde mit dem Luna\textsuperscript{\textcopyright} Universal Probe One-Step RT-qPCR Kit durchgeführt. Pro Reaktion wurden 19 µl Reaktionsmix (siehe Tabelle \@ref(tab:infPCR)) mit 1 µl Virus-RNA versetzt. Für den in Tabelle \@ref(tab:infPCR) angegebenen Primer-Sonden-Mix (PSM) wurden je nach Detektionssystem die für Influenza A (siehe Tabelle \@ref(tab:infaPSM)) bzw. Influenza B (siehe Tabelle \@ref(tab:infbPSM)) beschriebenen Primer und Sonden verwendet  [@ImmunizationJuly132021]. Die finalen 20 µl Reaktionsmix wurden nach dem in Tabelle \@ref(tab:infbTEMP) angegebenen Temperaturprotokoll im LightCycler\textsuperscript{\textcopyright} 480 (Roche Holding) gemessen. Für das Hexachlorofluorescein (HEX) Fluorophor wurde im Wellenlängenbereich von ....... gemessen. Die Erfassung des Cyanine 5 (Cy5) Fluorophors erfolgte im Wellenlängenbereich von ..... Die Auswertung der Daten ist in Kapitel \@ref(chipPCR) beschrieben.
+
+(ref:design) Modifiziert wie in Kapitel \@ref(modifikation) beschrieben.
+
+```{r, infPCR}
+infbPCR <- read.csv2("infbPCR.csv", fileEncoding="latin1")
+kable(infbPCR, booktabs = TRUE, format = "latex", escape = FALSE, caption = "Zusammensetzung des Influenza PCR-Reaktionsmixes") %>%
+  kable_styling(latex_options = "hold_position") %>%
+  footnote(symbol = "Bei Negativkontrollen die Virus RNA mit PCR-reinem Wasser substituiert",threeparttable = T, escape= FALSE, footnote_as_chunk =TRUE)
+```
+
+```{r, infaPSM}
+infaPSM <- read.csv2("infaPSM.csv", header = FALSE, fileEncoding="latin1")
+kable(infaPSM, booktabs = TRUE, col.names = NULL, caption = "Zusammensetzung des Influenza A Primer-Sonden-Mixes") %>%
+  add_header_above(c("Name"= 1, "Sequenz (5´->3´)"= 1, "Konzentration"=1,"3´-Position"=1, "Modifikation"=1), line_sep=0) %>%
+  kable_styling(latex_options = "scale_down") %>%
+  kable_styling(latex_options = "hold_position") %>%
+  column_spec(5, width = "1.5in") %>%
+  footnote( symbol = c("Y=C oder T; V=A, C oder T", "(ref:design)"), symbol_manual = c('*', '**', '***'), fixed_small_size = TRUE, general_title = "Notiz:", escape= FALSE, footnote_as_chunk =TRUE)
+
+```
+
+```{r, infbPSM}
+infbPSM <- read.csv2("infbPSM.csv", header = FALSE, fileEncoding="latin1")
+kable(infbPSM, booktabs = TRUE, col.names = NULL, caption = "Zusammensetzung des Influenza B Primer-Sonden-Mixes") %>%
+  add_header_above(c("Name"= 1, "Sequenz (5´->3´)"= 1, "Konzentration"=1,"3´-Position"=1, "Modifikation"=1), line_sep=0) %>%
+  kable_styling(latex_options = "hold_position") %>%
+  kable_styling(latex_options = "scale_down")%>%
+  column_spec(5, width = "1.5in")%>%
+   footnote( symbol = c("Y=C oder T; V=A, C oder T", "(ref:design)"), symbol_manual = c('*', '**', '***'), fixed_small_size = TRUE, general_title = "Notiz:", escape= FALSE, footnote_as_chunk =TRUE)
+```
+
+```{r, infbTEMP}
+
+infbTEMP <- read.csv2("infbTEMP.csv", fileEncoding="latin1")
+
+kable(infbTEMP, booktabs = TRUE, caption = "Temperaturprotokoll für die Influenza PCR") %>%
+  footnote( symbol = c("Messung der Fluoreszenz"))%>%
+  kable_styling(latex_options = "hold_position") %>%
+  pack_rows("Reverse Transkription", 1, 2) %>%
+  pack_rows("Amplifikation", 3, 4) %>%
+  pack_rows("Kühlen", 5, 5) %>%
+  column_spec(1, width = "0.8in") %>%
+  column_spec(2, width = "0.8in") %>%
+  column_spec(3, width = "0.6in")
+  
+
+```
+
+### Rekombinase Polymerase Amplifikation
+
+#### Nukleinsäureamplifikation im 50 µl Ansatz {#RPAnormal}
+\hfill
+Für die Amplifikation von Nukleinsäuren mittels RPA wurde das TwistAmp\textsuperscript{\textcopyright} exo Kit (TwistDX\texttrademark{}) verwendet. Die für die RPA verwendeten Oligonukleotide sind in Tabelle \@ref(tab:RPAoligo) angegeben. Pro Reaktion wurde 46,5 µl Rehydrationsmix (Zusammensetzung siehe Tab. \@ref(tab:RPAMM)) hergestellt und auf das lyophilisiert RPA-Enzympellet übertragen, um es zu resuspendieren. Die Lösung wurde für ca. 2 min bei Raumtemperatur inkubiert und anschließend gut gemischt. Die resuspendierte RPA-Reaktion (46,5 µl) wurden in eine Kavität eines 8-ter Messstreifens (Carl Roth) übertragen und dieser kurz zentrifugiert. Nachfolgend wurde 1 µl zu amplifizierende Virus RNA bzw. 1 µl PCR reines H~2~O (Negativkontrolle) zum Reaktionsmix gegeben, sowie 2,5 µl Magnesium Acetat (280 mM) in den Deckel der Kavität pipettiert. Zum Start der Reaktion wurde der Messstreifen kurz zentrifugiert und homogenisiert, um das Magnesium Acetat in den Reaktionsmix einzubringen. Die Messung erfolgte nach einer ein minütigen Equilibrationszeit im ESEQuant TS2.4 (Qiagen) bei 38-42 °C. Je nach Versuch wurde die Messung für ein zusätzliches Mischen unterbrochen.
+
+(ref:rr2a) Modifiziert wie in Kapitel \@ref(modifikation) beschrieben.
+
+```{r, RPAoligo}
+RPAoligo <- read.csv2("RPAoligo.csv", header = FALSE)
+kable(RPAoligo, booktabs = TRUE, col.names = NULL, format = "latex", escape = FALSE, caption = "Entwickelte Primer und Sonden für die Recombinase Polymerase Amplifikation") %>%
+  add_header_above(c("Name"= 1, "Sequenz (5´->3´)"= 1, "3´-Position"=1, "Modifikation"=1), line_sep=0) %>%
+  pack_rows("Influenza B", 1, 4) %>%
+  pack_rows("Influenza A", 5, 7) %>%
+  column_spec(4, width = "2in")%>%
+  kable_styling(latex_options = "hold_position") %>%
+  kable_styling(latex_options = "scale_down") %>%
+  footnote( symbol = c("Y=C oder T; 1: Repoterfluorophor; 2: a-basische Seite; 3: Quencher" , "(ref:rr2a)"), symbol_manual = c('*', '**', '***'), fixed_small_size = TRUE, general_title = "Notiz:", escape= FALSE, footnote_as_chunk =TRUE)
+```
+
+```{r, RPAMM}
+
+RPAMM <- read.csv2("RPAMM.csv", header = FALSE, fileEncoding="latin1")
+
+kable(RPAMM, booktabs = TRUE, col.names = NULL, format = "latex", escape = FALSE, caption = "Zusammenstzung des Rehydrationsmixes") %>%
+  kable_styling(latex_options = "hold_position") %>%
+  add_header_above(c("Bestandteil"= 1, "Konzentration"= 1, "Modifikation"=1), line_sep=0)%>%
+  footnote(symbol = "Bei Negativkontrollen die Virus RNA mit PCR-reinem Wasser substituiert",threeparttable = T, escape= FALSE, footnote_as_chunk =TRUE)
+
+```
+
+\pagebreak
+ 
+
+#### Nukleinsäureamplifikation im 8-tel Ansatz {#8telRPA}
+\hfill
+kurze Einleitung, dass die RPA auch im 8-tel Ansatz geht. (kommt darauf an, was ich in der Einleitung/theoretischem Hintergrund dazu schreibe)
+
+Für 8 Reaktionen wurde insgesamt 40,8 µl Rehydrationsmix (Zusammensetzung siehe Tab. \@ref(tab:achtRPA)) hergestellt und auf das lyophilisiert RPA-Enzympellet übertragen, um es zu resuspendieren. Die Zusammensetzung des in Tabelle \@ref(tab:achtRPA) aufgeführten 50X PSM´s ist in Tabelle \@ref(tab:psmRPA) gezeigt. Die Lösung wurde für ca. 2 min bei Raumtemperatur inkubiert und anschließend gut gemischt. Die resuspendierte RPA-Reaktion wurden auf einen 8-ter Messstreifens aufgeteilt (4,8 µl pro Kavität) und dieser kurz zentrifugiert. Nachfolgend wurden jeweils pro Kavität 1 µl zu amplifizierende Virus RNA bzw. 1 µl PCR reines H~2~O (Negativkontrolle) zum Reaktionsmix gegeben. Darauffolgend wurden 15 µl Mineralöl \textcolor{red}{Hersteller}, welches die Evaporation des Reaktionsmixes während der Messung verhindert, in den Deckel jeder Kavität pipettiert. Als Letztes wurden 0,64 µl Magnesium Acetat (140mM) an die Innenseite der Kavität pipettiert. Zum Start der Messung wurde der Messstreifen kurz zentrifugiert und homogenisiert um das Magnesium und das Mineralöl in den Reaktionsmix einzubringen. Es folgte eine erneute Zentrifugation, um die Öl-Phase von der wässrigen Phase zu trennen. Die Messung erfolgte nach einer einminütigen Equilibrationszeit im ESEQuant TS2.4 (Qiagen) bei 38-42 °C. Je nach Versuch wurde die Messung für ein zusätzliches Mischen unterbrochen.
+
+
+```{r, achtRPA}
+
+achtRPA <- read.csv2("achtRPA.csv", header = FALSE, fileEncoding="latin1")
+
+kable(achtRPA, booktabs = TRUE, col.names = NULL, caption = "Zusammenstzung des Rehydrationsmixes für den 8-tel Ansatz") %>%
+  kable_styling(latex_options = "hold_position") %>%
+  add_header_above(c("Bestandteil"= 1, "Konzentration"= 1, "Hersteller"=1), line_sep=0)
+
+```
+
+```{r, psmRPA}
+psmRPA <- read.csv2("psmRPA.csv", header = FALSE, fileEncoding="latin1")
+
+kable(psmRPA, booktabs = TRUE, col.names = NULL, caption = "Zusammenstzung des Primer-Sonden-Mixes für den 8-tel Ansatz") %>%
+  kable_styling(latex_options = "hold_position") %>%
+  add_header_above(c("Bestandteil"= 1, "Konzentration"= 1, "Hersteller"=1), line_sep=0)
+
+```
+
+\pagebreak
+
+
+
