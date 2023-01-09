@@ -20,7 +20,7 @@ header-includes:
   
 ---
 
-```{r setup2, include=FALSE}
+```{r setup3, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 
 library(kableExtra)
@@ -35,6 +35,43 @@ library(latex2exp)
 
 # Ergebnisse
 
+## Entwicklung eines Rekombinase Polymerase Amplifikationssystems für das Influenza A Virus
+
+### Herstellung der Influenza A Virus Standard-RNA 
+
+Für die Durchführung und den Vergleich von verschiedenen Nukleinsäure-Amplifikationsverfahren, ist es nötig, standardisierte Virus-RNA mit einer definierten Konzentration herzustellen. Dabei dient ein DNA-Plasmid mit der entsprechenden Virus-Sequenz als Ausgangsmaterial. Dieses wurde in _E. coli_ transformiert, durch Kultivierung vermehrt und anschließend mittels verschiedener Methoden zur gewünschten Virus-RNA transkribiert. 
+
+Um die Gruppe der Influenza A Viren ausreichend abdecken zu können wurden RNA-Standards von den akutell vorherrschenden Subtypen H1N1 und H3N2 erstellt. Damit die Detektion von älteren Varianten der beiden Subtypen untersucht werden kann, wurden zusätzlich RNA-Standards von früher dominanten Subtypen hergestellt. Für den H1N1-Subtyp wurde dabei eine DNA-Sequenz aus dem Jahr 2004 und für den H3N2-Subtyp eine Sequenz aus dem Jahr 2005 als Vorlage verwendet. Alle nachfolgenden Schritte dieses Kapitels wurden für alle vier RNA-Standards gleich durchgeführt.   
+Für die Erstellung der Standard-RNA's wurden im ersten Schritt die entsprechenden Virus DNA-Sequenzen als teil eines DNA-Plasmids nach beschriebener Methode (siehe Kapitel \@ref(transformation)) in _E. coli_ transformiert. Anschließend wurden die transformierten Bakterien, wie in Kapitel \@ref(isolation) angegeben kultiviert und die Plasmid-DNA isoliert. Durch eine anschließende Sequenezierung konnten Sequenzfehler durch Mutationen ausgeschlossen werden. Im nächsten Schritt wurden die isolierten Plasmide durch einen Restriktionsverdau linearisiert und somit für die _in vitro_ transkription vorbereitet. Der Restriktionsverdau wurde wie in Kapitel \@ref(verdau) angegeben durchgeführt. Die zur Überprüfung der erfolgreichen linearisierung durchgeführten Agarose-Gele sind in Abbildung \@ref(fig:infAverdau) gezeigt. Alle verdauten Plasmide zeigen eine DNA-Bande bei ~ 3300 bp. Die ungeschnittenen mitgeführten Kontrollplasmide aus der vorherigen Plasmid-DNA isolation weisen hingegen eine Bande zwischen 5000 bp und 6000 bp auf. Eine Ausnahme bildet hierbei das Kontrollplasmid auf der Gelspur 5, da keine DNA-Bande sichtbar ist. 
+ 
+
+(ref:infaverA) **Kontrollgel des Restriktionsverdaus der Influenza A Plasmide**: DNA-Banden des Kontrollgels für den Restriktionsverdau der Influenza A Plasmide. **A**: DNA-Banden des verdautem Plasmid des 2005 H3N2 Standards (2) mit unverdauter Kontrolle (3), verdautem Plasmid des aktuellem H1N1 Standards (4) mit unverdauter Kontrolle (5) sowie verdautem Plasmid des aktuellen H3N2 Standard (6) mit unverdautem Kontrollplasmid (7), sowie mitgeführte 100 bp plus DNA-Leiter (8) und 1000 bp DNA-Leiter (1). **B**: DNA-Banden des verdautem Plasmid des 2004 H1N1 Standards (2) mit unverdautem Kontrollplasmid (3) und mitgeführter 100 bp plus DNA-Leiter (1).
+
+```{r infAverdau, message = FALSE, fig.cap="(ref:infaverA)", out.width= "70%", fig.align='center', fig.scap="Kontrollgel des Restriktionsverdaus der Influenza A Plasmide."}
+
+knitr::include_graphics("Bilder/infA_verdau.png")
+  
+```
+
+Zur Weiteren Vorbereitung der linearisierten Plasmid-DNA für die _in vitro_ Transkription und als Nachbehandlung von den Restriktionsverdau wurden die verdauten Plasmide nach der in Kapitel \@ref(cleaning) beschriebenen Methode von Enzym- und Pufferrückständen entfernt. Die gereinigte DNA wurde im nächsten Schritt mithilfe der in Kapitel \@ref(transkription) angegeben Methode zu RNA reverse Transkribiert und die Ausgangs-DNA beseitigt. In der nachfolgenden Aufreinigung wurde die Nukleinsäure abermals von störenden Puffer und Enzymrückständen befreit. Die reine artifiziell erstellte virale RNA wurde im letzten Schritt nach mithilfe des Ribogreen-Assays quanitifiziert (siehe Methode unter Kapitel \@ref(ribogreen)). Die Kalibriergerade des Assays ist in Abbildung \@ref(fig:infAverdau)C gezeigt. 
+
+Kalibriergerade beschreiben
+
+Aus der berechneten Geradengleichung für die Fluoreszezintestität in Verhältnis zu der RNA-Konzentration konnten die Konzentrationen und Kopie-Zahlen der hergestellten viralen RNA-Standards ermittelt werden. Die Ergebnisse sind zur in Tabelle \@ref(tab:) angegeben. 
+
+### Entwicklung von spezifischen Primern und Sonden für das Influenza A Virus
+
+Mithilfe der in Kapitel \@ref(desing) beschriebenen Methode konnten für das Influenza A Virus insgesamt 8 verschiedene Primer-Sonden-Kombinationen entwickelt werden. Durch die Einführung von degenerierten Basen in die Oligonukleotide wurden übermäßige Basenfehlpaarungen bei dem Alingment an die unterschiedlichen DNA-Sequenzen der beiden Subtypen H1N1 und H3N2 vermieden. Dabei wurden nicht mehr 3 Fehlpaarungen pro Oligonukleotid erreicht. Zusätzlich konnten vermieden werden, dass diese an dem für die Amplifikation benötigten 3´-Ende sitzen. 
+
+
+
+
+
+
+
+
+
+
 ## Entwicklung eines Rekombinase Polymerase Amplifikationssystems für das Influenza B Virus
 
 kleiner Einleitungstext... (kommt darauf an, was ich in der Einleitung/theoretischem Hintergrund dazu schreibe)
@@ -45,7 +82,7 @@ Für das Influenza B Virus konnten nach der beschriebenen Methode (siehe \@ref(d
 
 ### Herstellung der Influenza B Virus Standard-RNA {#standardherstellung}
 
-Um verschiedene Nukleinsäure-Amplifikationsverfahren durchführen und vergleichen zu können, war es nötig, standardisierte Virus-RNA mit einer definierten Konzentration herzustellen. Dabei diente ein DNA-Plasmid mit der entsprechenden Virus-Sequenz als Ausgangsmaterial. Dieses wurde in _E. coli_ transformiert, durch Kultivierung vermehrt und anschließend mittels verschiedener Methoden zur gewünschten Virus-RNA transkribiert. 
+\textcolor{red}{Für die Durchführung und den Vergleich von verschiedenen Nukleinsäure-Amplifikationsverfahren, ist es nötig, standardisierte Virus-RNA mit einer definierten Konzentration herzustellen.} Dabei diente ein DNA-Plasmid mit der entsprechenden Virus-Sequenz als Ausgangsmaterial. Dieses wurde in _E. coli_ transformiert, durch Kultivierung vermehrt und anschließend mittels verschiedener Methoden zur gewünschten Virus-RNA transkribiert.
 
 Da für das Influenza B Virus innerhalb der Arbeitsgruppe schon eine transformierte Bakterienkolonie vorhanden war, konnte direkt eine Kultivierung mit anschließender Plasmid-Extraktion nach beschriebener Methode (siehe Kapitel \@ref(isolation)) erfolgen. Durch eine Sequenzierung (siehe \@ref(sequenzierung)) konnten mögliche Sequenzfehler der extrahierten DNA ausgeschlossen werden.
 

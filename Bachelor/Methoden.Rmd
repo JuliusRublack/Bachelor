@@ -23,7 +23,7 @@ header-includes:
   
 ---
 
-```{r setup1, include=FALSE}
+```{r setup2, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 
 library(kableExtra)

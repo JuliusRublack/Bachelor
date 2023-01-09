@@ -68,7 +68,7 @@ library(mdthemes)
 
 \pagenumbering{arabic}
 
-```{r, child=c( 'Methoden.Rmd', "Ergebnisse.Rmd")}
+```{r, child=c('Einleitung.Rmd', 'Methoden.Rmd', "Ergebnisse.Rmd")}
 ```
 
 \pagebreak

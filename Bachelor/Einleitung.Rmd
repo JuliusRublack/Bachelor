@@ -1,0 +1,60 @@
+---
+output:
+  bookdown::pdf_document2:
+    fig_caption: yes
+    toc: TRUE
+    toc_depth: 3
+    fontsize: 12pt
+    latex_engine: xelatex
+bibliography: "Bachelor_quellen.bib"
+biblio-style: apalike
+citation_package: biblatex
+link-citations: yes
+urlcolor: RoyalBlue
+linkcolor: RoyalBlue
+header-includes:
+  \usepackage{float}
+  \usepackage[ngerman]{babel}
+  \usepackage[onehalfspacing]{setspace}
+  \usepackage[utf8]{inputenc}
+  
+---
+
+```{r setup1, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+library(kableExtra)
+library(ggplot2)
+library(ggpubr)
+library(tidyverse)
+library(scales)
+library(latex2exp)
+```
+
+# Influenza
+
+## Influenza A
+
+## Influenza B
+
+## Nachweismethoden von Influenza
+
+# Amplifikation
+
+## Polymerase chain reaktion
+
+## Isothermale Amplifikation
+
+### Lamp loop mediated isothermal Amplifikation
+
+### NasBA nucleic acid sequence-based amplification
+
+### RCA rolling circle Amplifikation
+
+### HDA helicase dependent amplifikation
+
+### NEAR nicking enzyme amplifikation reaction
+
+### RPA rekombinase polymerase Amplifikation
+
+# Ziel der Arbeit

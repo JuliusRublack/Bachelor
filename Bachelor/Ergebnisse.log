@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.10) (preloaded format=xelatex 2022.11.18)  20 DEC 2022 13:39
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.10) (preloaded format=xelatex 2022.11.18)  8 JAN 2023 16:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -956,53 +956,80 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 \openout3 = `Ergebnisse.toc'.
 
 
-LaTeX Warning: Reference `desing' on page 1 undefined on input line 115.
+LaTeX Warning: Reference `transformation' on page 1 undefined on input line 116
+.
 
 
-LaTeX Warning: Reference `RPAnormal' on page 1 undefined on input line 115.
+LaTeX Warning: Reference `isolation' on page 1 undefined on input line 116.
 
 
-LaTeX Warning: Reference `tab:RPAoligo' on page 1 undefined on input line 115.
-
-
-LaTeX Warning: Reference `isolation' on page 1 undefined on input line 122.
-
-
-LaTeX Warning: Reference `sequenzierung' on page 1 undefined on input line 122.
-
-
-
-LaTeX Warning: Reference `verdau' on page 1 undefined on input line 124.
-
-
-LaTeX Warning: Reference `cleaning' on page 1 undefined on input line 124.
+LaTeX Warning: Reference `verdau' on page 1 undefined on input line 116.
 
 [1
 
 ]
+File: Bilder/infA_verdau.png Graphic file (type bmp)
+<Bilder/infA_verdau.png>
+
+LaTeX Warning: Reference `cleaning' on page 2 undefined on input line 129.
+
+
+LaTeX Warning: Reference `transkription' on page 2 undefined on input line 129.
+
+
+
+LaTeX Warning: Reference `ribogreen' on page 2 undefined on input line 129.
+
+
+LaTeX Warning: Reference `desing' on page 2 undefined on input line 134.
+
+[2]
+
+LaTeX Warning: Reference `desing' on page 3 undefined on input line 144.
+
+
+LaTeX Warning: Reference `RPAnormal' on page 3 undefined on input line 144.
+
+
+LaTeX Warning: Reference `tab:RPAoligo' on page 3 undefined on input line 144.
+
+
+LaTeX Warning: Reference `isolation' on page 3 undefined on input line 151.
+
+
+LaTeX Warning: Reference `sequenzierung' on page 3 undefined on input line 151.
+
+
+
+LaTeX Warning: Reference `verdau' on page 3 undefined on input line 153.
+
+
+LaTeX Warning: Reference `cleaning' on page 3 undefined on input line 153.
+
 File: Bilder/infB_verdau_t.png Graphic file (type bmp)
 <Bilder/infB_verdau_t.png>
 File: Ergebnisse_files/figure-latex/infBverdau-2.pdf Graphic file (type pdf)
 <use Ergebnisse_files/figure-latex/infBverdau-2.pdf>
 
-LaTeX Warning: Reference `transkription' on page 2 undefined on input line 135.
+LaTeX Warning: Reference `transkription' on page 3 undefined on input line 164.
 
 
 
-LaTeX Warning: Reference `ribogreen' on page 2 undefined on input line 135.
+LaTeX Warning: Reference `ribogreen' on page 3 undefined on input line 164.
 
 
-LaTeX Warning: Reference `rtpcr' on page 2 undefined on input line 140.
+LaTeX Warning: Reference `rtpcr' on page 3 undefined on input line 169.
 
 
-LaTeX Warning: Reference `rtpcr' on page 2 undefined on input line 140.
+LaTeX Warning: Reference `rtpcr' on page 3 undefined on input line 169.
 
 
-LaTeX Warning: Reference `chipPCR' on page 2 undefined on input line 140.
+LaTeX Warning: Reference `chipPCR' on page 3 undefined on input line 169.
 
 
-LaTeX Warning: Reference `probit' on page 2 undefined on input line 140.
+LaTeX Warning: Reference `probit' on page 3 undefined on input line 169.
 
+[3]
 File: Bilder/infB_PCR_sensi.png Graphic file (type bmp)
 <Bilder/infB_PCR_sensi.png>
 File: Ergebnisse_files/figure-latex/infBPCR-2.pdf Graphic file (type pdf)
@@ -1010,76 +1037,75 @@ File: Ergebnisse_files/figure-latex/infBPCR-2.pdf Graphic file (type pdf)
 File: Bilder/infB_probit.png Graphic file (type bmp)
 <Bilder/infB_probit.png>
 
-LaTeX Warning: Reference `RPAnormal' on page 2 undefined on input line 154.
+LaTeX Warning: Reference `RPAnormal' on page 4 undefined on input line 183.
 
 
-LaTeX Warning: Reference `8telRPA' on page 2 undefined on input line 154.
+LaTeX Warning: Reference `8telRPA' on page 4 undefined on input line 183.
 
 
-LaTeX Warning: Reference `chipPCR' on page 2 undefined on input line 154.
+LaTeX Warning: Reference `chipPCR' on page 4 undefined on input line 183.
 
 
-LaTeX Warning: Reference `tt-wert' on page 2 undefined on input line 154.
+LaTeX Warning: Reference `tt-wert' on page 4 undefined on input line 183.
 
 
-LaTeX Warning: Reference `tab:tabeins' on page 2 undefined on input line 154.
+LaTeX Warning: Reference `tab:tabeins' on page 4 undefined on input line 183.
 
-[2] [3]
 File: Bilder/infB_etab.png Graphic file (type bmp)
 <Bilder/infB_etab.png>
 
-LaTeX Warning: Reference `aksjdalf' on page 4 undefined on input line 170.
+LaTeX Warning: Reference `aksjdalf' on page 4 undefined on input line 199.
 
 
-LaTeX Warning: Reference `tab:tabzwei' on page 4 undefined on input line 171.
+LaTeX Warning: Reference `tab:tabzwei' on page 4 undefined on input line 200.
 
 
-LaTeX Warning: Reference `8telRPA' on page 4 undefined on input line 172.
+LaTeX Warning: Reference `8telRPA' on page 4 undefined on input line 201.
 
 
-LaTeX Warning: Reference `fig:infBobtiam' on page 4 undefined on input line 173
+LaTeX Warning: Reference `fig:infBobtiam' on page 4 undefined on input line 202
 .
 
 
-LaTeX Warning: Reference `tab:tabvier' on page 4 undefined on input line 173.
+LaTeX Warning: Reference `tab:tabvier' on page 4 undefined on input line 202.
 
 
-LaTeX Warning: Reference `fig:infBobtiam' on page 4 undefined on input line 173
+LaTeX Warning: Reference `fig:infBobtiam' on page 4 undefined on input line 202
 .
 
 
-LaTeX Warning: Reference `chipPCR' on page 4 undefined on input line 173.
+LaTeX Warning: Reference `chipPCR' on page 4 undefined on input line 202.
 
 
-LaTeX Warning: Reference `tab:tabdrei' on page 4 undefined on input line 174.
+LaTeX Warning: Reference `tab:tabdrei' on page 4 undefined on input line 203.
 
 
-LaTeX Warning: Reference `8telRPA' on page 4 undefined on input line 174.
+LaTeX Warning: Reference `8telRPA' on page 4 undefined on input line 203.
 
-[4]
+[4] [5] [6]
 File: Bilder/infB_opti_temp.png Graphic file (type bmp)
 <Bilder/infB_opti_temp.png>
 File: Bilder/infB_opti_konz.png Graphic file (type bmp)
 <Bilder/infB_opti_konz.png>
 
-LaTeX Warning: Reference `RPAnormal' on page 5 undefined on input line 192.
+LaTeX Warning: Reference `RPAnormal' on page 7 undefined on input line 221.
 
 
-LaTeX Warning: Reference `8telRPA' on page 5 undefined on input line 192.
+LaTeX Warning: Reference `8telRPA' on page 7 undefined on input line 221.
 
 
-LaTeX Warning: Reference `chipPCR' on page 5 undefined on input line 192.
+LaTeX Warning: Reference `chipPCR' on page 7 undefined on input line 221.
 
 
-LaTeX Warning: Reference `tt-wert' on page 5 undefined on input line 192.
+LaTeX Warning: Reference `tt-wert' on page 7 undefined on input line 221.
 
-[5]
+[7]
 
-LaTeX Warning: Reference `klinischeproben' on page 6 undefined on input line 19
-4.
+LaTeX Warning: Reference `klinischeproben' on page 8 undefined on input line 22
+3.
 
 
-LaTeX Warning: Reference `fig:' on page 6 undefined on input line 194.
+LaTeX Warning: Reference `fig:' on page 8 undefined on input line 223.
 
 File: Bilder/InfB_50_sensi.png Graphic file (type bmp)
 <Bilder/InfB_50_sensi.png>
@@ -1089,18 +1115,18 @@ File: Bilder/InfB_50_probit.png Graphic file (type bmp)
 <Bilder/InfB_50_probit.png>
 File: Bilder/infB_8tel_probit.png Graphic file (type bmp)
 <Bilder/infB_8tel_probit.png>
-[6] [7] (Ergebnisse.aux)
+[8] [9] [10] (Ergebnisse.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 22149 strings out of 410527
- 399574 string characters out of 2816817
- 958908 words of memory out of 3000000
- 43010 multiletter control sequences out of 15000+600000
+ 22179 strings out of 410527
+ 400432 string characters out of 2816817
+ 963535 words of memory out of 3000000
+ 43039 multiletter control sequences out of 15000+600000
  472886 words of font info for 59 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  86i,6n,121p,2153b,358s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
-Output written on Ergebnisse.pdf (7 pages).
+Output written on Ergebnisse.pdf (10 pages).
