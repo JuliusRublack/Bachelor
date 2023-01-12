@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.10) (preloaded format=xelatex 2022.11.18)  3 JAN 2023 08:50
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.10) (preloaded format=xelatex 2022.11.18)  10 JAN 2023 09:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -928,33 +928,33 @@ Package hyperref Info: Link coloring ON on input line 120.
 
 ] (Gesamt.toc
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 4.
+(Font)              scaled to size 7.0pt on input line 5.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 4.
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 4
+(Font)              scaled to size 5.0pt on input line 5.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 5
 .
 (D:\Julius\Programme\MikTex\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.00092pt on input line 4.
+(Font)              scaled to size 10.00092pt on input line 5.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.00064pt on input line 4.
+(Font)              scaled to size 7.00064pt on input line 5.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.00046pt on input line 4.
+(Font)              scaled to size 5.00046pt on input line 5.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 4.
+(Font)              scaled to size 9.99893pt on input line 5.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 4.
+(Font)              scaled to size 6.99925pt on input line 5.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 4.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
+(Font)              scaled to size 4.99947pt on input line 5.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 5.
 (D:\Julius\Programme\MikTex\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (D:\Julius\Programme\MikTex\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
 (D:\Julius\Programme\MikTex\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (D:\Julius\Programme\MikTex\tex/latex/microtype\mt-msb.cfg
@@ -973,27 +973,38 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 [3] [4] [1]
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 258.
+(Font)              scaled to size 8.0pt on input line 267.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 258.
+(Font)              scaled to size 6.0pt on input line 267.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 8.00073pt on input line 258.
+(Font)              scaled to size 8.00073pt on input line 267.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.00055pt on input line 258.
+(Font)              scaled to size 6.00055pt on input line 267.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.99915pt on input line 258.
+(Font)              scaled to size 7.99915pt on input line 267.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.99936pt on input line 258.
+(Font)              scaled to size 5.99936pt on input line 267.
 [2] [3] [4] [5] [6] [7] [8]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [9] [10] [11]
+File: Bilder/infA_verdau.png Graphic file (type bmp)
+<Bilder/infA_verdau.png>
+File: Bilder/InfA_transkription_kalibrier.png Graphic file (type bmp)
+<Bilder/InfA_transkription_kalibrier.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `fig' on page 12 undefined on input line 649.
+
+[12] [13] [14]
 File: Bilder/infB_verdau_t.png Graphic file (type bmp)
 <Bilder/infB_verdau_t.png>
 File: Gesamt_files/figure-latex/infBverdau-2.pdf Graphic file (type pdf)
 <use Gesamt_files/figure-latex/infBverdau-2.pdf>
-[12]
+[15]
 File: Bilder/infB_PCR_sensi.png Graphic file (type bmp)
 <Bilder/infB_PCR_sensi.png>
 File: Gesamt_files/figure-latex/infBPCR-2.pdf Graphic file (type pdf)
@@ -1003,16 +1014,16 @@ File: Bilder/infB_probit.png Graphic file (type bmp)
 File: Bilder/infB_etab.png Graphic file (type bmp)
 <Bilder/infB_etab.png>
 
-LaTeX Warning: Reference `aksjdalf' on page 13 undefined on input line 659.
+LaTeX Warning: Reference `aksjdalf' on page 16 undefined on input line 714.
 
-[13] [14] [15]
+[16] [17]
 File: Bilder/infB_opti_temp.png Graphic file (type bmp)
 <Bilder/infB_opti_temp.png>
 File: Bilder/infB_opti_konz.png Graphic file (type bmp)
 <Bilder/infB_opti_konz.png>
-[16]
+[18]
 
-LaTeX Warning: Reference `fig:' on page 17 undefined on input line 683.
+LaTeX Warning: Reference `fig:' on page 19 undefined on input line 738.
 
 File: Bilder/InfB_50_sensi.png Graphic file (type bmp)
 <Bilder/InfB_50_sensi.png>
@@ -1022,7 +1033,7 @@ File: Bilder/InfB_50_probit.png Graphic file (type bmp)
 <Bilder/InfB_50_probit.png>
 File: Bilder/infB_8tel_probit.png Graphic file (type bmp)
 <Bilder/infB_8tel_probit.png>
-[17] [18] [19]
+[19] [20] [21]
 File: Gesamt_files/figure-latex/infBobtiam-1.pdf Graphic file (type pdf)
 <use Gesamt_files/figure-latex/infBobtiam-1.pdf>
 File: Gesamt_files/figure-latex/infBobtiam-2.pdf Graphic file (type pdf)
@@ -1030,11 +1041,11 @@ File: Gesamt_files/figure-latex/infBobtiam-2.pdf Graphic file (type pdf)
 File: Gesamt_files/figure-latex/infBobtiam-3.pdf Graphic file (type pdf)
 <use Gesamt_files/figure-latex/infBobtiam-3.pdf>
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 781.
+(Font)              scaled to size 9.0pt on input line 836.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 9.00082pt on input line 781.
+(Font)              scaled to size 9.00082pt on input line 836.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 8.99904pt on input line 781.
+(Font)              scaled to size 8.99904pt on input line 836.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1060,7 +1071,7 @@ File: Bilder/InfA Plasmidkarte 937.png Graphic file (type bmp)
 File: Bilder/InfA Plasmidkarte 214.png Graphic file (type bmp)
 <Bilder/InfA Plasmidkarte 214.png>
 [7] [8]
-Underfull \hbox (badness 2205) in paragraph at lines 966--968
+Underfull \hbox (badness 2205) in paragraph at lines 1021--1023
 []\TU/lmr/m/n/10 QIAGEN. 2021. “QIAGEN® PlasmidPurification Handbook.” \TU/lmr/
 m/it/10 QIAGEN Plasmid Mini, Midi, Ma-
  []
@@ -1071,12 +1082,12 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 22465 strings out of 410527
- 407924 string characters out of 2816817
- 976749 words of memory out of 3000000
- 43285 multiletter control sequences out of 15000+600000
+ 22516 strings out of 410527
+ 409543 string characters out of 2816817
+ 977389 words of memory out of 3000000
+ 43334 multiletter control sequences out of 15000+600000
  475848 words of font info for 86 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  86i,16n,121p,2164b,512s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
-Output written on Gesamt.pdf (33 pages).
+Output written on Gesamt.pdf (35 pages).

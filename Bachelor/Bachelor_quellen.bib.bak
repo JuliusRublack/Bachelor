@@ -405,7 +405,8 @@
   publisher = {Oxford University Press ({OUP})},
 }
 
-@InCollection{1992a,
+@InCollection{Student1992,
+  author    = {Student},
   booktitle = {Springer Series in Statistics},
   publisher = {Springer New York},
   title     = {The Probable Error of a Mean},
@@ -415,9 +416,154 @@
   groups    = {Methoden},
 }
 
+@Book{Modrow2010,
+  author    = {Susanne Modrow and Dietrich Falke and Uwe Truyen and Hermann Schätzl},
+  publisher = {Spektrum Akademischer Verlag},
+  title     = {Molekulare Virologie},
+  year      = {2010},
+  doi       = {10.1007/978-3-8274-2241-5},
+  groups    = {Einleitung},
+}
+
+@Article{Chen2018,
+  author    = {Xiaoyong Chen and Shasha Liu and Mohsan Ullah Goraya and Mohamed Maarouf and Shile Huang and Ji-Long Chen},
+  journal   = {Frontiers in Immunology},
+  title     = {Host Immune Response to Influenza A Virus Infection},
+  year      = {2018},
+  month     = {mar},
+  volume    = {9},
+  doi       = {10.3389/fimmu.2018.00320},
+  groups    = {Einleitung},
+  publisher = {Frontiers Media {SA}},
+}
+
+@InCollection{Luo2011,
+  author    = {Ming Luo},
+  booktitle = {Viral Molecular Machines},
+  publisher = {Springer {US}},
+  title     = {Influenza Virus Entry},
+  year      = {2011},
+  month     = {nov},
+  pages     = {201--221},
+  doi       = {10.1007/978-1-4614-0980-9_9},
+  groups    = {Einleitung},
+}
+
+@Article{Krammer2018,
+  author    = {Florian Krammer and Gavin J. D. Smith and Ron A. M. Fouchier and Malik Peiris and Katherine Kedzierska and Peter C. Doherty and Peter Palese and Megan L. Shaw and John Treanor and Robert G. Webster and Adolfo Garc{\'{\i}}a-Sastre},
+  journal   = {Nature Reviews Disease Primers},
+  title     = {Influenza},
+  year      = {2018},
+  month     = {jun},
+  number    = {1},
+  volume    = {4},
+  doi       = {10.1038/s41572-018-0002-y},
+  groups    = {Einleitung},
+  publisher = {Springer Science and Business Media {LLC}},
+}
+
+@Article{Goraya2015,
+  author    = {Mohsan Ullah Goraya and Song Wang and Muhammad Munir and Ji-Long Chen},
+  journal   = {Protein {\&}amp$\mathsemicolon$ Cell},
+  title     = {Induction of innate immunity and its perturbation by influenza viruses},
+  year      = {2015},
+  month     = {jul},
+  number    = {10},
+  pages     = {712--721},
+  volume    = {6},
+  doi       = {10.1007/s13238-015-0191-z},
+  groups    = {Einleitung},
+  publisher = {Oxford University Press ({OUP})},
+}
+
+@Article{Vasin2014,
+  author    = {A.V. Vasin and O.A. Temkina and V.V. Egorov and S.A. Klotchenko and M.A. Plotnikova and O.I. Kiselev},
+  journal   = {Virus Research},
+  title     = {Molecular mechanisms enhancing the proteome of influenza A viruses: An overview of recently discovered proteins},
+  year      = {2014},
+  month     = {jun},
+  pages     = {53--63},
+  volume    = {185},
+  doi       = {10.1016/j.virusres.2014.03.015},
+  groups    = {Einleitung},
+  publisher = {Elsevier {BV}},
+}
+
+@Article{Firth2012,
+  author    = {Andrew E. Firth and Ian Brierley},
+  journal   = {Journal of General Virology},
+  title     = {Non-canonical translation in {RNA} viruses},
+  year      = {2012},
+  month     = {jul},
+  number    = {7},
+  pages     = {1385--1409},
+  volume    = {93},
+  doi       = {10.1099/vir.0.042499-0},
+  groups    = {Einleitung},
+  publisher = {Microbiology Society},
+}
+
+@Article{Selman2012,
+  author    = {Mohammed Selman and Samar K Dankar and Nicole E Forbes and Jian-Jun Jia and Earl G Brown},
+  journal   = {Emerging Microbes {\&}amp$\mathsemicolon$ Infections},
+  title     = {Adaptive mutation in influenza A virus non-structural gene is linked to host switching and induces a novel protein by alternative splicing},
+  year      = {2012},
+  month     = {jul},
+  number    = {1},
+  pages     = {1--10},
+  volume    = {1},
+  doi       = {10.1038/emi.2012.38},
+  groups    = {Einleitung},
+  publisher = {Informa {UK} Limited},
+}
+
+@Article{Wise2012,
+  author    = {Helen M. Wise and Edward C. Hutchinson and Brett W. Jagger and Amanda D. Stuart and Zi H. Kang and Nicole Robb and Louis M. Schwartzman and John C. Kash and Ervin Fodor and Andrew E. Firth and Julia R. Gog and Jeffery K. Taubenberger and Paul Digard},
+  journal   = {{PLoS} Pathogens},
+  title     = {Identification of a Novel Splice Variant Form of the Influenza A Virus M2 Ion Channel with an Antigenically Distinct Ectodomain},
+  year      = {2012},
+  month     = {nov},
+  number    = {11},
+  pages     = {e1002998},
+  volume    = {8},
+  doi       = {10.1371/journal.ppat.1002998},
+  editor    = {Andrew Pekosz},
+  groups    = {Einleitung},
+  publisher = {Public Library of Science ({PLoS})},
+}
+
+@Article{Jagger2012,
+  author    = {B. W. Jagger and H. M. Wise and J. C. Kash and K.-A. Walters and N. M. Wills and Y.-L. Xiao and R. L. Dunfee and L. M. Schwartzman and A. Ozinsky and G. L. Bell and R. M. Dalton and A. Lo and S. Efstathiou and J. F. Atkins and A. E. Firth and J. K. Taubenberger and P. Digard},
+  journal   = {Science},
+  title     = {An Overlapping Protein-Coding Region in Influenza A Virus Segment 3 Modulates the Host Response},
+  year      = {2012},
+  month     = {jul},
+  number    = {6091},
+  pages     = {199--204},
+  volume    = {337},
+  doi       = {10.1126/science.1222213},
+  groups    = {Einleitung},
+  publisher = {American Association for the Advancement of Science ({AAAS})},
+}
+
+@Article{Muramoto2013,
+  author    = {Yukiko Muramoto and Takeshi Noda and Eiryo Kawakami and Ramesh Akkina and Yoshihiro Kawaoka},
+  journal   = {Journal of Virology},
+  title     = {Identification of Novel Influenza A Virus Proteins Translated from {PA} {mRNA}},
+  year      = {2013},
+  month     = {mar},
+  number    = {5},
+  pages     = {2455--2462},
+  volume    = {87},
+  doi       = {10.1128/jvi.02656-12},
+  groups    = {Einleitung},
+  publisher = {American Society for Microbiology},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
 0 AllEntriesGroup:;
 1 StaticGroup:Methoden\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Einleitung\;0\;1\;0x8a8a8aff\;\;\;;
 }

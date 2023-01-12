@@ -45,23 +45,35 @@ Um die Gruppe der Influenza A Viren ausreichend abdecken zu können wurden RNA-S
 Für die Erstellung der Standard-RNA's wurden im ersten Schritt die entsprechenden Virus DNA-Sequenzen als teil eines DNA-Plasmids nach beschriebener Methode (siehe Kapitel \@ref(transformation)) in _E. coli_ transformiert. Anschließend wurden die transformierten Bakterien, wie in Kapitel \@ref(isolation) angegeben kultiviert und die Plasmid-DNA isoliert. Durch eine anschließende Sequenezierung konnten Sequenzfehler durch Mutationen ausgeschlossen werden. Im nächsten Schritt wurden die isolierten Plasmide durch einen Restriktionsverdau linearisiert und somit für die _in vitro_ transkription vorbereitet. Der Restriktionsverdau wurde wie in Kapitel \@ref(verdau) angegeben durchgeführt. Die zur Überprüfung der erfolgreichen linearisierung durchgeführten Agarose-Gele sind in Abbildung \@ref(fig:infAverdau) gezeigt. Alle verdauten Plasmide zeigen eine DNA-Bande bei ~ 3300 bp. Die ungeschnittenen mitgeführten Kontrollplasmide aus der vorherigen Plasmid-DNA isolation weisen hingegen eine Bande zwischen 5000 bp und 6000 bp auf. Eine Ausnahme bildet hierbei das Kontrollplasmid auf der Gelspur 5, da keine DNA-Bande sichtbar ist. 
  
 
-(ref:infaverA) **Kontrollgel des Restriktionsverdaus der Influenza A Plasmide**: DNA-Banden des Kontrollgels für den Restriktionsverdau der Influenza A Plasmide. **A**: DNA-Banden des verdautem Plasmid des 2005 H3N2 Standards (2) mit unverdauter Kontrolle (3), verdautem Plasmid des aktuellem H1N1 Standards (4) mit unverdauter Kontrolle (5) sowie verdautem Plasmid des aktuellen H3N2 Standard (6) mit unverdautem Kontrollplasmid (7), sowie mitgeführte 100 bp plus DNA-Leiter (8) und 1000 bp DNA-Leiter (1). **B**: DNA-Banden des verdautem Plasmid des 2004 H1N1 Standards (2) mit unverdautem Kontrollplasmid (3) und mitgeführter 100 bp plus DNA-Leiter (1).
+(ref:infaverA) **Kontrollgel des Restriktionsverdaus und Ribogreen Kalibrationsgeraden der Influenza A Plasmide**: **A**: DNA-Banden des Kontrollgels für den Restriktionsverdau der Influenza A Plasmide. DNA-Banden des verdautem Plasmid des 2005 H3N2 Standards (2) mit unverdauter Kontrolle (3), verdautem Plasmid des aktuellem H1N1 Standards (4) mit unverdauter Kontrolle (5) sowie verdautem Plasmid des aktuellen H3N2 Standard (6) mit unverdautem Kontrollplasmid (7), sowie mitgeführte 100 bp plus DNA-Leiter (8) und 1000 bp DNA-Leiter (1).  DNA-Banden des verdautem Plasmid des 2004 H1N1 Standards (2) mit unverdautem Kontrollplasmid (3) und mitgeführter 100 bp plus DNA-Leiter (1). Bilder digital bearbeitet. **B, C** Kalibrationsgeraden des Ribogreen-Assays mit angefügter Geradengleichung, Korrelationskoeffizienten und p-Wert. Das graue Band zeigt das 95 %-ige Konfidenzintervall der linearen Funktion. Alle Messungen wurden mit n=5 durchgeführt.
 
-```{r infAverdau, message = FALSE, fig.cap="(ref:infaverA)", out.width= "70%", fig.align='center', fig.scap="Kontrollgel des Restriktionsverdaus der Influenza A Plasmide."}
+```{r infAverdau, message = FALSE, fig.show='hold', fig.cap="(ref:infaverA)", out.width= "49%", fig.align='center', fig.scap="Kontrollgel des Restriktionsverdaus und Ribogreen Kalibrationsgeraden der Influenza A Plasmide."}
 
 knitr::include_graphics("Bilder/infA_verdau.png")
+knitr::include_graphics("Bilder/InfA_transkription_kalibrier.PNG")
+knitr::include_graphics("Bilder/InfA_transkription_kalibrier.PNG")
+
+
   
 ```
 
-Zur Weiteren Vorbereitung der linearisierten Plasmid-DNA für die _in vitro_ Transkription und als Nachbehandlung von den Restriktionsverdau wurden die verdauten Plasmide nach der in Kapitel \@ref(cleaning) beschriebenen Methode von Enzym- und Pufferrückständen entfernt. Die gereinigte DNA wurde im nächsten Schritt mithilfe der in Kapitel \@ref(transkription) angegeben Methode zu RNA reverse Transkribiert und die Ausgangs-DNA beseitigt. In der nachfolgenden Aufreinigung wurde die Nukleinsäure abermals von störenden Puffer und Enzymrückständen befreit. Die reine artifiziell erstellte virale RNA wurde im letzten Schritt nach mithilfe des Ribogreen-Assays quanitifiziert (siehe Methode unter Kapitel \@ref(ribogreen)). Die Kalibriergerade des Assays ist in Abbildung \@ref(fig:infAverdau)C gezeigt. 
+Zur Weiteren Vorbereitung der linearisierten Plasmid-DNA für die _in vitro_ Transkription und als Nachbehandlung von den Restriktionsverdau wurden die verdauten Plasmide nach der in Kapitel \@ref(cleaning) beschriebenen Methode von Enzym- und Pufferrückständen entfernt. Die gereinigte DNA wurde im nächsten Schritt mithilfe der in Kapitel \@ref(transkription) angegeben Methode zu RNA reverse Transkribiert und die Ausgangs-DNA beseitigt. In der nachfolgenden Aufreinigung wurde die Nukleinsäure abermals von störenden Puffer und Enzymrückständen befreit. Die reine, artifiziell erstellte virale RNA wurde im letzten Schritt nach mithilfe des Ribogreen-Assays quanitifiziert (siehe Methode unter Kapitel \@ref(ribogreen)). \textcolor{red}{Dabei wurden jeweils die RNA-Standards H3N2 (2005) und H1N1 (2020) innerhalb einer Messung und die Standards H1N1 (2004) und H3N2 (2020) in einem seperaten Assay quantifiziert. Die Kalibriergeraden der Assays sind in Abbildung \@ref(fig:infAverdau) gezeigt. Beide Kalibriergeraden besitzen einen Korrelationskoeffizienten (R) von 1 und einen p-Wert von >> 0,05. Daraus lässt sich ein starker linearer Zusammenhang zwischen Konzentration und Fluoreszenz erkennen. Mithilfe der angegeben Geradengleichungen von $y=-190 + 3,8 x$ und $y=-190 + 3,8 x$ für die jeweiligen Messungen konnten die Konzentrationen der gemessenen viralen RNA-Standards berechnet werden.} Die Mittelwerte von jeweils 5 Messungen pro Standard sind zusammen mit den daraus resultierenden Kopie-Zahlen der einzelnen RNA-Moleküle/µl in Tabelle \@ref(tab:infAtranskription) angegeben. 
 
-Kalibriergerade beschreiben
+```{r infAtranskription}
+infAtranskription <- read.csv2("infA_copy_numbr.csv", header = FALSE, fileEncoding="latin1")
 
-Aus der berechneten Geradengleichung für die Fluoreszezintestität in Verhältnis zu der RNA-Konzentration konnten die Konzentrationen und Kopie-Zahlen der hergestellten viralen RNA-Standards ermittelt werden. Die Ergebnisse sind zur in Tabelle \@ref(tab:) angegeben. 
+kable(infAtranskription, booktabs = TRUE, format = "latex", escape = FALSE,  col.names = NULL, caption = "Quantifizierung der Influenza A RNA-Standards") %>%
+  add_header_above(c("RNA-Standard"= 1, "Mittelwert der Konzentration"= 1, "RNA-Kopien pro µl"=1), line_sep=0) %>%
+  kable_styling(latex_options = "hold_position")
+
+```
+
+
 
 ### Entwicklung von spezifischen Primern und Sonden für das Influenza A Virus
 
-Mithilfe der in Kapitel \@ref(desing) beschriebenen Methode konnten für das Influenza A Virus insgesamt 8 verschiedene Primer-Sonden-Kombinationen entwickelt werden. Durch die Einführung von degenerierten Basen in die Oligonukleotide wurden übermäßige Basenfehlpaarungen bei dem Alingment an die unterschiedlichen DNA-Sequenzen der beiden Subtypen H1N1 und H3N2 vermieden. Dabei wurden nicht mehr 3 Fehlpaarungen pro Oligonukleotid erreicht. Zusätzlich konnten vermieden werden, dass diese an dem für die Amplifikation benötigten 3´-Ende sitzen. 
+Mithilfe der in Kapitel \@ref(desing) beschriebenen Methode konnten für das Influenza A Virus insgesamt 8 verschiedene Primer-Sonden-Kombinationen im Bereich zwischen 20 bp und 248 bp entwickelt werden. Durch die Einführung von degenerierten Basen in die Oligonukleotide wurden übermäßige Basenfehlpaarungen bei dem Alingment an die unterschiedlichen DNA-Sequenzen der beiden Subtypen H1N1 und H3N2 vermieden. Dabei wurden nicht mehr 3 Fehlpaarungen pro Oligonukleotid erreicht. Zusätzlich konnten vermieden werden, dass diese an dem für die Amplifikation benötigten 3´-Ende sitzen. 
+Alle Kombinationen wurden mit 10^7^ Kopien des viralen RNA-Standards des aktuellen H3N2 Subtypes in einer Dreifachbestimmung (n=3) auf Amplifikation getestet. Dabei konnte keine Variante eine zufriedenstellende Amplifikation vorweisen, wie in Abbildung \@ref(fig) im Anhang zu sehen. 
 
 
 

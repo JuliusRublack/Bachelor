@@ -7,7 +7,7 @@ output:
     fontsize: 12pt
     latex_engine: xelatex
 bibliography: "Bachelor_quellen.bib"
-biblio-style: apalike
+biblio-style: apsr
 citation_package: biblatex
 link-citations: yes
 urlcolor: RoyalBlue

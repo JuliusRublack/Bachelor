@@ -243,6 +243,19 @@ ggplot(transformed, aes(x=Zeit, y = Fluoreszenz)) +
 
 ```
 
+```{r}
+data <- read.csv2("regression1.csv")
+
+
+ggplot(data, aes(alter, schmerz)) +
+  geom_point() +
+  geom_smooth(method = "lm") +
+  theme_minimal()+
+   ylab("Ct-Wert")+
+   xlab("Konzentration")+
+  stat_cor(label.y = 28)+ 
+        stat_regline_equation(label.y = 25)
+```
 
 
 

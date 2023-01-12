@@ -31,13 +31,31 @@ library(scales)
 library(latex2exp)
 ```
 
+\pagebreak
+
+# Virale Erkankungen
+
 # Influenza
 
 ## Influenza A
 
+Das zur Virusfamilie der Orthomyxoviren gehörige Influenza A Virus ist ein behülltes, einzelsträngiges RNA Virus. Die genmomische RNA, welche in negativer Strang-Orientierung, also entgegen der 5´-3´ Leserichtung der Ribosomen vorliegt ist in 8 unterschiedlich große Abschnitte unterteilt (siehe Abbildung \@ref(fig:)). Das ca. 13.500 bp große, segmentierte Genom codiert dabei für mindestens 17 Proteine, wobei die 3´ und 5´ Regionen keine codogenen Bereiche enthalten, sondern komplementär zueinnander sind. Dadurch bilden sie über eine kurze Distanz einen Doppelstrang aus, welcher als Signalsequenz bei Transkription dient [@Modrow2010; @Chen2018]. Von den 17 codierten Proteinen zählen 10 als Essentiell Wichtig, während der Rest als Accessoire-Proteine zählt [@Vasin2014]. Zu den essentiellen  Proteinen zählen die Neuraminidase (NA), welche im Verlauf der Infektion für die Freisetzung der Viruspartikel verantwortlich ist, das Hämagglutinin (HA), welches bei der Infektion der Zelle eine Rolle spielt, das Matrixproteinen (M1), das Membranprotein (M2), anderem die Nichtstrukturproteine NS1 und NS2, das nukleoprotein (NP), sowie die 3 Untereinheiten PA, PB1 und Pb2 der RNA-Polymerase [@Luo2011; @Krammer2018]. Die Accessoire-Proteinen sind dabei auf alternativen offene Leserahmen (engl.: _open reading frame_, ORF) codiert. Diese erlauben es Viren eine größere Protein-Vielfalt auf engen genomischen Raum, durch die "mehrfachverwendung" einer Nukleotid-Sequenz, zu expremieren. Diese alternativen ORF enstehen dabei durch verschiedene molekularbiologische Mechnanismen, wie _frame shifting_ bei welchem das Ribosom bei der translation eine Base überspringt und somit den Leseramen ändert, _readthrough_ bei dem das Ribosom ein Stopp-codon überspring, oder _internal Ribosom Entry_ wobei das Ribosom an ein interes Start-Codon druch eine sogenannte IRES (engl.: _internal ribosomal entry site_) rekrutiert wird, sowie einige weitere [@Firth2012]. Zu den Accessoire-Proteinen zählen unter anderem das 2012 entdeckte nichtstruktur Protein 3 [@Selman2012], das von M2 abstammende M42 [@Wise2012] und die dem PA zugehörigen Proteine PA-X, PA-N155 und PA-N182 [@Jagger2012; @Muramoto2013].
+
+(ref:label) **Schematischer Aufbau eines Influenza A Virus**: Schematische Darstellung eines Influenza A Virus mit den Längen der einlenen Genom-Segmente in Basenpaaren (bp). Modifizierte Abbildung von @Modrow2010. 
+
+```{r infAstruk, fig.align='center', fig.cap= "(ref:label)", out.width= "49%", fig.scap= "Schematischer Aufbau eines Influenza A Virus"}
+
+knitr::include_graphics("Bilder/infA_Virus.png")
+
+```
+
+
+Die RNA-abhäninge RNA Polymerase des Influenza A Virus besteht wie in Abbildung \@ref(fig:...) gezeigt aus den 3 Unterheinheiten PA, PB1 und PB2, wobei die Gensequenz für PA auf dem Segment 3, für PB1 auf dem Segment 2 und PB2 auf dem Segment 1 codiert sind [@Krammer2018]. Das heterotrimer assoziert innerhalb des Virus mit den komplementären Sequenzen an den jeweiligen Enden der einzelnen Genom-Segmente. Der restliche Teil der einzelträngigen RNA wird von oligomeren NP gebunden, welches auf dem Segment 5 codiert ist. Dieser RNA-Protein-Komplex ist in der Literatur als vRNP-Komplex (engl.: _viral ribonucleoprotein_) beschrieben [@Krammer2018; @Velthuis2016]. Kryoelektronenmikroskopische Untersuchungen des vRNP-Komplex zeigten eine doppel-helikae Struktur mit einer SChleife am nicht RNA-Polymerase assoziiertenEnde. Die Helix-Struktur wird dabei durch eine Assozitation von unterschiedlich polaren oligo-NP-Proteinen stabilisiert [@Arranz2012].
+Die Hülle von Influenza A Viren besteht aus 2 Schichten. Einerseits
+
 ## Influenza B
 
-## Nachweismethoden von Influenza
+## Nachweismethoden von Influenz
 
 # Amplifikation
 
