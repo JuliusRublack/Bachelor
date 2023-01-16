@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.10) (preloaded format=xelatex 2022.11.18)  11 JAN 2023 14:59
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.10) (preloaded format=xelatex 2022.11.18)  16 JAN 2023 17:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -925,33 +925,33 @@ ern Roman (RS)
 Package hyperref Info: Link coloring ON on input line 120.
 (Einleitung.toc
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 4.
+(Font)              scaled to size 7.0pt on input line 3.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 4.
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 4
+(Font)              scaled to size 5.0pt on input line 3.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3
 .
 (D:\Julius\Programme\MikTex\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.00092pt on input line 4.
+(Font)              scaled to size 10.00092pt on input line 3.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.00064pt on input line 4.
+(Font)              scaled to size 7.00064pt on input line 3.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.00046pt on input line 4.
+(Font)              scaled to size 5.00046pt on input line 3.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 4.
+(Font)              scaled to size 9.99893pt on input line 3.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 4.
+(Font)              scaled to size 6.99925pt on input line 3.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 4.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
+(Font)              scaled to size 4.99947pt on input line 3.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
 (D:\Julius\Programme\MikTex\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (D:\Julius\Programme\MikTex\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
 (D:\Julius\Programme\MikTex\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (D:\Julius\Programme\MikTex\tex/latex/microtype\mt-msb.cfg
@@ -963,23 +963,22 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 [1
 
 ]
-
-LaTeX Warning: Reference `fig:' on page 2 undefined on input line 138.
-
 File: Bilder/infA_Virus.png Graphic file (type bmp)
 <Bilder/infA_Virus.png>
-[2] [3] [4] (Einleitung.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+[2] [3]
+File: Bilder/LAMP_struktur.png Graphic file (type bmp)
+<Bilder/LAMP_struktur.png>
+[4]
+File: Bilder/NASBA_reaction.png Graphic file (type bmp)
+<Bilder/NASBA_reaction.png>
+[5] [6] [7] [8] [9] [10] (Einleitung.aux) ) 
 Here is how much of TeX's memory you used:
- 21960 strings out of 410527
- 393687 string characters out of 2816817
- 963647 words of memory out of 3000000
- 42835 multiletter control sequences out of 15000+600000
+ 21999 strings out of 410527
+ 394754 string characters out of 2816817
+ 970869 words of memory out of 3000000
+ 42872 multiletter control sequences out of 15000+600000
  472878 words of font info for 58 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 86i,6n,121p,2726b,430s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 86i,6n,121p,2735b,430s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
-Output written on Einleitung.pdf (4 pages).
+Output written on Einleitung.pdf (10 pages).

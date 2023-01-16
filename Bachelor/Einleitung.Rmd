@@ -32,16 +32,17 @@ library(latex2exp)
 ```
 
 \pagebreak
+# Einleitung
 
-# Virale Erkankungen
+## Virale Erkankungen
 
-# Influenza
+## Influenza
 
-## Influenza A
+### Influenza A
 
-Das zur Virusfamilie der Orthomyxoviren gehörige Influenza A Virus ist ein behülltes, einzelsträngiges RNA Virus. Die genmomische RNA, welche in negativer Strang-Orientierung, also entgegen der 5´-3´ Leserichtung der Ribosomen vorliegt ist in 8 unterschiedlich große Abschnitte unterteilt (siehe Abbildung \@ref(fig:)). Das ca. 13.500 bp große, segmentierte Genom codiert dabei für mindestens 17 Proteine, wobei die 3´ und 5´ Regionen keine codogenen Bereiche enthalten, sondern komplementär zueinnander sind. Dadurch bilden sie über eine kurze Distanz einen Doppelstrang aus, welcher als Signalsequenz bei Transkription dient [@Modrow2010; @Chen2018]. Von den 17 codierten Proteinen zählen 10 als Essentiell Wichtig, während der Rest als Accessoire-Proteine zählt [@Vasin2014]. Zu den essentiellen  Proteinen zählen die Neuraminidase (NA), welche im Verlauf der Infektion für die Freisetzung der Viruspartikel verantwortlich ist, das Hämagglutinin (HA), welches bei der Infektion der Zelle eine Rolle spielt, das Matrixproteinen (M1), das Membranprotein (M2), anderem die Nichtstrukturproteine NS1 und NS2, das nukleoprotein (NP), sowie die 3 Untereinheiten PA, PB1 und Pb2 der RNA-Polymerase [@Luo2011; @Krammer2018]. Die Accessoire-Proteinen sind dabei auf alternativen offene Leserahmen (engl.: _open reading frame_, ORF) codiert. Diese erlauben es Viren eine größere Protein-Vielfalt auf engen genomischen Raum, durch die "mehrfachverwendung" einer Nukleotid-Sequenz, zu expremieren. Diese alternativen ORF enstehen dabei durch verschiedene molekularbiologische Mechnanismen, wie _frame shifting_ bei welchem das Ribosom bei der translation eine Base überspringt und somit den Leseramen ändert, _readthrough_ bei dem das Ribosom ein Stopp-codon überspring, oder _internal Ribosom Entry_ wobei das Ribosom an ein interes Start-Codon druch eine sogenannte IRES (engl.: _internal ribosomal entry site_) rekrutiert wird, sowie einige weitere [@Firth2012]. Zu den Accessoire-Proteinen zählen unter anderem das 2012 entdeckte nichtstruktur Protein 3 [@Selman2012], das von M2 abstammende M42 [@Wise2012] und die dem PA zugehörigen Proteine PA-X, PA-N155 und PA-N182 [@Jagger2012; @Muramoto2013].
+Das zur Virusfamilie der Orthomyxoviren gehörige Influenza A Virus ist ein behülltes, einzelsträngiges RNA Virus. Die genmomische RNA, welche in negativer Strang-Orientierung, also entgegen der 5´-3´ Leserichtung der Ribosomen vorliegt ist in 8 unterschiedlich große Abschnitte unterteilt (siehe Abbildung \@ref(fig:infAstruk)). Das ca. 13.500 bp große, segmentierte Genom codiert dabei für mindestens 17 Proteine, wobei die 3´ und 5´ Regionen keine codogenen Bereiche enthalten, sondern komplementär zueinnander sind. Dadurch bilden sie über eine kurze Distanz einen Doppelstrang aus, welcher als Signalsequenz bei Transkription dient [@Modrow2010; @Chen2018]. Von den 17 codierten Proteinen zählen 10 als Essentiell Wichtig, während der Rest als Accessoire-Proteine zählt [@Vasin2014]. Zu den essentiellen  Proteinen zählen die Neuraminidase (NA), welche im Verlauf der Infektion für die Freisetzung der Viruspartikel verantwortlich ist, das Hämagglutinin (HA), welches bei der Infektion der Zelle eine Rolle spielt, das Matrixproteinen (M1), das Membranprotein (M2), anderem die Nichtstrukturproteine NS1 und NS2, das nukleoprotein (NP), sowie die 3 Untereinheiten PA, PB1 und Pb2 der RNA-Polymerase [@Luo2011; @Krammer2018]. Die Accessoire-Proteinen sind dabei auf alternativen offene Leserahmen (engl.: _open reading frame_, ORF) codiert. Diese erlauben es Viren eine größere Protein-Vielfalt auf engen genomischen Raum, durch die "mehrfachverwendung" einer Nukleotid-Sequenz, zu expremieren. Diese alternativen ORF enstehen dabei durch verschiedene molekularbiologische Mechnanismen, wie _frame shifting_ bei welchem das Ribosom bei der translation eine Base überspringt und somit den Leseramen ändert, _readthrough_ bei dem das Ribosom ein Stopp-codon überspring, oder _internal Ribosom Entry_ wobei das Ribosom an ein interes Start-Codon druch eine sogenannte IRES (engl.: _internal ribosomal entry site_) rekrutiert wird, sowie einige weitere [@Firth2012]. Zu den Accessoire-Proteinen zählen unter anderem das 2012 entdeckte nichtstruktur Protein 3 [@Selman2012], das von M2 abstammende M42 [@Wise2012] und die dem PA zugehörigen Proteine PA-X, PA-N155 und PA-N182 [@Jagger2012; @Muramoto2013].
 
-(ref:label) **Schematischer Aufbau eines Influenza A Virus**: Schematische Darstellung eines Influenza A Virus mit den Längen der einlenen Genom-Segmente in Basenpaaren (bp). Modifizierte Abbildung von @Modrow2010. 
+(ref:label) **Schematischer Aufbau eines Influenza A Virus**: Schematische Darstellung eines Influenza A Virus mit den Längen der einlenen Genom-Segmente in Basenpaaren (bp). Modifizierte nach @Modrow2010. 
 
 ```{r infAstruk, fig.align='center', fig.cap= "(ref:label)", out.width= "49%", fig.scap= "Schematischer Aufbau eines Influenza A Virus"}
 
@@ -50,24 +51,54 @@ knitr::include_graphics("Bilder/infA_Virus.png")
 ```
 
 
-Die RNA-abhäninge RNA Polymerase des Influenza A Virus besteht wie in Abbildung \@ref(fig:...) gezeigt aus den 3 Unterheinheiten PA, PB1 und PB2, wobei die Gensequenz für PA auf dem Segment 3, für PB1 auf dem Segment 2 und PB2 auf dem Segment 1 codiert sind [@Krammer2018]. Das heterotrimer assoziert innerhalb des Virus mit den komplementären Sequenzen an den jeweiligen Enden der einzelnen Genom-Segmente. Der restliche Teil der einzelträngigen RNA wird von oligomeren NP gebunden, welches auf dem Segment 5 codiert ist. Dieser RNA-Protein-Komplex ist in der Literatur als vRNP-Komplex (engl.: _viral ribonucleoprotein_) beschrieben [@Krammer2018; @Velthuis2016]. Kryoelektronenmikroskopische Untersuchungen des vRNP-Komplex zeigten eine doppel-helikae Struktur mit einer SChleife am nicht RNA-Polymerase assoziiertenEnde. Die Helix-Struktur wird dabei durch eine Assozitation von unterschiedlich polaren oligo-NP-Proteinen stabilisiert [@Arranz2012].
-Die Hülle von Influenza A Viren besteht aus 2 Schichten. Einerseits
+Die RNA-abhäninge RNA Polymerase des Influenza A Virus besteht wie in Abbildung \@ref(fig:infAstruk) gezeigt aus den 3 Unterheinheiten PA, PB1 und PB2, wobei die Gensequenz für PA auf dem Segment 3, für PB1 auf dem Segment 2 und PB2 auf dem Segment 1 codiert sind [@Krammer2018]. Das heterotrimer assoziert innerhalb des Virus mit den komplementären Sequenzen an den jeweiligen Enden der einzelnen Genom-Segmente. Der restliche Teil der einzelträngigen RNA wird von oligomeren NP gebunden, welches auf dem Segment 5 codiert ist. Dieser RNA-Protein-Komplex ist in der Literatur als vRNP-Komplex (engl.: _viral ribonucleoprotein_) beschrieben [@Krammer2018; @Velthuis2016]. Kryoelektronenmikroskopische Untersuchungen des vRNP-Komplex zeigten eine doppel-helikae Struktur mit einer SChleife am nicht RNA-Polymerase assoziiertenEnde. Die Helix-Struktur wird dabei durch eine Assozitation von unterschiedlich polaren oligo-NP-Proteinen stabilisiert [@Arranz2012].
+Das Virion des Influenza A Virus besteht wie in Abbildung aus einer äußeren choletesterol haltigen doppel-Lipid Schicht, in welche die glycoproteine NA, HA und M2 integriert sind [@To2019; @Modrow2010]. \textcolor{red}{Hier schon erwähnen, dass die Membran vom wirt und nicht vom Virus stammt? Oder das doch lieber beim Infektionsmechanismus} Die darunter liegende Proteinmatrix besteht aus oligomeren M1-Proteinen, welche auf dem Genom-Segment 7 codiert sind. Dieses Matrixprotein dient als Angelpunkt und bindet alle anderen Struktur-bildenden Komponenten wie den vRNP-Komplex, die Membranbindenden Glycoproteine, sowie die Lipidmembran durch seine positive Polarität [@Kordyukova2018; @Chlanda2016]. Das M1-Protein erfüllt dadurch eine essentielle Rolle bei dem Zusammenbau des Virus und der nachfolgenden Umhüllung mit Wirts-Lipiden, dem sogenaannten _Budding_ [@Nayak2009].  Durch seine komplexe Funktion und die verschieden Bindungsdomänen für die anderen Strukturkomponenten, ist die Aminosäuresequenz des M1-Protein am stärksten im viralen Genom konserviert [@McCauley1983; @Kordyukova2018].
 
-## Influenza B
+### Influenza B
 
 ## Nachweismethoden von Influenz
 
-# Amplifikation
+## Amplifikation
 
-## Polymerase chain reaktion
+### RT Polymerase chain reaktion
 
-## Isothermale Amplifikation
+### Isotherme Amplifikation
 
 ### Lamp loop mediated isothermal Amplifikation
+Die erstmal im Jahr 2000 von @Notomi2000 entwickelte Schleifenvermittelte isotherme Amplifikation (engl.: _loop mediated isothermal amplifikation_, LAMP) ist eine effektive isotherme Amplifikationsmethode von DNA bei einer Konstanten Temperatur von 60 - 65 °C. Im Gegensatz zur der PCR werden bei der LAMP 4 bis 6 Primer verwendet um die Nukleinsäure zu amplifizieren. Dadurch erreicht die LAMP einerseits sehr hohe spezifitäten, da die 4 essentiellen Primer binden müssen, andererseit aber hohe Anforderung an die Optimierung und das Primer-Design [@Soroka2021]. Die Primer werden dabei in innere Primer, äußere Primer und sogenannte Loop Primer unterschieden [@Nagamine2002]. Die äußeren Primer, bestehend aus forward und reverse primer sind zweigeteilt, wobei der 3´-Teil jedes Primer komplementär zum jeweiligen Strang (forward- / reverse-Strang) ist. Der zweite Teil der Primer hingegen ist komplimentär zu einer Stelle auf dem gegenüberliegenden DNA-Strang. Dieses Zweiteilung der Primer sorgt im späteren Verlauf der Reaktion für die Bildung einer Handtel ähnlichen Struktur. Die äußeren Primer, ebenfalls bestehend als forward und reverse Primer binden weiter außen auf dem DNA-Doppelstrang und liegen in niedrigerer Konzentration vor als die inneren Primer. Zusätzlich können optional Loop Primer verwendet werden, welche in den Köpfen der gebildeten Handtelstruktur bilden [@Huang2020]. Ebenfalls nötig für die Amplifikation ist eine DNA-Polymerase, welche eine hohe DNA-Strang Verdrängungs-Aktivität besitzt [@Park2022].
+Der Reaktionsmechanismus der LAMP kann in zwei Phasen unterteilt werden; der nicht zyklischen Phase und der zyklischen Phase. Im ersten Schritt der nicht zyklische Phase hybridisiert einer der inneren Primer mit dem 3´-Ende an die zu amplifizierende DNA. Dadurch kann eine Strangverlängerung des Primers durch die Polymerase stattfinden und mithilfe der Strang Verdrängungs-Aktivität wird der ursprüngliche Doppelstrang abgelöst. Anschließend bindet der äußere Primer hinter dem neu entstandenen Doppelstrang, es findet abermals eine Strangverlängerung statt und der innere Primer mit der neu synthetisierten DNA wird verdrängt. Der nun entstandene DNA-Einzelstrang besitzt an einem Ende die Sequenz des inneren Primers, und bildet durch den hinteren komplimetären Teil des Primers eine Schleife aus.
+Der beschriebene Amplifikations-Schritt wird mit den entgegen gesetzten inneren und äußeren Primern wiederholt, sodass eine einzelsträngige DNA entsteht, welche an beiden Enden die Sequenzen der inneren Primer besitzt. Dadruch nimmt diese einzelstängige DNA die oben erwähnte form einer Handtel an und der nicht zyklische Teil der Amplifikation ist damit beendet [@Parida2008].  
 
-### NasBA nucleic acid sequence-based amplification
+(ref:label3) **Primer-Bindungsstellen und Handtelstruktur der LAMP**: **A**: Primerdesing und -bindungsstellen der LAMP. Die inneren Primer besitzen zwei Bindungstellen auf den unterschiedlichen Strängen der DNA. Die Äußeren Primer liegen "hinter" den inneren und sorgen im Verlauf der Strangverlängerung für eine Verdränung des DNA-Strangs. **B**: Handtelstruktur der 
+
+```{r LAMP, fig.align='center', fig.cap= "(ref:label3)", out.width= "70%", fig.scap= "Primer-Bindungsstellen und Handtelstruktur der LAMP"}
+
+knitr::include_graphics("Bilder/LAMP_struktur.PNG")
+
+```
+
+Die gebildetet Handtelstruktur dient im der zweiten Phase der Amplifikation als Startpunkt. Hier können nun die verschiedenen Primer gleichzeitig binden und somit die Ziel-DNA exponentiell vervielfältigen. Ebenfalls dient das 3'-Ende der Handtelstruktur als Primer und somit als Startpunkt für die Polymerase. Im verlauf der Reaktion entstehen verschiednenste Strukturen wie Konkatemere und blumenkohlähnliche Strukturen mit vielen Schleifen [@Soroka2021; @Silva2019]. Ebenfalls kann durch das zusätzliche Einbringen der Loop Primer, die Anzahl der Startpunkte abermals erhöhrt werden, zu einer erhöhten Reaktionsgeschwindigkeit führt [@Nagamine2002]. 
+Eine Amplifikation von RNA ist ebenfalls möglich, jedoch muss eine Reverse Transkriptase Reaktion vor der LAMP vorgeschaltet werden [@Chander2014]. 
+Zur Detektion der Amplifikation können kolorimetrische Fluoreszenzfarbstoffe wie Calcein, welche vor der Messung zugegeben werden [@Tomita2008] oder Fluoreszenzfarbstoffen wie SYBR Green I, welche nach Abschluss zugegeben werden [@Iwamoto2003] verwendet werden. Durch die eine hohe DNA-Endkonzentration von 10-20 µg am Ende der Reaktion kann eine Auswertung mit dem bloßen Auge erfolgen [@Parida2008]. Ebenfalls kann die Messung der Trübung für den NAchweis einer Positiven Reaktion verwendet werden. Durch die extrem hohe Menge an syntethisierter DNA entstehen große Mengen an Pyrophosphat, welches Magnesium-Ionen bindet und bei hohen Kontentration ausfällt. Diese Fällung führt zu einer Trübung der Reaktionsmixtur, welches wiederum Quantifiziert werden kann [@Mori2001].
+
+
+### Nukleinsäure sequenz-basierte Amplifikation
+Die Nucleinsäure sequenz-basierte Amplifikation ( engl.: _nucleic acid sequence-based amplification_, NASBA), auch bekannt unter _self-sustained sequence replication_ (3SR) ist eine auf der transkription basierende, isotherme Amplifikationsmethode zum Nachweis von Nukleinsäuren [@Deiman2002]. Die erstmals von @Guatelli1990 erwähnte Methode beruht dabei auf einem Enzym-mix bestehend aus einer reversen Transkripase (RT),des avian myeloblastosis virus, der RNAse H und einer T7 DNA abhäningen RNA Polymerase (DdRp) [@Deiman2002]. Eine Besonderheit der NASBA liegt im ersten Schritt der Methode. Hier bindet ein ca. 45 bp langer Primer 1 an das 3´-Ende einer einzelsträngigen RNA. Dadurch eignet sich die NASBA besonders zum Nachweis von RNA-Molekülen, da diese direkt zum Start der Reaktion benötgt werden, im gegensatz zu anderen Amplifikationsmethoden, wo ein RT-Schritt vorgeschalten werden muss [@Compton1991; @Bachman2013; @Zhang2021]. Dabei hybridisieren nur 20 bp des Primers am 3´-Ende, da sie komplementär zur Ziel-RNA sind. Das 5-Ende des Primers hingegen besitzt eine Promotor-Erkennungssequenz für die DdRp. Nachdem der Primer gebunden hat wird eine cDNA bei einer Temperatur von 41 °C von der im Reaktionsmix enthaltenen RT synthetisiert. Das entstandene cDNA/RNA-Hybrid wird anschließend von der RNAse H verdaut, sodass der einzelstängige DNA-Anteil mit der Promotorsequenz im Reaktionsmix enthalten ist. Ein zweiter 20 bp langer Primer2, welcher komplementär zur DNA ist, hybridisiert und die RT vervollständigt den DNA-Doppelstrang. Die nun aktive, doppelsträngige T7-Promotorsequenz, rekrutiert die DdRpt, welche um die 100 RNA kopien pro DNA-\textcolor{red}{Template} erzeugt. Die neu entstandenen RNA-Moleküle gehen in den ersten Zyklus der NASBA ein, indem der Primer2 hybridisiert, die RT ein cDNA/RNA hybrid erzeugt und der RNA-Anteil durch die RNAse H hydrolisiert wird. An diese cDNA bindet wiederum Primer1 und die RT vervollständigt den DNA-Doppelstrang, sodass der Promotor wieder Aktiv wird und neue RNA-Kopien erstellt werden können [@Compton1991].  
+
+(ref:label2) **Schematischer Reaktionsmechanismus der NASBA**: Schematische Darstellung des Reaktionsmechanismus der NASBA mit der Initialen Phase und der zyklischen Phase. Die Anfängliche RNA wird durch die Hybridisation von Primern in ein DNA/RNA hybrid überführt, dieses über einen RNAse verdau und erneute DNA synthese in einen DNA-Doppelstrang umgewandelt. Durch den auf dem doppelstrang aktiven Promotor werden viele RNA-Kopien erzeugt, welche in den Amplifikationszyklus eingehen. 
+
+```{r NASBA, fig.align='center', fig.cap= "(ref:label2)", out.width= "49%", fig.scap= "Schematischer Reaktionsmechanismus der NASBA"}
+
+knitr::include_graphics("Bilder/NASBA_reaction.png")
+
+```
+
+
+Die Amplifikation von DNA-Molekülen als Ausgangsmaterial mittels NASBA ist ebenfalls möglich, jedoch mit einem erhöhtem Aufwand und zusätzlichen Denaturierung-Schritten [@Malek1994]. Hierbei hybridisiert nach einem initialen Denaturierungsschritt bei 95 °C Primer1 mit der Ziel-DNA und wird durch die frisch dazugegebene RT verlängert. Da kein cDNA/RNA hybrid entstanden ist, kann die RNAse nicht den Gegenstrang hydrolisieren und ein weiterer Denaturierungsschritt ist nötig. Durch die hohen Temperaturen wird jedoch die RT inaktiviert, wodurch sie mit den anderen Enzymen neu zugegeben werden muss. Anschließend bindet Primer2, der Doppelstrang wird vervollständigt und die DdRp kann über den aktiven Promotor RNA-Kopien erstellen [@Deiman2002].  
+Zur Detektion und Quantifizierung der amplifizierten RNA können spezielle hybridisations-Sonden sogenannte "Molecular-Beacon" verwendet werden [@Deiman2002]. Diese Besitzen die Struktur einer Stem-Loop, wobei das eine Ende mit einem Reporterfluorophor und das andere Ende mit einem Quencher gekoppelt sind. Die Stem-Loop ist dabei so ausgebildet, dass die beiden Enden der Sonde komplementär zueinander Sind und somit Reporterflurophor und Quencher in direkter Nähe zueinander sind.Die Sequenz innerhalb der ausgebildeten Schleife ist komplimentär zu einer Region auf dem zu detektierenden RNA-Molekül. Bei der Bindung der Sonde an die Zielregion öffnet sich die SChleife, Reporterfluorophor und Quencher werden voneinander getrennt und ein Fluoreszenzsignal kann detektiert werden [@Omran2022].
 
 ### RCA rolling circle Amplifikation
+evtl.
 
 ### HDA helicase dependent amplifikation
 
@@ -75,4 +106,25 @@ Die Hülle von Influenza A Viren besteht aus 2 Schichten. Einerseits
 
 ### RPA rekombinase polymerase Amplifikation
 
-# Ziel der Arbeit
+## Ziel der Arbeit
+
+Ziel der Arbeit ist es RPA-Systeme zum Nachweis der Influenza A und B Viren zu entwickeln und zu Optimieren. Dabei soll das Influenza B System alle human pathogenen Viren detektieren können und das Influenza A System die relevanten Subtypen H3N2 und H1N1 nachweisen können. Die Entwicklung der Systeme unterteilt sich dabei in folgende Punkte:
+
+* Erstellung eines definierten RNA-Standards für die einzelnen Viren
+* Desing und Überprüfung von spezifischen Primer-Sonden-Sets
+* Sensitivitäts und Spezifitäts-Testungen
+
+Innerhalb der Optimierung soll das optimum folgender Reaktionsparameter ermittelt werden:
+
+* Reaktionstemperatur
+* Mischzeitpunkt der Reaktion
+* Primerkonzentration 
+* Ansatzvolumen der Reaktion (50 µl RPA und 8tel RPA)
+
+Des Weiteren soll die Wirksamkeit der Entwickelten und Optimierten RPA-Systeme an Patientenproben geteset und die Sensitivität mit PCR-Systemen für die Detektion der gleichen Viren verglichen werden.
+
+\pagebreak
+
+
+
+

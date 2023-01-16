@@ -422,7 +422,7 @@
   title     = {Molekulare Virologie},
   year      = {2010},
   doi       = {10.1007/978-3-8274-2241-5},
-  groups    = {Einleitung},
+  groups    = {Einleitung, Influenza A},
 }
 
 @Article{Chen2018,
@@ -433,7 +433,7 @@
   month     = {mar},
   volume    = {9},
   doi       = {10.3389/fimmu.2018.00320},
-  groups    = {Einleitung},
+  groups    = {Einleitung, Influenza A},
   publisher = {Frontiers Media {SA}},
 }
 
@@ -446,7 +446,7 @@
   month     = {nov},
   pages     = {201--221},
   doi       = {10.1007/978-1-4614-0980-9_9},
-  groups    = {Einleitung},
+  groups    = {Einleitung, Influenza A},
 }
 
 @Article{Krammer2018,
@@ -458,7 +458,7 @@
   number    = {1},
   volume    = {4},
   doi       = {10.1038/s41572-018-0002-y},
-  groups    = {Einleitung},
+  groups    = {Einleitung, Influenza A},
   publisher = {Springer Science and Business Media {LLC}},
 }
 
@@ -472,7 +472,7 @@
   pages     = {712--721},
   volume    = {6},
   doi       = {10.1007/s13238-015-0191-z},
-  groups    = {Einleitung},
+  groups    = {Einleitung, Influenza A},
   publisher = {Oxford University Press ({OUP})},
 }
 
@@ -485,7 +485,7 @@
   pages     = {53--63},
   volume    = {185},
   doi       = {10.1016/j.virusres.2014.03.015},
-  groups    = {Einleitung},
+  groups    = {Einleitung, Influenza A},
   publisher = {Elsevier {BV}},
 }
 
@@ -499,7 +499,7 @@
   pages     = {1385--1409},
   volume    = {93},
   doi       = {10.1099/vir.0.042499-0},
-  groups    = {Einleitung},
+  groups    = {Einleitung, Influenza A},
   publisher = {Microbiology Society},
 }
 
@@ -513,7 +513,7 @@
   pages     = {1--10},
   volume    = {1},
   doi       = {10.1038/emi.2012.38},
-  groups    = {Einleitung},
+  groups    = {Einleitung, Influenza A},
   publisher = {Informa {UK} Limited},
 }
 
@@ -528,7 +528,7 @@
   volume    = {8},
   doi       = {10.1371/journal.ppat.1002998},
   editor    = {Andrew Pekosz},
-  groups    = {Einleitung},
+  groups    = {Einleitung, Influenza A},
   publisher = {Public Library of Science ({PLoS})},
 }
 
@@ -542,7 +542,7 @@
   pages     = {199--204},
   volume    = {337},
   doi       = {10.1126/science.1222213},
-  groups    = {Einleitung},
+  groups    = {Einleitung, Influenza A},
   publisher = {American Association for the Advancement of Science ({AAAS})},
 }
 
@@ -556,8 +556,306 @@
   pages     = {2455--2462},
   volume    = {87},
   doi       = {10.1128/jvi.02656-12},
-  groups    = {Einleitung},
+  groups    = {Einleitung, Influenza A},
   publisher = {American Society for Microbiology},
+}
+
+@Article{Velthuis2016,
+  author    = {Aartjan J. W. te Velthuis and Ervin Fodor},
+  journal   = {Nature Reviews Microbiology},
+  title     = {Influenza virus {RNA} polymerase: insights into the mechanisms of viral {RNA} synthesis},
+  year      = {2016},
+  month     = {jul},
+  number    = {8},
+  pages     = {479--493},
+  volume    = {14},
+  doi       = {10.1038/nrmicro.2016.87},
+  groups    = {Einleitung, Influenza A},
+  publisher = {Springer Science and Business Media {LLC}},
+}
+
+@Article{Arranz2012,
+  author    = {Roc{\'{\i}}o Arranz and Roc{\'{\i}}o Coloma and Francisco Javier Chich{\'{o}}n and Jos{\'{e}} Javier Conesa and Jos{\'{e}} L. Carrascosa and Jos{\'{e}} M. Valpuesta and Juan Ort{\'{\i}}n and Jaime Mart{\'{\i}}n-Benito},
+  journal   = {Science},
+  title     = {The Structure of Native Influenza Virion Ribonucleoproteins},
+  year      = {2012},
+  month     = {dec},
+  number    = {6114},
+  pages     = {1634--1637},
+  volume    = {338},
+  doi       = {10.1126/science.1228172},
+  groups    = {Einleitung, Influenza A},
+  publisher = {American Association for the Advancement of Science ({AAAS})},
+}
+
+@Article{To2019,
+  author    = {Janet To and Jaume Torres},
+  journal   = {Cells},
+  title     = {Viroporins in the Influenza Virus},
+  year      = {2019},
+  month     = {jun},
+  number    = {7},
+  pages     = {654},
+  volume    = {8},
+  doi       = {10.3390/cells8070654},
+  groups    = {Einleitung, Influenza A},
+  publisher = {{MDPI} {AG}},
+}
+
+@Article{Kordyukova2018,
+  author    = {Larisa V. Kordyukova and Eleonora V. Shtykova and Lyudmila A. Baratova and Dmitri I. Svergun and Oleg V. Batishchev},
+  journal   = {Journal of Biomolecular Structure and Dynamics},
+  title     = {Matrix proteins of enveloped viruses: a case study of Influenza A virus M1 protein},
+  year      = {2018},
+  month     = {feb},
+  number    = {3},
+  pages     = {671--690},
+  volume    = {37},
+  doi       = {10.1080/07391102.2018.1436089},
+  groups    = {Einleitung, Influenza A},
+  publisher = {Informa {UK} Limited},
+}
+
+@Article{Chlanda2016,
+  author    = {Petr Chlanda and Joshua Zimmerberg},
+  journal   = {{FEBS} Letters},
+  title     = {Protein-lipid interactions critical to replication of the influenza A virus},
+  year      = {2016},
+  month     = {mar},
+  number    = {13},
+  pages     = {1940--1954},
+  volume    = {590},
+  doi       = {10.1002/1873-3468.12118},
+  groups    = {Einleitung, Influenza A},
+  publisher = {Wiley},
+}
+
+@Article{Nayak2009,
+  author    = {Debi P. Nayak and Rilwan A. Balogun and Hiroshi Yamada and Z. Hong Zhou and Subrata Barman},
+  journal   = {Virus Research},
+  title     = {Influenza virus morphogenesis and budding},
+  year      = {2009},
+  month     = {aug},
+  number    = {2},
+  pages     = {147--161},
+  volume    = {143},
+  doi       = {10.1016/j.virusres.2009.05.010},
+  groups    = {Einleitung, Influenza A},
+  publisher = {Elsevier {BV}},
+}
+
+@Article{McCauley1983,
+  author    = {J W McCauley and B W J Mahy},
+  journal   = {Biochemical Journal},
+  title     = {Structure and function of the influenza virus genome},
+  year      = {1983},
+  month     = {may},
+  number    = {2},
+  pages     = {281--294},
+  volume    = {211},
+  doi       = {10.1042/bj2110281},
+  groups    = {Einleitung, Influenza A},
+  publisher = {Portland Press Ltd.},
+}
+
+@Article{Deiman2002,
+  author    = {Birgit Deiman and Pierre van Aarle and Peter Sillekens},
+  journal   = {Molecular Biotechnology},
+  title     = {Characteristics and Applications of Nucleic Acid Sequence-Based Amplification ({NASBA})},
+  year      = {2002},
+  number    = {2},
+  pages     = {163--180},
+  volume    = {20},
+  doi       = {10.1385/mb:20:2:163},
+  groups    = {NASBA},
+  publisher = {Springer Science and Business Media {LLC}},
+}
+
+@Article{Guatelli1990,
+  author    = {J C Guatelli and K M Whitfield and D Y Kwoh and K J Barringer and D D Richman and T R Gingeras},
+  journal   = {Proceedings of the National Academy of Sciences},
+  title     = {Isothermal, in vitro amplification of nucleic acids by a multienzyme reaction modeled after retroviral replication.},
+  year      = {1990},
+  month     = {mar},
+  number    = {5},
+  pages     = {1874--1878},
+  volume    = {87},
+  doi       = {10.1073/pnas.87.5.1874},
+  groups    = {NASBA},
+  publisher = {Proceedings of the National Academy of Sciences},
+}
+
+@InCollection{Bachman2013,
+  author    = {Julia Bachman},
+  booktitle = {Laboratory Methods in Enzymology: {RNA}},
+  publisher = {Elsevier},
+  title     = {Reverse-Transcription {PCR} ({RT}-{PCR})},
+  year      = {2013},
+  pages     = {67--74},
+  doi       = {10.1016/b978-0-12-420037-1.00002-6},
+  groups    = {NASBA},
+}
+
+@Article{Compton1991,
+  author    = {J. Compton},
+  journal   = {Nature},
+  title     = {Nucleic acid sequence-based amplification},
+  year      = {1991},
+  month     = {mar},
+  number    = {6313},
+  pages     = {91--92},
+  volume    = {350},
+  doi       = {10.1038/350091a0},
+  groups    = {NASBA},
+  publisher = {Springer Science and Business Media {LLC}},
+}
+
+@Article{Zhang2021,
+  author    = {Wei S. Zhang and Jianbin Pan and Feng Li and Min Zhu and Mengting Xu and Hongyan Zhu and Yanyan Yu and Gaoxing Su},
+  journal   = {Analytical Chemistry},
+  title     = {Reverse Transcription Recombinase Polymerase Amplification Coupled with {CRISPR}-Cas12a for Facile and Highly Sensitive Colorimetric {SARS}-{CoV}-2 Detection},
+  year      = {2021},
+  month     = {feb},
+  number    = {8},
+  pages     = {4126--4133},
+  volume    = {93},
+  doi       = {10.1021/acs.analchem.1c00013},
+  groups    = {NASBA},
+  publisher = {American Chemical Society ({ACS})},
+}
+
+@Article{Omran2022,
+  author    = {Qusay Q Omran and Olga Fedorova and Tianshuo Liu and Anna M Pyle},
+  journal   = {Nucleic Acids Research},
+  title     = {A molecular beacon assay for monitoring {RNA} splicing},
+  year      = {2022},
+  month     = {apr},
+  number    = {13},
+  pages     = {e74--e74},
+  volume    = {50},
+  doi       = {10.1093/nar/gkac242},
+  groups    = {NASBA},
+  publisher = {Oxford University Press ({OUP})},
+}
+
+@InCollection{Malek1994,
+  author    = {Larry Malek and Roy Sooknanan and Jean Compton},
+  booktitle = {Protocols for Nucleic Acid Analysis by Nonradioactive Probes},
+  publisher = {Humana Press},
+  title     = {Nucleic Acid Sequence-Based Amplification ({NASBA}{\texttrademark})},
+  year      = {1994},
+  pages     = {253--260},
+  doi       = {10.1385/0-89603-254-x:253},
+  groups    = {NASBA},
+}
+
+@Article{Notomi2000,
+  author    = {T. Notomi},
+  journal   = {Nucleic Acids Research},
+  title     = {Loop-mediated isothermal amplification of {DNA}},
+  year      = {2000},
+  month     = {jun},
+  number    = {12},
+  pages     = {63e--63},
+  volume    = {28},
+  doi       = {10.1093/nar/28.12.e63},
+  groups    = {LAMP},
+  publisher = {Oxford University Press ({OUP})},
+}
+
+@Article{Soroka2021,
+  author    = {Marianna Soroka and Barbara Wasowicz and Anna Rymaszewska},
+  journal   = {Cells},
+  title     = {Loop-Mediated Isothermal Amplification ({LAMP}): The Better Sibling of {PCR}?},
+  year      = {2021},
+  month     = {jul},
+  number    = {8},
+  pages     = {1931},
+  volume    = {10},
+  doi       = {10.3390/cells10081931},
+  groups    = {LAMP},
+  publisher = {{MDPI} {AG}},
+}
+
+@Article{Nagamine2002,
+  author    = {K. Nagamine and T. Hase and T. Notomi},
+  journal   = {Molecular and Cellular Probes},
+  title     = {Accelerated reaction by loop-mediated isothermal amplification using loop primers},
+  year      = {2002},
+  month     = {jun},
+  number    = {3},
+  pages     = {223--229},
+  volume    = {16},
+  doi       = {10.1006/mcpr.2002.0415},
+  groups    = {LAMP},
+  publisher = {Elsevier {BV}},
+}
+
+@Article{Parida2008,
+  author    = {Manmohan Parida and Santhosh Sannarangaiah and Paban Kumar Dash and P. V. L. Rao and Kouichi Morita},
+  journal   = {Reviews in Medical Virology},
+  title     = {Loop mediated isothermal amplification ({LAMP}): a new generation of innovative gene amplification technique$\mathsemicolon$ perspectives in clinical diagnosis of infectious diseases},
+  year      = {2008},
+  month     = {nov},
+  number    = {6},
+  pages     = {407--421},
+  volume    = {18},
+  doi       = {10.1002/rmv.593},
+  groups    = {LAMP},
+  publisher = {Wiley},
+}
+
+@Article{Park2022,
+  author    = {Jee-Woong Park},
+  journal   = {Biosensors},
+  title     = {Principles and Applications of Loop-Mediated Isothermal Amplification to Point-of-Care Tests},
+  year      = {2022},
+  month     = {oct},
+  number    = {10},
+  pages     = {857},
+  volume    = {12},
+  doi       = {10.3390/bios12100857},
+  groups    = {LAMP},
+  publisher = {{MDPI} {AG}},
+}
+
+@Article{Huang2020,
+  author    = {Tianzeng Huang and Linzhi Li and Xing Liu and Qi Chen and Xueen Fang and Jilie Kong and Mohamed S. Draz and Hongmei Cao},
+  journal   = {Analytical Methods},
+  title     = {Loop-mediated isothermal amplification technique: principle, development and wide application in food safety},
+  year      = {2020},
+  number    = {46},
+  pages     = {5551--5561},
+  volume    = {12},
+  doi       = {10.1039/d0ay01768j},
+  groups    = {LAMP},
+  publisher = {Royal Society of Chemistry ({RSC})},
+}
+
+@Article{Chander2014,
+  author    = {Yogesh Chander and Jim Koelbl and Jamie Puckett and Michael J. Moser and Audrey J. Klingele and Mark R. Liles and Abel Carrias and David A. Mead and Thomas W. Schoenfeld},
+  journal   = {Frontiers in Microbiology},
+  title     = {A novel thermostable polymerase for {RNA} and {DNA} loop-mediated isothermal amplification ({LAMP})},
+  year      = {2014},
+  month     = {aug},
+  volume    = {5},
+  doi       = {10.3389/fmicb.2014.00395},
+  groups    = {LAMP},
+  publisher = {Frontiers Media {SA}},
+}
+
+@Article{Silva2019,
+  author    = {Severino Jefferson Ribeiro da Silva and Keith Pardee and Lindomar Pena},
+  journal   = {Viruses},
+  title     = {Loop-Mediated Isothermal Amplification ({LAMP}) for the Diagnosis of Zika Virus: A Review},
+  year      = {2019},
+  month     = {dec},
+  number    = {1},
+  pages     = {19},
+  volume    = {12},
+  doi       = {10.3390/v12010019},
+  groups    = {LAMP},
+  publisher = {{MDPI} {AG}},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
@@ -566,4 +864,7 @@
 0 AllEntriesGroup:;
 1 StaticGroup:Methoden\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Einleitung\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Influenza A\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:NASBA\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:LAMP\;0\;1\;0x8a8a8aff\;\;\;;
 }
