@@ -422,7 +422,7 @@
   title     = {Molekulare Virologie},
   year      = {2010},
   doi       = {10.1007/978-3-8274-2241-5},
-  groups    = {Einleitung, Influenza A},
+  groups    = {Einleitung, Influenza A, Viren die Gefahr aus dem nichts},
 }
 
 @Article{Chen2018,
@@ -895,4 +895,3 @@
   number    = {1},
   pages     = {150--154},
   volume    = {289},
-  doi       = {10.1006/bbrc.2001.

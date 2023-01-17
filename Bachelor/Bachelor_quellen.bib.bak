@@ -422,7 +422,7 @@
   title     = {Molekulare Virologie},
   year      = {2010},
   doi       = {10.1007/978-3-8274-2241-5},
-  groups    = {Einleitung, Influenza A},
+  groups    = {Einleitung, Influenza A, Viren die Gefahr aus dem nichts},
 }
 
 @Article{Chen2018,
@@ -858,6 +858,118 @@
   publisher = {{MDPI} {AG}},
 }
 
+@Article{Iwamoto2003,
+  author    = {Tomotada Iwamoto and Toshiaki Sonobe and Kozaburo Hayashi},
+  journal   = {Journal of Clinical Microbiology},
+  title     = {Loop-Mediated Isothermal Amplification for Direct Detection of $\less$i$\greater$Mycobacterium tuberculosis$\less$/i$\greater$ Complex, $\less$i$\greater$M. avium$\less$/i$\greater$ , and $\less$i$\greater$M. intracellulare$\less$/i$\greater$ in Sputum Samples},
+  year      = {2003},
+  month     = {jun},
+  number    = {6},
+  pages     = {2616--2622},
+  volume    = {41},
+  doi       = {10.1128/jcm.41.6.2616-2622.2003},
+  groups    = {LAMP},
+  publisher = {American Society for Microbiology},
+}
+
+@Article{Tomita2008,
+  author    = {Norihiro Tomita and Yasuyoshi Mori and Hidetoshi Kanda and Tsugunori Notomi},
+  journal   = {Nature Protocols},
+  title     = {Loop-mediated isothermal amplification ({LAMP}) of gene sequences and simple visual detection of products},
+  year      = {2008},
+  month     = {apr},
+  number    = {5},
+  pages     = {877--882},
+  volume    = {3},
+  doi       = {10.1038/nprot.2008.57},
+  groups    = {LAMP},
+  publisher = {Springer Science and Business Media {LLC}},
+}
+
+@Article{Mori2001,
+  author    = {Yasuyoshi Mori and Kentaro Nagamine and Norihiro Tomita and Tsugunori Notomi},
+  journal   = {Biochemical and Biophysical Research Communications},
+  title     = {Detection of Loop-Mediated Isothermal Amplification Reaction by Turbidity Derived from Magnesium Pyrophosphate Formation},
+  year      = {2001},
+  month     = {nov},
+  number    = {1},
+  pages     = {150--154},
+  volume    = {289},
+  doi       = {10.1006/bbrc.2001.5921},
+  groups    = {LAMP},
+  publisher = {Elsevier {BV}},
+}
+
+@Article{Louie2009,
+  author    = {Richard F. Louie and Tyler Kitano and T. Keith Brock and Robert Derlet and Gerald J. Kost},
+  journal   = {Disaster Medicine and Public Health Preparedness},
+  title     = {Point-of-Care Testing for Pandemic Influenza and Biothreats},
+  year      = {2009},
+  month     = {dec},
+  number    = {S2},
+  pages     = {S193--S202},
+  volume    = {3},
+  doi       = {10.1097/dmp.0b013e3181be6dc4},
+  groups    = {Viren - die Gefahrt aus dem nichts, Viren die Gefahr aus dem nichts},
+  publisher = {Cambridge University Press ({CUP})},
+}
+
+@Article{Charrel2007,
+  author    = {R{\'{e}}mi N. Charrel and Xavier de Lamballerie and Didier Raoult},
+  journal   = {New England Journal of Medicine},
+  title     = {Chikungunya Outbreaks {\textemdash} The Globalization of Vectorborne Diseases},
+  year      = {2007},
+  month     = {feb},
+  number    = {8},
+  pages     = {769--771},
+  volume    = {356},
+  doi       = {10.1056/nejmp078013},
+  groups    = {Viren - die Gefahrt aus dem nichts, Viren die Gefahr aus dem nichts},
+  publisher = {Massachusetts Medical Society},
+}
+
+@Article{Dharmapalan2020,
+  author    = {Dhanya Dharmapalan},
+  journal   = {The Indian Journal of Pediatrics},
+  title     = {Influenza},
+  year      = {2020},
+  month     = {feb},
+  number    = {10},
+  pages     = {828--832},
+  volume    = {87},
+  doi       = {10.1007/s12098-020-03214-1},
+  groups    = {Viren - die Gefahrt aus dem nichts, Viren die Gefahr aus dem nichts},
+  publisher = {Springer Science and Business Media {LLC}},
+}
+
+@Article{Bai2021,
+  author    = {Chongzhi Bai and Qiming Zhong and George Fu Gao},
+  journal   = {Science China Life Sciences},
+  title     = {Overview of {SARS}-{CoV}-2 genome-encoded proteins},
+  year      = {2021},
+  month     = {aug},
+  number    = {2},
+  pages     = {280--294},
+  volume    = {65},
+  doi       = {10.1007/s11427-021-1964-4},
+  groups    = {Viren - die Gefahrt aus dem nichts, Viren die Gefahr aus dem nichts},
+  publisher = {Springer Science and Business Media {LLC}},
+}
+
+@Article{Valera2021,
+  author    = {Enrique Valera and Aaron Jankelow and Jongwon Lim and Victoria Kindratenko and Anurup Ganguli and Karen White and James Kumar and Rashid Bashir},
+  journal   = {{ACS} Nano},
+  title     = {{COVID}-19 Point-of-Care Diagnostics: Present and Future},
+  year      = {2021},
+  month     = {may},
+  number    = {5},
+  pages     = {7899--7906},
+  volume    = {15},
+  doi       = {10.1021/acsnano.1c02981},
+  groups    = {Viren die Gefahr aus dem nichts},
+  publisher = {American Chemical Society ({ACS})},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
@@ -867,4 +979,5 @@
 2 StaticGroup:Influenza A\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:NASBA\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:LAMP\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Viren die Gefahr aus dem nichts\;0\;0\;0x8a8a8aff\;\;\;;
 }
