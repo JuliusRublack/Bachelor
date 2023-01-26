@@ -1,0 +1,266 @@
+---
+output:
+  bookdown::pdf_document2:
+    fig_caption: yes
+    toc: TRUE
+    toc_depth: 3
+    fontsize: 12pt
+    latex_engine: xelatex
+bibliography: "Bachelor_quellen.bib"
+biblio-style: apalike
+citation_package: biblatex
+link-citations: yes
+urlcolor: RoyalBlue
+linkcolor: RoyalBlue
+header-includes:
+  \usepackage{float}
+  \usepackage[ngerman]{babel}
+  \usepackage[onehalfspacing]{setspace}
+  \usepackage[utf8]{inputenc}
+  
+---
+
+```{r setup3, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+library(kableExtra)
+library(ggplot2)
+library(ggpubr)
+library(tidyverse)
+library(scales)
+library(latex2exp)
+
+
+```
+
+
+\pagebreak
+
+# Ergebnisse
+
+## Influenza B
+
+### Herstellung der Influenza B Virus Standrad-RNA
+
+Für den Vergleich zwischen der RT-PCR und der RT-RPA sowie der variierenden Parameter ist es nötig, standardisierte Virus-RNA mit einer definierten Konzentration herzustellen. Dabei diente ein artifizielles DNA-Plasmid mit der inserierten Virus-Sequenz als Ausgangsmaterial. Dieses wurde in _E. coli_ transformiert, durch Kultivierung vermehrt und anschließend mittels verschiedener Methoden zur Virus-RNA transkribiert.
+
+zum Beginn der Arbeit war bereits ein mit dem Influenza B Plasmid (Plasmidkarte siehe Anhang \@ref(plasmidB)) transformierter _e. coli_ Stamm vorhanden. Dieser wurde Kultiviert und anschließend das Influenza B Plasmids extrahiert (Kapitel \@ref(isolation). Durch eine anschließende Sanger-Sequenzierung (Kapitel \@ref(sequenzierung)) der Influenza B Virussequenz auf dem extrahierten DNA-Plasmid konnten Sequenzfehler ausgeschlossen werden und die korrekte Virus-Sequenz bestätigt werden. In Vorbereitung für die _in Vitro_ Transkription wurde das Plasmid durch einen Restriktion-verdau linearisiert und über ein Agarose-Gel Überprüft (Kapitel \@ref(verdau)). Das Kontrollgel (siehe Abbildung \@ref(fig:infBverdau)A) weist zwei unterschiedlich große DNA-Banden auf. Das linearisierte Plasmid in Spur 2 zeigt wie erwartet eine Bande bei ~3400 bp und das unverdaute Kontrollplasmid in Spur 3 eine Bande bei weit über 4000 bp. Daraus lässt sich schließen, dass die Linearisierung durch den Restriktionsverdau erfolgreich war. Das linearisierte Plasmid wurde von Puffer und Enzymrückständen befreit (Kapitel \@ref(cleaning)) und über eine _in vitro_ Transkription mithilfe des auf dem Plasmid befindelichen T7-Promotors(Kapitel \@ref(transkription)) in RNA überführt. Die synthethisierte virale RNA wurde im letzten Schritt mit dem RiboGreen Assay (kapitel \@ref(ribogreen)) quantifiziert. Die Kalibriergerade des RiboGreen Assays ist in Abbildung \@ref(fig:infBverdau)B gezeigt. Es ergab sich eine Geradengleichung von $𝑦 = 22+3,6𝑥$ mit einem Korrelationskoeffizient R von 0,99. Mithilfe der Gradengleichung konnte
+für die synthetisierte RNA eine Konzentration von $476.0 \pm 7, 8$ ng/ml und somit eine Kopienanzahl von $2, 2 * 10^8$ RNA-Kopien/µl berechnet werden.
+
+```{r infBverdau, fig.align='center',message = FALSE, fig.cap= "\\textbf{Kontrollgel und Ribogreen Kalibrationsgerade der Influenza B Standardherstellung:} \\textbf{A:} DNA-Banden des Kontrollgels für den Restriktionsverdau des Influenza B Plasmids mit verdautem Plasmid (2), unverdautem Kontrollplasmid (3) und mitgeführter DNA-Leiter (1). Das linearisierte Plasmid läuft bei ca. 3400 bp und somit unter dem mitgeführten ungeschnittenem Kontrollplasmid. Bild ist digital bearbeitet. \\textbf{B:} Kalibrationsgerade des Ribogreen-Assays mit angefügter Geradengleichung, Korrelationskoeffizienten und p-Wert. Das graue Band zeigt das 95 \\%-ige Konfidenzintervall der linearen Funktion. Alle Messungen wurden mit n=4 durchgeführt. ", out.width= "49%", fig.show='hold', fig.scap="Kontrollgel und Ribogreen Kalibrationsgerade der Influenza B Standardherstellung"}
+
+knitr::include_graphics("Bilder/infB_verdau_t.png")
+
+
+data <- read.csv2("Daten/V_0027.csv")
+
+ggplot(data, aes(konz, fluo)) +
+  geom_point() +
+  geom_smooth(method = "lm") +
+  theme_minimal()+
+   ylab("Fluoreszenz")+
+   xlab("Konzentration") +  
+  stat_cor(label.y = 2700, 
+           aes(label = paste(after_stat(rr.label), after_stat(p.label), sep = "~`,`~"))) +
+  stat_regline_equation(label.y = 2400)+
+  annotate(geom="text", x=10, y=3500, label="B", color="black", size=12)
+
+
+```
+
+### Entwicklung der InfB-RPA Primer
+
+Für die Influenza B RT-RPA wurden mmithilfe der Software PrimedRPA insgesamt 9 verschiedene Primer und 2 Sonden gefunden. Die Sequenzen sind in Tabelle \@ref(tab:infboligo) mit entsprechenden Modifikationen und 3´-Position auf der Virus-Sequenz gezeigt. Daraus ergeben sich insgesamt 10 Primer-Sonden-Kombinationen. Davon bestehen 2 Kombinationen aus Sonde 1.1 mit Forward1 und Reverse 1.1 und Reverse 1.2. Die restlichen 8 Kombinationen setzten sich aus Sonde 3.1, Forward 1 oder Forward 2 und Reverse 3.3 - 3.15 zusammen. 
+
+
+(ref:design) Modifiziert wie in Kapitel \@ref(modifikation) beschrieben.
+```{r, infboligo}
+RPAoligo <- read.csv2("infB_oligos.csv", header = FALSE)
+kable(RPAoligo, booktabs = TRUE, col.names = NULL, format = "latex", escape = FALSE, caption = "Entwickelte Primer und Sonden für die Influenza B RT-RPA") %>%
+  add_header_above(c("Name"= 1, "Sequenz (5´->3´)"= 1, "3´-Position"=1, "Modifikation"=1), line_sep=0) %>%
+  column_spec(4, width = "1.5in")%>%
+  kable_styling(latex_options = "hold_position") %>%
+  kable_styling(latex_options = "scale_down") %>%
+  footnote( symbol = c("Y=C oder T; 1: Repoterfluorophor; 2: a-basische Seite; 3: Quencher" , "(ref:design)"), symbol_manual = c('*', '**', '***'), fixed_small_size = TRUE, general_title = "Notiz:", escape= FALSE, footnote_as_chunk =TRUE)
+```
+
+(ref:etablB) **Etablierung der Influenza B RPA im Original- und 8tel-Ansatz:** Normalisierte Fluoreszenzdaten der 50µl RPA (n=3) und der 8tel RPA (n=6). Messung bei 40 °C ohne Unterbrechung durch einen Mischschritt. Messung mit jeweils 10^6^ Virus-RNA-Molekülen/µl als Ausgangsmaterial
+
+```{r infbscreening, fig.show='hold', message = FALSE, warning=FALSE, results=FALSE, fig.cap="(ref:etablB)", out.width= "70%", fig.align='center', fig.scap="Etablierung der Influenza B RPA im Original- und 8tel-Ansatz."}
+data <- read.csv2("daten/infb_primer_screening.csv")
+
+zehn7 <- data %>% 
+  select(Zeit, X1071,	X1072,	X1073,	X1074,	X1075,	X1076,	X1077) %>%
+  gather(key = "Proben", value = "Fluoreszenz", -Zeit)
+
+zehn6 <- data %>% 
+  select(Zeit, X1061,	X1062,	X1063,	X1064,	X1065,	X1066,	X1067) %>%
+  gather(key = "Proben", value = "Fluoreszenz", -Zeit)
+
+zehn5 <- data %>% 
+  select(Zeit,  X1051,	X1052,	X1053,	X1054,	X1055,	X1056,	X1057) %>%
+  gather(key = "Proben", value = "Fluoreszenz", -Zeit)
+
+zehn4 <- data %>% 
+  select(Zeit, X1041,	X1042,	X1043,	X1044,	X1045,	X1046,	X1047) %>%
+  gather(key = "Proben", value = "Fluoreszenz", -Zeit)
+
+zehn3 <- data %>% 
+  select(Zeit, X1031,	X1032,	X1033,	X1034,	X1035,	X1036,	X1037) %>%
+  gather(key = "Proben", value = "Fluoreszenz", -Zeit)
+
+zehn2 <- data %>% 
+  select(Zeit, X1021,	X1022,	X1023,	X1024,	X1025,	X1026,	X1027) %>%
+  gather(key = "Proben", value = "Fluoreszenz", -Zeit)
+
+zehn1 <- data %>% 
+  select(Zeit,	X1011,	X1012,	X1013,	X1014,	X1015,	X1016,	X1017) %>%
+  gather(key = "Proben", value = "Fluoreszenz", -Zeit)
+
+zehn0 <- data %>% 
+  select(Zeit, X1001,	X1002,	X1003,	X1004,	X1005,	X1006,	X1007) %>%
+  gather(key = "Proben", value = "Fluoreszenz", -Zeit)
+
+zehnnk <- data %>%
+  select(Zeit, nk1,	nk2,	nk3,	nk4,	nk5,	nk6,	nk7,	nk8, nk9) %>%
+  gather(key = "Proben", value = "Fluoreszenz", -Zeit)
+  
+transformed <- rbind(zehn5, zehn4, zehn3, zehn2, zehn1, zehn0)
+
+transformed1 <- rbind(zehn7)
+
+transformed2 <- rbind(zehn6)
+
+transformed3 <- rbind(zehnnk)
+
+
+
+ggplot(transformed, aes(x=Zeit, y = Fluoreszenz)) +
+  geom_line(aes(color = Proben), linewidth = 0.3) +
+  theme_minimal()+
+   ylab("Fluoreszenz in mV")+
+   xlab("Zyklus")+
+  scale_color_manual(values = c("#000000", "#000000", "#cccccc", "#cccccc", "#cccccc", "#cccccc", "#cccccc", "#cccccc", 
+                                "#cccccc", "#cccccc", "#cccccc", "#cccccc", "#cccccc", "#cccccc", "#cccccc", "#cccccc",  
+                                "#cccccc", "#cccccc", "#cccccc", "#cccccc", "#cccccc", "#cccccc", "#cccccc",  
+                                "#cccccc", "#cccccc", "#cccccc", "#cccccc", "#cccccc", "#cccccc", "#cccccc",  
+                                "#cccccc", "#cccccc", "#cccccc", "#cccccc", "#cccccc", "#cccccc", "#cccccc",  
+                                "#cccccc", "#cccccc", "#cccccc", "#cccccc", "#cccccc", "#cccccc", "#cccccc",  
+                                "#cccccc", "#cccccc", "#cccccc", "#cccccc", "#cccccc", "#cccccc", "#cccccc",  
+                                "#000000", "#000000", "#000000", "#000000", "#000000", "#000000", "#000000",
+                                 "#000000", "#000000", "#000000", "#000000", "#000000", "#000000", "#000000"))+
+  theme(legend.position="none")+
+  geom_line(data=transformed1,aes(color = Proben), linetype="solid")+
+  geom_line(data=transformed2,aes(color = Proben), linetype="dashed")+
+  geom_line(data=transformed3,aes(color = Proben), linetype="dotdash")
+  annotate(geom="text", x=11, y=6, label="A", color="black", size=12)
+```
+
+Die entwickelten Primer-Sonden-Kombinationen wurden in einem Screening Verfahren mittels RT-RPA in einer Dreifachbestimmung auf Amplifikation getestet (Kapitel \@ref(RPAnormal). Die Fluoreszenzdaten sind in Abbilung \@ref(fig:infbscreening) gezeigt. Die Kombinationen mit Sonde 1.1 (schwarz) zeichen sich durch einen steileren Anstieg und höhere Fluoreszenzwerte im vergleich zu den Kombinationen mit Sonde 3.1 (grau) aus. Des Weiteren lässt sich bei der Kombination mit Reverse 1.1 (schwarz, duchgängig) ein signifikant niedrigerer Ansteig als bei der Kombination mit Reverse 1.2 (schwarz, gestrichelt) beobachten. Die Mittelwerte der TT-Werte für die jeweiligen Kombinationen liegen bei $3,33 \pm 0,07$ (Reverse 1.1) und $4,27 \pm 0,07$ (Reverse 1.2). Die Kombination mit Reverse 1.2 erreicht im Verlauf höhere Fluoreszenzintensitäten, jedoch deutet ein zeitigerer Ansteig, sprich niedrigere TT-Werte, auf eine schnellere Amplifikation. Aus diesem Grund wurde die Kombination mit Reverse 1.1 zusammen und Forward 1 und Sonde 1.1 (schwarz,durchgezogen) als bestmöglich eingestuft und für alle nachfolgenden Versuche \textcolor{red}{Ergebnisse} in diesem Kapitel verwendet.
+
+### Optimierung der InfB RPA
+
+**Verringerung des Reaktionsvolumen (8tel Ansatz)**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\pagebreak
+
+## Influenza A
+
+### Herstellung der Influenza A Virus Standard-RNA 
+
+Für die Durchführung und den Vergleich von verschiedenen Nukleinsäure-Amplifikationsverfahren, ist es nötig, standardisierte Virus-RNA mit einer definierten Konzentration herzustellen. Dabei dient ein DNA-Plasmid mit der entsprechenden Virus-Sequenz als Ausgangsmaterial. Dieses wurde in _E. coli_ transformiert, durch Kultivierung vermehrt und anschließend mittels verschiedener Methoden zur gewünschten Virus-RNA transkribiert. 
+
+Um die Gruppe der Influenza A Viren ausreichend abdecken zu können wurden RNA-Standards von den akutell vorherrschenden Subtypen H1N1 und H3N2 erstellt. Damit die Detektion von älteren Varianten der beiden Subtypen untersucht werden kann, wurden zusätzlich RNA-Standards von früher dominanten Subtypen hergestellt. Für den H1N1-Subtyp wurde dabei eine DNA-Sequenz aus dem Jahr 2004 und für den H3N2-Subtyp eine Sequenz aus dem Jahr 2005 als Vorlage verwendet. Alle nachfolgenden Schritte dieses Kapitels wurden für alle vier RNA-Standards gleich durchgeführt.   
+Für die Erstellung der Standard-RNA's wurden im ersten Schritt die entsprechenden Virus DNA-Sequenzen als teil eines DNA-Plasmids nach beschriebener Methode (siehe Kapitel \@ref(transformation)) in _E. coli_ transformiert. Anschließend wurden die transformierten Bakterien, wie in Kapitel \@ref(isolation) angegeben kultiviert und die Plasmid-DNA isoliert. Durch eine anschließende Sequenezierung konnten Sequenzfehler durch Mutationen ausgeschlossen werden. Im nächsten Schritt wurden die isolierten Plasmide durch einen Restriktionsverdau linearisiert und somit für die _in vitro_ transkription vorbereitet. Der Restriktionsverdau wurde wie in Kapitel \@ref(verdau) angegeben durchgeführt. Die zur Überprüfung der erfolgreichen linearisierung durchgeführten Agarose-Gele sind in Abbildung \@ref(fig:infAverdau) gezeigt. Alle verdauten Plasmide zeigen eine DNA-Bande bei ~ 3300 bp. Die ungeschnittenen mitgeführten Kontrollplasmide aus der vorherigen Plasmid-DNA isolation weisen hingegen eine Bande zwischen 5000 bp und 6000 bp auf. Eine Ausnahme bildet hierbei das Kontrollplasmid auf der Gelspur 5, da keine DNA-Bande sichtbar ist. 
+ 
+
+(ref:infaverA) **Kontrollgel des Restriktionsverdaus und Ribogreen Kalibrationsgeraden der Influenza A Plasmide**: **A**: DNA-Banden des Kontrollgels für den Restriktionsverdau der Influenza A Plasmide. DNA-Banden des verdautem Plasmid des 2005 H3N2 Standards (2) mit unverdauter Kontrolle (3), verdautem Plasmid des aktuellem H1N1 Standards (4) mit unverdauter Kontrolle (5) sowie verdautem Plasmid des aktuellen H3N2 Standard (6) mit unverdautem Kontrollplasmid (7), sowie mitgeführte 100 bp plus DNA-Leiter (8) und 1000 bp DNA-Leiter (1).  DNA-Banden des verdautem Plasmid des 2004 H1N1 Standards (2) mit unverdautem Kontrollplasmid (3) und mitgeführter 100 bp plus DNA-Leiter (1). Bilder digital bearbeitet. **B, C** Kalibrationsgeraden des Ribogreen-Assays mit angefügter Geradengleichung, Korrelationskoeffizienten und p-Wert. Das graue Band zeigt das 95 %-ige Konfidenzintervall der linearen Funktion. Alle Messungen wurden mit n=5 durchgeführt.
+
+```{r infAverdau, message = FALSE, fig.show='hold', fig.cap="(ref:infaverA)", out.width= "49%", fig.align='center', fig.scap="Kontrollgel des Restriktionsverdaus und Ribogreen Kalibrationsgeraden der Influenza A Plasmide."}
+
+knitr::include_graphics("Bilder/infA_verdau.png")
+knitr::include_graphics("Bilder/InfA_transkription_kalibrier.PNG")
+knitr::include_graphics("Bilder/InfA_transkription_kalibrier.PNG")
+
+
+  
+```
+
+Zur Weiteren Vorbereitung der linearisierten Plasmid-DNA für die _in vitro_ Transkription und als Nachbehandlung von den Restriktionsverdau wurden die verdauten Plasmide nach der in Kapitel \@ref(cleaning) beschriebenen Methode von Enzym- und Pufferrückständen entfernt. Die gereinigte DNA wurde im nächsten Schritt mithilfe der in Kapitel \@ref(transkription) angegeben Methode zu RNA reverse Transkribiert und die Ausgangs-DNA beseitigt. In der nachfolgenden Aufreinigung wurde die Nukleinsäure abermals von störenden Puffer und Enzymrückständen befreit. Die reine, artifiziell erstellte virale RNA wurde im letzten Schritt nach mithilfe des Ribogreen-Assays quanitifiziert (siehe Methode unter Kapitel \@ref(ribogreen)). \textcolor{red}{Dabei wurden jeweils die RNA-Standards H3N2 (2005) und H1N1 (2020) innerhalb einer Messung und die Standards H1N1 (2004) und H3N2 (2020) in einem seperaten Assay quantifiziert. Die Kalibriergeraden der Assays sind in Abbildung \@ref(fig:infAverdau) gezeigt. Beide Kalibriergeraden besitzen einen Korrelationskoeffizienten (R) von 1 und einen p-Wert von >> 0,05. Daraus lässt sich ein starker linearer Zusammenhang zwischen Konzentration und Fluoreszenz erkennen. Mithilfe der angegeben Geradengleichungen von $y=-190 + 3,8 x$ und $y=-190 + 3,8 x$ für die jeweiligen Messungen konnten die Konzentrationen der gemessenen viralen RNA-Standards berechnet werden.} Die Mittelwerte von jeweils 5 Messungen pro Standard sind zusammen mit den daraus resultierenden Kopie-Zahlen der einzelnen RNA-Moleküle/µl in Tabelle \@ref(tab:infAtranskription) angegeben. 
+
+### Entwicklung der InfB-RPA Primer
+
+* Tabelle mit allen getesteten Primern und Sonden + auf die Primer und sonden in Methoden verweisen? 
+  + oder die Sonden aus dem Methoden teil mir rein zu nehmen und da raus nehmen
+* Graphen der Tests (grau und die guten farbig)
+* Sensitivität ohne optimierungsparameter? müsste ich noch machen
+  + wenn sensitivität dann auch Spezifität
+
+### Optimierung der Infb-RPA
+
+* 8tel Ansatz
+* Temperatur
+* Mischzeitpunkt
+
+### Primerassymetrie
+
+* soll ich hier dann noch das Experiment zum bestätigen der Assymetrie mit rein nehmen? oder extra Punkt
+
+### Sensitisanalysen und Verlgeich
+
+* Sensitivität mit allen Optimirungsparametern 8tel Ansatz gegenüberstellen
+  + weil literatur sagt, dass dadurch eine Erhöhung der Sensitivität erhalten werden kann
+  
+* Sensitivität PCR und RPA gegenüberstellen
+
+### Spezifität
+
+* Spezifität
+
+## Influenza A
+
+### Entwicklung der InfA-RPA Primer
+
+* Tabelle mit allen getesteten Primern und Sonden + auf die Primer und sonden in Methoden verweisen? 
+  + oder die Sonden aus dem Methoden teil mir rein zu nehmen und da raus nehmen
+* Graphen der Tests (grau und die guten farbig)
+* Sensitivität ohne optimierungsparameter? müsste ich noch machen
+  + wenn sensitivität dann auch Spezifität
+
+### Optimierung der InfbARPA
+
+* 8tel Ansatz
+* Temperatur
+* Mischzeitpunkt
+* Primerassymetrie
+
+### Sensitivitätsanalysen und Vergleich
+
+* Sensitivitätstest und vergleich mit PCR
+
+### Einfluss von Sondendesign auf die InfA-RPA
+
+* Test mit neuer Sonde
+* Sensitivitätsvergleich
+
+### Spezifitätstest

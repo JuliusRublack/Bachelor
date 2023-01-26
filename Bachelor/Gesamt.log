@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.10) (preloaded format=xelatex 2022.11.18)  17 JAN 2023 16:06
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.10) (preloaded format=xelatex 2022.11.18)  26 JAN 2023 13:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -967,96 +967,107 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 \tf@lof=\write4
 \openout4 = `Gesamt.lof'.
 
-(Gesamt.lot)
+[3] (Gesamt.lot
+
+LaTeX Warning: Reference `fig:infBetabl' on page IV undefined on input line 13.
+
+
+
+LaTeX Warning: Reference `fig:infBoptil' on page IV undefined on input line 14.
+
+
+
+LaTeX Warning: Reference `fig:infBoptil' on page IV undefined on input line 15.
+
+
+)
 \tf@lot=\write5
 \openout5 = `Gesamt.lot'.
 
-[3] [4] [1]
+[4] [5] [1]
 File: Bilder/infA_Virus.png Graphic file (type bmp)
 <Bilder/infA_Virus.png>
-[2]
+[2] [3] [4]
 File: Bilder/LAMP_struktur.png Graphic file (type bmp)
 <Bilder/LAMP_struktur.png>
-[3] [4]
+[5]
 File: Bilder/NASBA_reaction.png Graphic file (type bmp)
 <Bilder/NASBA_reaction.png>
-[5] [6]
+[6] [7] [8]
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 364.
+(Font)              scaled to size 8.0pt on input line 340.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 364.
+(Font)              scaled to size 6.0pt on input line 340.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 8.00073pt on input line 364.
+(Font)              scaled to size 8.00073pt on input line 340.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.00055pt on input line 364.
+(Font)              scaled to size 6.00055pt on input line 340.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.99915pt on input line 364.
+(Font)              scaled to size 7.99915pt on input line 340.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.99936pt on input line 364.
-[7] [8] [9] [10] [11] [12] [13]
+(Font)              scaled to size 5.99936pt on input line 340.
+[9]
+File: Bilder/probes.png Graphic file (type bmp)
+<Bilder/probes.png>
+[10] [11] [12] [13] [14] [15] [16]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[14] [15] [16]
+[17]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[18]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[19] [20] [21]
+
+LaTeX Warning: Reference `plasmidB' on page 22 undefined on input line 744.
+
+File: Bilder/infB_verdau_t.png Graphic file (type bmp)
+<Bilder/infB_verdau_t.png>
+File: Gesamt_files/figure-latex/infBverdau-2.pdf Graphic file (type pdf)
+<use Gesamt_files/figure-latex/infBverdau-2.pdf>
+[22]
+File: Gesamt_files/figure-latex/infbscreening-1.pdf Graphic file (type pdf)
+<use Gesamt_files/figure-latex/infbscreening-1.pdf>
+[23] [24]
 File: Bilder/infA_verdau.png Graphic file (type bmp)
 <Bilder/infA_verdau.png>
 File: Bilder/InfA_transkription_kalibrier.png Graphic file (type bmp)
 <Bilder/InfA_transkription_kalibrier.png>
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: Reference `tab:infAtranskription' on page 25 undefined on input 
+line 832.
 
-
-LaTeX Warning: Reference `fig' on page 17 undefined on input line 746.
-
-[17] [18] [19]
-File: Bilder/infB_verdau_t.png Graphic file (type bmp)
-<Bilder/infB_verdau_t.png>
-File: Gesamt_files/figure-latex/infBverdau-2.pdf Graphic file (type pdf)
-<use Gesamt_files/figure-latex/infBverdau-2.pdf>
-[20]
-File: Bilder/infB_PCR_sensi.png Graphic file (type bmp)
-<Bilder/infB_PCR_sensi.png>
-File: Gesamt_files/figure-latex/infBPCR-2.pdf Graphic file (type pdf)
-<use Gesamt_files/figure-latex/infBPCR-2.pdf>
-File: Bilder/infB_probit.png Graphic file (type bmp)
-<Bilder/infB_probit.png>
-File: Bilder/infB_etab.png Graphic file (type bmp)
-<Bilder/infB_etab.png>
-
-LaTeX Warning: Reference `aksjdalf' on page 21 undefined on input line 811.
-
-[21] [22]
-File: Bilder/infB_opti_temp.png Graphic file (type bmp)
-<Bilder/infB_opti_temp.png>
-File: Bilder/infB_opti_konz.png Graphic file (type bmp)
-<Bilder/infB_opti_konz.png>
-[23]
-
-LaTeX Warning: Reference `fig:' on page 24 undefined on input line 835.
-
-File: Bilder/InfB_50_sensi.png Graphic file (type bmp)
-<Bilder/InfB_50_sensi.png>
-File: Bilder/InfB_8tel_sensi.png Graphic file (type bmp)
-<Bilder/InfB_8tel_sensi.png>
-File: Bilder/InfB_50_probit.png Graphic file (type bmp)
-<Bilder/InfB_50_probit.png>
-File: Bilder/infB_8tel_probit.png Graphic file (type bmp)
-<Bilder/infB_8tel_probit.png>
-[24] [25] [26]
+[25] [26] [27] [28]
 File: Gesamt_files/figure-latex/infBobtiam-1.pdf Graphic file (type pdf)
 <use Gesamt_files/figure-latex/infBobtiam-1.pdf>
 File: Gesamt_files/figure-latex/infBobtiam-2.pdf Graphic file (type pdf)
 <use Gesamt_files/figure-latex/infBobtiam-2.pdf>
 File: Gesamt_files/figure-latex/infBobtiam-3.pdf Graphic file (type pdf)
 <use Gesamt_files/figure-latex/infBobtiam-3.pdf>
+
+LaTeX Warning: Reference `fig:infBetabl' on page I undefined on input line 997.
+
+
+
+LaTeX Warning: Reference `fig:infBoptil' on page I undefined on input line 1016
+.
+
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 933.
+(Font)              scaled to size 9.0pt on input line 1044.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 9.00082pt on input line 933.
+(Font)              scaled to size 9.00082pt on input line 1044.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 8.99904pt on input line 933.
+(Font)              scaled to size 8.99904pt on input line 1044.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `fig:infBoptil' on page I undefined on input line 1051
+.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1079,24 +1090,24 @@ File: Bilder/InfA Plasmidkarte 937.png Graphic file (type bmp)
 [6]
 File: Bilder/InfA Plasmidkarte 214.png Graphic file (type bmp)
 <Bilder/InfA Plasmidkarte 214.png>
-[7] [8] [9] [10]
-Underfull \hbox (badness 2205) in paragraph at lines 1208--1210
+[7] [8] [9] [10] [11]
+Underfull \hbox (badness 2205) in paragraph at lines 1391--1393
 []\TU/lmr/m/n/10 QIAGEN. 2021. “QIAGEN® PlasmidPurification Handbook.” \TU/lmr/
 m/it/10 QIAGEN Plasmid Mini, Midi, Ma-
  []
 
-[11] [12] (Gesamt.aux)
+[12] [13] [14] (Gesamt.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 22577 strings out of 410527
- 411158 string characters out of 2816817
- 977799 words of memory out of 3000000
- 43392 multiletter control sequences out of 15000+600000
- 475848 words of font info for 86 fonts, out of 8000000 for 9000
+ 22448 strings out of 410527
+ 406993 string characters out of 2816817
+ 980670 words of memory out of 3000000
+ 43269 multiletter control sequences out of 15000+600000
+ 475856 words of font info for 87 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 86i,16n,121p,2675b,512s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 86i,16n,121p,2678b,512s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
-Output written on Gesamt.pdf (43 pages).
+Output written on Gesamt.pdf (48 pages).

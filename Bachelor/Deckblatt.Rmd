@@ -48,7 +48,7 @@ Julius Rublack
 Matrikel Nr.: 3801533
 
 
-`r format(Sys.time(), '%d %B, %Y')`
+`r format(Sys.time(), '%d. %B, %Y')`
 
 
 \end{centering}

@@ -47,6 +47,8 @@ library(mdthemes)
 
 \listoffigures
 
+\pagebreak
+
 \listoftables
 
 \pagebreak
@@ -68,7 +70,7 @@ library(mdthemes)
 
 \pagenumbering{arabic}
 
-```{r, child=c('Einleitung.Rmd', 'Methoden.Rmd', "Ergebnisse.Rmd")}
+```{r, child=c('Einleitung.Rmd', 'Methoden.Rmd', "Ergebnisse(neu).Rmd")}
 ```
 
 \pagebreak

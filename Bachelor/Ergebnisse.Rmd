@@ -76,11 +76,71 @@ Mithilfe der in Kapitel \@ref(desing) beschriebenen Methode konnten für das Inf
 Alle Kombinationen wurden mit 10^7^ Kopien des viralen RNA-Standards des aktuellen H3N2 Subtypes in einer Dreifachbestimmung (n=3) auf Amplifikation getestet. Dabei konnte keine Variante eine zufriedenstellende Amplifikation vorweisen, wie in Abbildung \@ref(fig) im Anhang zu sehen. 
 
 
+### Influenza A PCR
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+```{r InfAPCR, fig.align='center',message = FALSE, out.width= "49%", fig.show='hold', fig.cap= "A und C H3N2..... B und D H1N1"  }
+
+knitr::include_graphics("Bilder/infA_PCR_H3N2.png")
+knitr::include_graphics("Bilder/infA_PCR_H1N1.png")
+
+data <- read.csv2("daten/regression3.csv")
+
+
+ggplot(data, aes(konz, ct)) +
+  geom_point() +
+  geom_smooth(method = "lm") +
+  theme_minimal()+
+   ylab("Ct-Wert")+
+   xlab("Konzentration") +
+  scale_x_log10(breaks = trans_breaks('log10', function(x) 10^x),
+                  labels = trans_format('log10', math_format(10^.x)))+
+  stat_cor(label.y = 28, 
+           aes(label = paste(after_stat(rr.label), after_stat(p.label), sep = "~`,`~"))) +
+  stat_regline_equation(label.y = 25)+
+  annotate(geom="text", x=500, y=37, label="C", color="black", size=12)
+
+
+data <- read.csv2("daten/regression2.csv")
+
+
+ggplot(data, aes(konz, ct)) +
+  geom_point() +
+  geom_smooth(method = "lm") +
+  theme_minimal()+
+   ylab("Ct-Wert")+
+   xlab("Konzentration") +
+  scale_x_log10(breaks = trans_breaks('log10', function(x) 10^x),
+                  labels = trans_format('log10', math_format(10^.x)))+
+  stat_cor(label.y = 28, 
+           aes(label = paste(after_stat(rr.label), after_stat(p.label), sep = "~`,`~"))) +
+  stat_regline_equation(label.y = 25)+
+  annotate(geom="text", x=500, y=37, label="D", color="black", size=12)
+
+```
+
+
+
+
+
+
+
+### Etablierung InfA
 
 
 
@@ -113,9 +173,10 @@ ggplot(data, aes(konz, fluo)) +
   geom_smooth(method = "lm") +
   theme_minimal()+
    ylab("Fluoreszenz")+
-   xlab("Konzentration") +
-  stat_cor(label.y = 2700)+ 
-        stat_regline_equation(label.y = 2400)+ 
+   xlab("Konzentration") +  
+  stat_cor(label.y = 2700, 
+           aes(label = paste(..rr.label.., ..p.label.., sep = "~`,`~"))) +
+  stat_regline_equation(label.y = 2400)+
   annotate(geom="text", x=10, y=3500, label="B", color="black", size=12)
 
 
@@ -142,8 +203,9 @@ ggplot(data, aes(konz, ct)) +
    xlab("Konzentration") +
   scale_x_log10(breaks = trans_breaks('log10', function(x) 10^x),
                   labels = trans_format('log10', math_format(10^.x)))+
-  stat_cor(label.y = 28)+ 
-        stat_regline_equation(label.y = 25)+
+  stat_cor(label.y = 28, 
+           aes(label = paste(..rr.label.., ..p.label.., sep = "~`,`~"))) +
+  stat_regline_equation(label.y = 25)
   annotate(geom="text", x=1000000, y=35, label="B", color="black", size=12)
 
 knitr::include_graphics("Bilder/infB_probit.png")
