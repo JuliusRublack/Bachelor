@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.10) (preloaded format=xelatex 2022.11.18)  26 JAN 2023 13:37
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.10) (preloaded format=xelatex 2022.11.18)  31 JAN 2023 10:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -926,7 +926,7 @@ ern Roman (RS)
 Package hyperref Info: Link coloring ON on input line 120.
 [1
 
-] (Gesamt.toc
+] [2] (Gesamt.toc
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
 (Font)              scaled to size 7.0pt on input line 4.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
@@ -969,10 +969,6 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 [3] (Gesamt.lot
 
-LaTeX Warning: Reference `fig:infBetabl' on page IV undefined on input line 13.
-
-
-
 LaTeX Warning: Reference `fig:infBoptil' on page IV undefined on input line 14.
 
 
@@ -990,22 +986,22 @@ File: Bilder/infA_Virus.png Graphic file (type bmp)
 [2] [3] [4]
 File: Bilder/LAMP_struktur.png Graphic file (type bmp)
 <Bilder/LAMP_struktur.png>
-[5]
+[5] [6]
 File: Bilder/NASBA_reaction.png Graphic file (type bmp)
 <Bilder/NASBA_reaction.png>
-[6] [7] [8]
+[7] [8]
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 340.
+(Font)              scaled to size 8.0pt on input line 341.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 340.
+(Font)              scaled to size 6.0pt on input line 341.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 8.00073pt on input line 340.
+(Font)              scaled to size 8.00073pt on input line 341.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.00055pt on input line 340.
+(Font)              scaled to size 6.00055pt on input line 341.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.99915pt on input line 340.
+(Font)              scaled to size 7.99915pt on input line 341.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.99936pt on input line 340.
+(Font)              scaled to size 5.99936pt on input line 341.
 [9]
 File: Bilder/probes.png Graphic file (type bmp)
 <Bilder/probes.png>
@@ -1023,25 +1019,64 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [19] [20] [21]
 
-LaTeX Warning: Reference `plasmidB' on page 22 undefined on input line 744.
+LaTeX Warning: Reference `plasmidB' on page 22 undefined on input line 747.
 
 File: Bilder/infB_verdau_t.png Graphic file (type bmp)
 <Bilder/infB_verdau_t.png>
 File: Gesamt_files/figure-latex/infBverdau-2.pdf Graphic file (type pdf)
 <use Gesamt_files/figure-latex/infBverdau-2.pdf>
-[22]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 File: Gesamt_files/figure-latex/infbscreening-1.pdf Graphic file (type pdf)
 <use Gesamt_files/figure-latex/infbscreening-1.pdf>
-[23] [24]
+
+Underfull \hbox (badness 3579) in paragraph at lines 801--801
+[]\TU/lmr/m/n/10 Abbildung 6: []\TU/lmr/bx/n/10 Primerscreening der entwickelte
+n Influenza B RT-RPA Primer-Sonden-
+ []
+
+[22] [23]
+
+LaTeX Warning: Reference `methode' on page 24 undefined on input line 811.
+
+File: Gesamt_files/figure-latex/infBetabl-1.pdf Graphic file (type pdf)
+<use Gesamt_files/figure-latex/infBetabl-1.pdf>
+[24] [25]
+File: Gesamt_files/figure-latex/infbopti-1.pdf Graphic file (type pdf)
+<use Gesamt_files/figure-latex/infbopti-1.pdf>
+File: Gesamt_files/figure-latex/infbopti-2.pdf Graphic file (type pdf)
+<use Gesamt_files/figure-latex/infbopti-2.pdf>
+
+LaTeX Warning: Reference `tab:' on page 26 undefined on input line 848.
+
+[26]
+File: Gesamt_files/figure-latex/assymetriy-1.pdf Graphic file (type pdf)
+<use Gesamt_files/figure-latex/assymetriy-1.pdf>
+File: Gesamt_files/figure-latex/assymetriy-2.pdf Graphic file (type pdf)
+<use Gesamt_files/figure-latex/assymetriy-2.pdf>
+
+Underfull \hbox (badness 3579) in paragraph at lines 857--857
+[]\TU/lmr/m/n/10 Abbildung 9: []\TU/lmr/bx/n/10 Primerscreening der entwickelte
+n Influenza B RT-RPA Primer-Sonden-
+ []
+
+File: Gesamt_files/figure-latex/infbsensi-1.pdf Graphic file (type pdf)
+<use Gesamt_files/figure-latex/infbsensi-1.pdf>
+File: Gesamt_files/figure-latex/infbsensi-2.pdf Graphic file (type pdf)
+<use Gesamt_files/figure-latex/infbsensi-2.pdf>
+File: Gesamt_files/figure-latex/infbsensi-3.pdf Graphic file (type pdf)
+<use Gesamt_files/figure-latex/infbsensi-3.pdf>
+[27] [28]
 File: Bilder/infA_verdau.png Graphic file (type bmp)
 <Bilder/infA_verdau.png>
 File: Bilder/InfA_transkription_kalibrier.png Graphic file (type bmp)
 <Bilder/InfA_transkription_kalibrier.png>
 
-LaTeX Warning: Reference `tab:infAtranskription' on page 25 undefined on input 
-line 832.
+LaTeX Warning: Reference `tab:infAtranskription' on page 29 undefined on input 
+line 910.
 
-[25] [26] [27] [28]
+[29] [30] [31] [32]
 File: Gesamt_files/figure-latex/infBobtiam-1.pdf Graphic file (type pdf)
 <use Gesamt_files/figure-latex/infBobtiam-1.pdf>
 File: Gesamt_files/figure-latex/infBobtiam-2.pdf Graphic file (type pdf)
@@ -1049,24 +1084,20 @@ File: Gesamt_files/figure-latex/infBobtiam-2.pdf Graphic file (type pdf)
 File: Gesamt_files/figure-latex/infBobtiam-3.pdf Graphic file (type pdf)
 <use Gesamt_files/figure-latex/infBobtiam-3.pdf>
 
-LaTeX Warning: Reference `fig:infBetabl' on page I undefined on input line 997.
-
-
-
-LaTeX Warning: Reference `fig:infBoptil' on page I undefined on input line 1016
+LaTeX Warning: Reference `fig:infBoptil' on page I undefined on input line 1094
 .
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 1044.
+(Font)              scaled to size 9.0pt on input line 1122.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 9.00082pt on input line 1044.
+(Font)              scaled to size 9.00082pt on input line 1122.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 8.99904pt on input line 1044.
+(Font)              scaled to size 8.99904pt on input line 1122.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: Reference `fig:infBoptil' on page I undefined on input line 1051
+LaTeX Warning: Reference `fig:infBoptil' on page I undefined on input line 1129
 .
 
 
@@ -1090,24 +1121,24 @@ File: Bilder/InfA Plasmidkarte 937.png Graphic file (type bmp)
 [6]
 File: Bilder/InfA Plasmidkarte 214.png Graphic file (type bmp)
 <Bilder/InfA Plasmidkarte 214.png>
-[7] [8] [9] [10] [11]
-Underfull \hbox (badness 2205) in paragraph at lines 1391--1393
+[7] [8] [9] [10] [11] [12]
+Underfull \hbox (badness 2205) in paragraph at lines 1493--1495
 []\TU/lmr/m/n/10 QIAGEN. 2021. “QIAGEN® PlasmidPurification Handbook.” \TU/lmr/
 m/it/10 QIAGEN Plasmid Mini, Midi, Ma-
  []
 
-[12] [13] [14] (Gesamt.aux)
+[13] [14] [15] (Gesamt.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 22448 strings out of 410527
- 406993 string characters out of 2816817
- 980670 words of memory out of 3000000
- 43269 multiletter control sequences out of 15000+600000
+ 22546 strings out of 410527
+ 410605 string characters out of 2816817
+ 982231 words of memory out of 3000000
+ 43359 multiletter control sequences out of 15000+600000
  475856 words of font info for 87 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  86i,16n,121p,2678b,512s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
-Output written on Gesamt.pdf (48 pages).
+Output written on Gesamt.pdf (54 pages).

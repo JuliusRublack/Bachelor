@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.10) (preloaded format=xelatex 2022.11.18)  26 JAN 2023 13:28
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.10) (preloaded format=xelatex 2022.11.18)  31 JAN 2023 13:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1005,24 +1005,32 @@ LaTeX Warning: Reference `fig:plasmidA214' on page 7 undefined on input line 30
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[10] [11] [12] [13] [14]
-Underfull \hbox (badness 2205) in paragraph at lines 642--644
+[10]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[11]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[12] [13] [14] [15]
+Underfull \hbox (badness 2205) in paragraph at lines 645--647
 []\TU/lmr/m/n/10 QIAGEN. 2021. “QIAGEN® PlasmidPurification Handbook.” \TU/lmr/
 m/it/10 QIAGEN Plasmid Mini, Midi, Ma-
  []
 
-[15] [16] (Methoden.aux)
+[16] [17] (Methoden.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
  22058 strings out of 410527
- 395670 string characters out of 2816817
- 978079 words of memory out of 3000000
+ 395509 string characters out of 2816817
+ 978101 words of memory out of 3000000
  42915 multiletter control sequences out of 15000+600000
  474847 words of font info for 75 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  86i,15n,121p,2334b,512s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
-Output written on Methoden.pdf (16 pages).
+Output written on Methoden.pdf (17 pages).

@@ -74,7 +74,7 @@ ggplot(transformed, aes(x=Zeit, y = Fluoreszenz)) +
 ```
 
 ```{r}
-test <- read.csv2("test22.csv")
+test <- read.csv2("test7.csv")
 
 #test auf Normalverteilung
 test %>%
@@ -99,7 +99,7 @@ stat.test2
 ```
 
 ```{r}
-test <- read.csv2("test4.csv")
+test <- read.csv2("test8.csv")
 
 #test auf Normalverteilung
 test %>%
@@ -124,7 +124,7 @@ pwc
 ```
 
 ```{r}
-data <- read.csv2("V_0096.probit.csv")
+data <- read.csv2("infb_primer_screening.csv")
 
 zehn7 <- data %>% 
   select(Zeit, X1071,	X1072,	X1073,	X1074,	X1075,	X1076,	X1077) %>%
@@ -162,7 +162,11 @@ zehnnk <- data %>%
   select(Zeit, nk1,	nk2,	nk3,	nk4,	nk5,	nk6,	nk7,	nk8) %>%
   gather(key = "Proben", value = "Fluoreszenz", -Zeit)
   
-transformed <- rbind(zehn7, zehn6, zehn5, zehn4, zehn3, zehn2, zehn1, zehn0, zehnnk)
+transformed <- rbind(zehn5, zehn4, zehn3, zehn2, zehn1, zehn0, zehnnk)
+
+transformed1 <- rbind(zehn7)
+
+transformed2 <- rbind(zehn6)
 
 
 
@@ -171,16 +175,18 @@ ggplot(transformed, aes(x=Zeit, y = Fluoreszenz)) +
   theme_minimal()+
    ylab("Fluoreszenz in mV")+
    xlab("Zyklus")+
-  scale_color_manual(values = c("#d73027", "#d73027", "#d73027", "#d73027", "#d73027", "#d73027", "#d73027", "#d73027", 
-                                "#f46d43", "#f46d43", "#f46d43", "#f46d43", "#f46d43", "#f46d43", "#f46d43",  
-                                "#fdae61", "#fdae61", "#fdae61", "#fdae61", "#fdae61", "#fdae61", "#fdae61",  
-                                "#fee090", "#fee090", "#fee090", "#fee090", "#fee090", "#fee090", "#fee090",  
-                                "#e0f3f8", "#e0f3f8", "#e0f3f8", "#e0f3f8", "#e0f3f8", "#e0f3f8", "#e0f3f8",  
-                                "#abd9e9", "#abd9e9", "#abd9e9", "#abd9e9", "#abd9e9", "#abd9e9", "#abd9e9",  
-                                "#74add1", "#74add1", "#74add1", "#74add1", "#74add1", "#74add1", "#74add1",  
-                                "#4575b4", "#4575b4", "#4575b4", "#4575b4", "#4575b4", "#4575b4", "#4575b4",
-                                "#333388", "#333388", "#333388", "#333388", "#333388", "#333388", "#333388"))+
+  scale_color_manual(values = c("#cccccc", "#cccccc", "#cccccc", "#cccccc", "#cccccc", "#cccccc", "#cccccc", "#cccccc", 
+                               "#cccccc", "#cccccc", "#cccccc", "#cccccc", "#cccccc", "#cccccc", "#cccccc",  
+                                "#cccccc", "#cccccc", "#cccccc", "#cccccc", "#cccccc", "#cccccc", "#cccccc",  
+                                "#cccccc", "#cccccc", "#cccccc", "#cccccc", "#cccccc", "#cccccc", "#cccccc",  
+                                "#cccccc", "#cccccc", "#cccccc", "#cccccc", "#cccccc", "#cccccc", "#cccccc",  
+                                "#cccccc", "#cccccc", "#cccccc", "#cccccc", "#cccccc", "#cccccc", "#cccccc",  
+                                "#cccccc", "#cccccc", "#cccccc", "#cccccc", "#cccccc", "#cccccc", "#cccccc",  
+                                "#000000", "#000000", "#000000", "#000000", "#000000", "#000000", "#000000",
+                                 "#000000", "#000000", "#000000", "#000000", "#000000", "#000000", "#000000"))+
   theme(legend.position="none")+
+  geom_line(data=transformed1,aes(color = Proben), linetype="solid")+
+  geom_line(data=transformed2,aes(color = Proben), linetype="dashed")
   annotate(geom="text", x=11, y=6, label="A", color="black", size=12)
 ```
 
@@ -243,21 +249,68 @@ ggplot(transformed, aes(x=Zeit, y = Fluoreszenz)) +
 
 ```
 
+
+
 ```{r}
-data <- read.csv2("regression1.csv")
+data <- read.csv2("infb_primer_screening.csv")
+
+zehn7 <- data %>% 
+  select(Zeit, X1071,	X1072,	X1073,	X1074,	X1075,	X1076,	X1077) %>%
+  gather(key = "Proben", value = "Fluoreszenz", -Zeit)
+
+zehn6 <- data %>% 
+  select(Zeit, X1061,	X1062,	X1063,	X1064,	X1065,	X1066,	X1067) %>%
+  gather(key = "Proben", value = "Fluoreszenz", -Zeit)
+
+zehn5 <- data %>% 
+  select(Zeit,  X1051,	X1052,	X1053,	X1054,	X1055,	X1056,	X1057) %>%
+  gather(key = "Proben", value = "Fluoreszenz", -Zeit)
+
+zehn4 <- data %>% 
+  select(Zeit, X1041,	X1042,	X1043,	X1044,	X1045,	X1046,	X1047) %>%
+  gather(key = "Proben", value = "Fluoreszenz", -Zeit)
+
+zehn3 <- data %>% 
+  select(Zeit, X1031,	X1032,	X1033,	X1034,	X1035,	X1036,	X1037) %>%
+  gather(key = "Proben", value = "Fluoreszenz", -Zeit)
+
+zehn2 <- data %>% 
+  select(Zeit, X1021,	X1022,	X1023,	X1024,	X1025,	X1026,	X1027) %>%
+  gather(key = "Proben", value = "Fluoreszenz", -Zeit)
+
+zehn1 <- data %>% 
+  select(Zeit,	X1011,	X1012,	X1013,	X1014,	X1015,	X1016,	X1017) %>%
+  gather(key = "Proben", value = "Fluoreszenz", -Zeit)
+
+zehn0 <- data %>% 
+  select(Zeit, X1001,	X1002,	X1003,	X1004,	X1005,	X1006,	X1007) %>%
+  gather(key = "Proben", value = "Fluoreszenz", -Zeit)
+
+zehnnk <- data %>%
+  select(Zeit, nk1,	nk2,	nk3,	nk4,	nk5,	nk6,	nk7,	nk8) %>%
+  gather(key = "Proben", value = "Fluoreszenz", -Zeit)
+  
+transformed <- rbind(zehn7, zehn6, zehn5, zehn4, zehn3, zehn2, zehn1, zehn0, zehnnk)
 
 
-ggplot(data, aes(alter, schmerz)) +
-  geom_point() +
-  geom_smooth(method = "lm") +
+
+ggplot(transformed, aes(x=Zeit, y = Fluoreszenz)) +
+  geom_line(aes(color = Proben), linewidth = 0.3) +
   theme_minimal()+
-   ylab("Ct-Wert")+
-   xlab("Konzentration")+
-  stat_cor(label.y = 28)+ 
-        stat_regline_equation(label.y = 25)
+   ylab("Fluoreszenz in mV")+
+   xlab("Zyklus")+
+  scale_color_manual(values = c("#d73027", "#d73027", "#d73027", "#d73027", "#d73027", "#d73027", "#d73027", "#d73027", 
+                                "#f46d43", "#f46d43", "#f46d43", "#f46d43", "#f46d43", "#f46d43", "#f46d43",  
+                                "#fdae61", "#fdae61", "#fdae61", "#fdae61", "#fdae61", "#fdae61", "#fdae61",  
+                                "#fee090", "#fee090", "#fee090", "#fee090", "#fee090", "#fee090", "#fee090",  
+                                "#e0f3f8", "#e0f3f8", "#e0f3f8", "#e0f3f8", "#e0f3f8", "#e0f3f8", "#e0f3f8",  
+                                "#abd9e9", "#abd9e9", "#abd9e9", "#abd9e9", "#abd9e9", "#abd9e9", "#abd9e9",  
+                                "#74add1", "#74add1", "#74add1", "#74add1", "#74add1", "#74add1", "#74add1",  
+                                "#4575b4", "#4575b4", "#4575b4", "#4575b4", "#4575b4", "#4575b4", "#4575b4",
+                                "#333388", "#333388", "#333388", "#333388", "#333388", "#333388", "#333388"))+
+  theme(legend.position="none")+
+  annotate(geom="text", x=11, y=6, label="A", color="black", size=12)
 ```
-
-
 
 
 

@@ -32,7 +32,7 @@ header-includes:
 
 \Huge
 
-{\bf Entwicklung und Optimierung einer Rekombinase Polymerase Amplifikation zur Detektion von Influenza A und B Viren  }
+{\bf Entwicklung und Optimierung eines isothermen Amplifikationssystems zur Detektion von Influenza A und B Viren-RNA für die Point-of-care Diagnostik }
 
 \vspace{3 cm}
 

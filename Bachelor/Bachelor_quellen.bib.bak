@@ -1396,6 +1396,166 @@
   groups    = {Methoden},
 }
 
+@Article{Kang2022,
+  author    = {Tongjia Kang and Jingming Lu and Tian Yu and Yi Long and Guozhen Liu},
+  journal   = {Biosensors and Bioelectronics},
+  title     = {Advances in nucleic acid amplification techniques ({NAATs}): {COVID}-19 point-of-care diagnostics as an example},
+  year      = {2022},
+  month     = {jun},
+  pages     = {114109},
+  volume    = {206},
+  doi       = {10.1016/j.bios.2022.114109},
+  groups    = {isotherme Amplifikation},
+  publisher = {Elsevier {BV}},
+}
+
+@Article{Zhao2015,
+  author    = {Yongxi Zhao and Feng Chen and Qian Li and Lihua Wang and Chunhai Fan},
+  journal   = {Chemical Reviews},
+  title     = {Isothermal Amplification of Nucleic Acids},
+  year      = {2015},
+  month     = {nov},
+  number    = {22},
+  pages     = {12491--12545},
+  volume    = {115},
+  doi       = {10.1021/acs.chemrev.5b00428},
+  groups    = {isotherme Amplifikation},
+  publisher = {American Chemical Society ({ACS})},
+}
+
+@Article{RKI2019,
+  author  = {RKI},
+  journal = {Robert-Koch-Institut},
+  title   = {Infektionsepidemiologisches Jahrbuch meldepflichtiger Krankheiten für 2018},
+  year    = {2019},
+  groups  = {Influenza Allgemein},
+  url     = {https://www.rki.de/DE/Content/Infekt/Jahrbuch/Jahrbuch_2018.pdf?__blob=publicationFile},
+}
+
+@Article{Uyeki2022,
+  author    = {Timothy M Uyeki and David S Hui and Maria Zambon and David E Wentworth and Arnold S Monto},
+  journal   = {The Lancet},
+  title     = {Influenza},
+  year      = {2022},
+  month     = {aug},
+  number    = {10353},
+  pages     = {693--706},
+  volume    = {400},
+  doi       = {10.1016/s0140-6736(22)00982-5},
+  groups    = {Influenza Allgemein},
+  publisher = {Elsevier {BV}},
+}
+
+@Article{Paules2017,
+  author    = {Catharine Paules and Kanta Subbarao},
+  journal   = {The Lancet},
+  title     = {Influenza},
+  year      = {2017},
+  month     = {aug},
+  number    = {10095},
+  pages     = {697--708},
+  volume    = {390},
+  doi       = {10.1016/s0140-6736(17)30129-0},
+  groups    = {Influenza Allgemein},
+  publisher = {Elsevier {BV}},
+}
+
+@Article{Biggerstaff2014,
+  author    = {Matthew Biggerstaff and Simon Cauchemez and Carrie Reed and Manoj Gambhir and Lyn Finelli},
+  journal   = {{BMC} Infectious Diseases},
+  title     = {Estimates of the reproduction number for seasonal, pandemic, and zoonotic influenza: a systematic review of the literature},
+  year      = {2014},
+  month     = {sep},
+  number    = {1},
+  volume    = {14},
+  doi       = {10.1186/1471-2334-14-480},
+  groups    = {Influenza Allgemein},
+  publisher = {Springer Science and Business Media {LLC}},
+}
+
+@Article{Javanian2021,
+  author    = {Mostafa Javanian and Mohammad Barary and Sam Ghebrehewet and Veerendra Koppolu and VeneelaKrishnaRekha Vasigala and Soheil Ebrahimpour},
+  journal   = {Journal of Medical Virology},
+  title     = {A brief review of influenza virus infection},
+  year      = {2021},
+  month     = {apr},
+  number    = {8},
+  pages     = {4638--4646},
+  volume    = {93},
+  doi       = {10.1002/jmv.26990},
+  groups    = {Influenza Allgemein},
+  publisher = {Wiley},
+}
+
+@Article{Foni2017,
+  author    = {Emanuela Foni and Chiara Chiapponi and Laura Baioni and Irene Zanni and Marianna Merenda and Carlo Rosignoli and Constantinos S. Kyriakis and Mario Vittorio Luini and Maria Lucia Mandola and Luca Bolzoni and Arrigo Daniele Nigrelli and Silvia Faccini},
+  journal   = {Scientific Reports},
+  title     = {Influenza D in Italy: towards a better understanding of an emerging viral infection in swine},
+  year      = {2017},
+  month     = {sep},
+  number    = {1},
+  volume    = {7},
+  doi       = {10.1038/s41598-017-12012-3},
+  groups    = {Influenza Allgemein},
+  publisher = {Springer Science and Business Media {LLC}},
+}
+
+@Article{Yoo2018,
+  author    = {Sung J. Yoo and Taeyong Kwon and Young S. Lyoo},
+  journal   = {Clinical and Experimental Vaccine Research},
+  title     = {Challenges of influenza A viruses in humans and animals and current animal vaccines as an effective control measure},
+  year      = {2018},
+  number    = {1},
+  pages     = {1},
+  volume    = {7},
+  doi       = {10.7774/cevr.2018.7.1.1},
+  groups    = {Influenza Allgemein},
+  publisher = {Korean Vaccine Society},
+}
+
+@Article{Koutsakos2016,
+  author    = {Marios Koutsakos and Thi HO Nguyen and Wendy S Barclay and Katherine Kedzierska},
+  journal   = {Future Microbiology},
+  title     = {Knowns and unknowns of influenza B viruses},
+  year      = {2016},
+  month     = {jan},
+  number    = {1},
+  pages     = {119--135},
+  volume    = {11},
+  doi       = {10.2217/fmb.15.120},
+  groups    = {Influenza Allgemein},
+  publisher = {Future Medicine Ltd},
+}
+
+@Article{Hause2013,
+  author    = {Ben M. Hause and Mariette Ducatez and Emily A. Collin and Zhiguang Ran and Runxia Liu and Zizhang Sheng and Anibal Armien and Bryan Kaplan and Suvobrata Chakravarty and Adam D. Hoppe and Richard J. Webby and Randy R. Simonson and Feng Li},
+  journal   = {{PLoS} Pathogens},
+  title     = {Isolation of a Novel Swine Influenza Virus from Oklahoma in 2011 Which Is Distantly Related to Human Influenza C Viruses},
+  year      = {2013},
+  month     = {feb},
+  number    = {2},
+  pages     = {e1003176},
+  volume    = {9},
+  doi       = {10.1371/journal.ppat.1003176},
+  editor    = {Ron A. M. Fouchier},
+  groups    = {Influenza Allgemein},
+  publisher = {Public Library of Science ({PLoS})},
+}
+
+@Article{Njouom2019,
+  author    = {Richard Njouom and Gwladys Chavely Monamele and Burcu Ermetal and Serge Tchatchouang and Sylvie Moyo-Tetang and John W. McCauley and Rodney S. Daniels},
+  journal   = {Emerging Infectious Diseases},
+  title     = {Detection of Influenza C Virus Infection among Hospitalized Patients, Cameroon},
+  year      = {2019},
+  month     = {mar},
+  number    = {3},
+  pages     = {607--609},
+  volume    = {25},
+  doi       = {10.3201/eid2503.181213},
+  groups    = {Influenza Allgemein},
+  publisher = {Centers for Disease Control and Prevention ({CDC})},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
@@ -1408,4 +1568,6 @@
 2 StaticGroup:Viren die Gefahr aus dem nichts\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:RPA\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:PCR\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:isotherme Amplifikation\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Influenza Allgemein\;0\;1\;0x8a8a8aff\;\;\;;
 }

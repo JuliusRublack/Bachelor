@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.10) (preloaded format=xelatex 2022.11.18)  26 JAN 2023 15:24
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.10) (preloaded format=xelatex 2022.11.18)  31 JAN 2023 13:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -968,14 +968,14 @@ File: Bilder/infA_Virus.png Graphic file (type bmp)
 [3] [4] [5]
 File: Bilder/LAMP_struktur.png Graphic file (type bmp)
 <Bilder/LAMP_struktur.png>
-[6]
+[6] [7]
 File: Bilder/NASBA_reaction.png Graphic file (type bmp)
 <Bilder/NASBA_reaction.png>
-[7] [8] [9] [10] [11] [12] [13] [14] (Einleitung.aux) ) 
+[8] [9] [10] [11] [12] [13] [14] (Einleitung.aux) ) 
 Here is how much of TeX's memory you used:
  21993 strings out of 410527
- 394647 string characters out of 2816817
- 971697 words of memory out of 3000000
+ 394619 string characters out of 2816817
+ 971698 words of memory out of 3000000
  42866 multiletter control sequences out of 15000+600000
  472878 words of font info for 58 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191

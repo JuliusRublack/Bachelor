@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.10) (preloaded format=xelatex 2022.11.18)  26 JAN 2023 08:33
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.10) (preloaded format=xelatex 2022.11.18)  31 JAN 2023 10:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -959,84 +959,162 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 ]
 
-LaTeX Warning: Reference `plasmidB' on page 2 undefined on input line 117.
+LaTeX Warning: Reference `plasmidB' on page 2 undefined on input line 119.
 
 
-LaTeX Warning: Reference `isolation' on page 2 undefined on input line 117.
+LaTeX Warning: Reference `isolation' on page 2 undefined on input line 119.
 
 
-LaTeX Warning: Reference `sequenzierung' on page 2 undefined on input line 117.
-
-
-
-LaTeX Warning: Reference `verdau' on page 2 undefined on input line 117.
-
-
-LaTeX Warning: Reference `cleaning' on page 2 undefined on input line 117.
-
-
-LaTeX Warning: Reference `transkription' on page 2 undefined on input line 117.
+LaTeX Warning: Reference `sequenzierung' on page 2 undefined on input line 119.
 
 
 
-LaTeX Warning: Reference `ribogreen' on page 2 undefined on input line 117.
+LaTeX Warning: Reference `verdau' on page 2 undefined on input line 119.
+
+
+LaTeX Warning: Reference `cleaning' on page 2 undefined on input line 119.
+
+
+LaTeX Warning: Reference `transkription' on page 2 undefined on input line 119.
+
+
+
+LaTeX Warning: Reference `ribogreen' on page 2 undefined on input line 119.
 
 File: Bilder/infB_verdau_t.png Graphic file (type bmp)
 <Bilder/infB_verdau_t.png>
 File: Ergebnisse-neu-_files/figure-latex/infBverdau-2.pdf Graphic file (type pd
 f)
 <use Ergebnisse-neu-_files/figure-latex/infBverdau-2.pdf>
-[2]
 
-LaTeX Warning: Reference `modifikation' on page 3 undefined on input line 160.
+LaTeX Warning: Reference `modifikation' on page 2 undefined on input line 162.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 File: Ergebnisse-neu-_files/figure-latex/infbscreening-1.pdf Graphic file (type
  pdf)
 <use Ergebnisse-neu-_files/figure-latex/infbscreening-1.pdf>
 
-LaTeX Warning: Reference `RPAnormal' on page 3 undefined on input line 174.
+Underfull \hbox (badness 3579) in paragraph at lines 173--173
+[]\TU/lmr/m/n/10 Abbildung 2: []\TU/lmr/bx/n/10 Primerscreening der entwickelte
+n Influenza B RT-RPA Primer-Sonden-
+ []
 
-[3] [4]
 
-LaTeX Warning: Reference `transformation' on page 5 undefined on input line 192
+LaTeX Warning: Reference `RPAnormal' on page 2 undefined on input line 176.
+
+[2] [3]
+
+LaTeX Warning: Reference `methode' on page 4 undefined on input line 183.
+
+
+LaTeX Warning: Reference `tab:tabeins' on page 4 undefined on input line 183.
+
+File: Ergebnisse-neu-_files/figure-latex/infBetabl-1.pdf Graphic file (type pdf
+)
+<use Ergebnisse-neu-_files/figure-latex/infBetabl-1.pdf>
+
+LaTeX Warning: Reference `optimierungT' on page 4 undefined on input line 198.
+
+
+LaTeX Warning: Reference `tab:tabzwei' on page 4 undefined on input line 198.
+
+[4] [5]
+
+LaTeX Warning: Reference `optimierungP' on page 6 undefined on input line 202.
+
+
+LaTeX Warning: Reference `tt-wert' on page 6 undefined on input line 202.
+
+
+LaTeX Warning: Reference `tab:tabdrei' on page 6 undefined on input line 202.
+
+File: Ergebnisse-neu-_files/figure-latex/infbopti-1.pdf Graphic file (type pdf)
+
+<use Ergebnisse-neu-_files/figure-latex/infbopti-1.pdf>
+File: Ergebnisse-neu-_files/figure-latex/infbopti-2.pdf Graphic file (type pdf)
+
+<use Ergebnisse-neu-_files/figure-latex/infbopti-2.pdf>
+
+LaTeX Warning: Reference `assymetrie' on page 6 undefined on input line 220.
+
+
+LaTeX Warning: Reference `tab:' on page 6 undefined on input line 220.
+
+
+LaTeX Warning: Reference `assymetrie' on page 6 undefined on input line 221.
+
+[6]
+File: Ergebnisse-neu-_files/figure-latex/assymetriy-1.pdf Graphic file (type pd
+f)
+<use Ergebnisse-neu-_files/figure-latex/assymetriy-1.pdf>
+File: Ergebnisse-neu-_files/figure-latex/assymetriy-2.pdf Graphic file (type pd
+f)
+<use Ergebnisse-neu-_files/figure-latex/assymetriy-2.pdf>
+
+Underfull \hbox (badness 3579) in paragraph at lines 229--229
+[]\TU/lmr/m/n/10 Abbildung 5: []\TU/lmr/bx/n/10 Primerscreening der entwickelte
+n Influenza B RT-RPA Primer-Sonden-
+ []
+
+
+LaTeX Warning: Reference `probit' on page 7 undefined on input line 235.
+
+
+LaTeX Warning: Reference `tt-wert' on page 7 undefined on input line 235.
+
+[7]
+File: Ergebnisse-neu-_files/figure-latex/infbsensi-1.pdf Graphic file (type pdf
+)
+<use Ergebnisse-neu-_files/figure-latex/infbsensi-1.pdf>
+File: Ergebnisse-neu-_files/figure-latex/infbsensi-2.pdf Graphic file (type pdf
+)
+<use Ergebnisse-neu-_files/figure-latex/infbsensi-2.pdf>
+File: Ergebnisse-neu-_files/figure-latex/infbsensi-3.pdf Graphic file (type pdf
+)
+<use Ergebnisse-neu-_files/figure-latex/infbsensi-3.pdf>
+[8]
+
+LaTeX Warning: Reference `transformation' on page 9 undefined on input line 270
 .
 
 
-LaTeX Warning: Reference `isolation' on page 5 undefined on input line 192.
+LaTeX Warning: Reference `isolation' on page 9 undefined on input line 270.
 
 
-LaTeX Warning: Reference `verdau' on page 5 undefined on input line 192.
+LaTeX Warning: Reference `verdau' on page 9 undefined on input line 270.
 
 File: Bilder/infA_verdau.png Graphic file (type bmp)
 <Bilder/infA_verdau.png>
 File: Bilder/InfA_transkription_kalibrier.png Graphic file (type bmp)
 <Bilder/InfA_transkription_kalibrier.png>
 
-LaTeX Warning: Reference `cleaning' on page 5 undefined on input line 205.
+LaTeX Warning: Reference `cleaning' on page 9 undefined on input line 283.
 
 
-LaTeX Warning: Reference `transkription' on page 5 undefined on input line 205.
+LaTeX Warning: Reference `transkription' on page 9 undefined on input line 283.
 
 
 
-LaTeX Warning: Reference `ribogreen' on page 5 undefined on input line 205.
+LaTeX Warning: Reference `ribogreen' on page 9 undefined on input line 283.
 
 
-LaTeX Warning: Reference `tab:infAtranskription' on page 5 undefined on input l
-ine 205.
+LaTeX Warning: Reference `tab:infAtranskription' on page 9 undefined on input l
+ine 283.
 
-[5] [6] [7] [8] (Ergebnisse-neu-.aux)
+[9] [10] [11] [12] (Ergebnisse-neu-.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 22030 strings out of 410527
- 396454 string characters out of 2816817
- 956107 words of memory out of 3000000
- 42898 multiletter control sequences out of 15000+600000
+ 22137 strings out of 410527
+ 401016 string characters out of 2816817
+ 964666 words of memory out of 3000000
+ 42997 multiletter control sequences out of 15000+600000
  472886 words of font info for 59 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 86i,14n,121p,1685b,468s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 86i,14n,121p,1685b,474s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
-Output written on Ergebnisse-neu-.pdf (8 pages).
+Output written on Ergebnisse-neu-.pdf (12 pages).
